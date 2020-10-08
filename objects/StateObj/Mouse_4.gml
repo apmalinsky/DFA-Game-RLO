@@ -1,5 +1,5 @@
 
-
+// testing commit show_debug_message("Changed");
 
 if (global.selected_color != "") {
 	show_debug_message("Changed");
