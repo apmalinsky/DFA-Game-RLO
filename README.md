@@ -9,3 +9,4 @@ To open this repo as a project in GameMaker Studio 2, download [GameMaker Studio
   -Paste the URL of this [repo](https://github.com/apmalinsky/DFA-Game-RLO) in the first field.<br />
   -In the second field, choose a file path to clone the repo to. Make sure you choose an empty folder to clone to. Click OK.<br />
 6. Select the DFA-Game-RLO.yyp file and click Open. 
+7. To get started, double-click on Room1 under the Rooms folder on the right-hand side.
