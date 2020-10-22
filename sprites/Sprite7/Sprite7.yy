@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2abbe1d0-30e6-479e-bd4a-bd264acf6f1f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "ProjectDemo2Code",
-    "path": "ProjectDemo2Code.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite7",
