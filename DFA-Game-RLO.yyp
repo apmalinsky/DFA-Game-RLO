@@ -14,6 +14,7 @@
     {"id":{"name":"t_getTarget","path":"scripts/t_getTarget/t_getTarget.yy",},"order":10,},
     {"id":{"name":"t_tokenize","path":"scripts/t_tokenize/t_tokenize.yy",},"order":11,},
     {"id":{"name":"GreenSelectorSpr","path":"sprites/GreenSelectorSpr/GreenSelectorSpr.yy",},"order":18,},
+    {"id":{"name":"g_runFirst","path":"scripts/g_runFirst/g_runFirst.yy",},"order":22,},
     {"id":{"name":"RedSelectorSpr","path":"sprites/RedSelectorSpr/RedSelectorSpr.yy",},"order":16,},
     {"id":{"name":"t_getSymbol","path":"scripts/t_getSymbol/t_getSymbol.yy",},"order":9,},
     {"id":{"name":"g_initLevel","path":"scripts/g_initLevel/g_initLevel.yy",},"order":21,},

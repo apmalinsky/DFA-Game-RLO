@@ -4,4 +4,6 @@ global.selected_color = background_color;
 
 global.sequence = [];
 
-init_level(Note1);
+gml_pragma("global", "g_runFirst()");
+g_initLevel("Note1");
+g_initDFA();
