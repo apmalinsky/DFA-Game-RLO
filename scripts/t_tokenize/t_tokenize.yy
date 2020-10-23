@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "script_state",
+  "name": "t_tokenize",
   "tags": [],
   "resourceType": "GMScript",
 }
