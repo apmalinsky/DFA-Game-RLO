@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite8",
-    "path": "sprites/Sprite8/Sprite8.yy",
+    "name": "ArrowSpr",
+    "path": "sprites/ArrowSpr/ArrowSpr.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"TransitionObj","path":"objects/TransitionObj/TransitionObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Object8",
+  "name": "TransitionObj",
   "tags": [],
   "resourceType": "GMObject",
 }
