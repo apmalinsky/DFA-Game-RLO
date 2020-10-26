@@ -24,8 +24,8 @@ global.state_selected = {id: 0, x: 0, y: 0};
 
 
 
-//store list of points to create path with (trace on submission)
-global.saved_transition_instance = {};
+//store list of transition ids
+global.saved_transition_instance = 0;
 
 
 global.sequence = [];

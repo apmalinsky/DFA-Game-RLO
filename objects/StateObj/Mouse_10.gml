@@ -48,7 +48,7 @@ if (global.is_state_selected){
 	//var arrow;
 
 	//var arrow = instance_create(600, 600, StateObj);
-	var arrow = instance_create_depth(global.state_selected.x, global.state_selected.y, 0, TransitionObj);
+	global.saved_transition_instance = instance_create_depth(global.state_selected.x, global.state_selected.y, 0, TransitionObj);
 	
 	
     //draw_sprite_ext( sprite, subimg, x, y, xscale, yscale, rot, colour, alpha );
