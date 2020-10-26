@@ -8,7 +8,7 @@
 init = argument0;
 var str = "\\"+init+".txt";
 var i, file;
-file = file_text_open_read(working_directory + src);
+file = file_text_open_read(working_directory + str);
 if(file!=-1){
 	global.num_states = real(file_text_readln(file));
 	show_debug_message(global.num_states);
