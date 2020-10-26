@@ -55,7 +55,7 @@ if (global.is_state_selected){
 	//var arrow_sprite = object_get_sprite(arrow);
 	//draw_sprite_ext(arrow_sprite, 0, global.state_selected.x, global.state_selected.y, 1, 1, 90, global.red, 0.5)
 	
-
+	
 
 
 

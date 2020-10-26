@@ -48,6 +48,7 @@ if (global.selected_transition_color != "") {
 		global.state_selected.x = x;
 		//show_debug_message(self.bbox_top)
 		global.state_selected.y = self.bbox_top;
+		
 		//updateStateSelected(id, self.x, self.y)
 		//show_debug_message(global.state_selected);
 	}
