@@ -15,6 +15,7 @@
     {"id":{"name":"t_tokenize","path":"scripts/t_tokenize/t_tokenize.yy",},"order":11,},
     {"id":{"name":"GreenSelectorSpr","path":"sprites/GreenSelectorSpr/GreenSelectorSpr.yy",},"order":18,},
     {"id":{"name":"DFA_animation","path":"sprites/DFA_animation/DFA_animation.yy",},"order":0,},
+    {"id":{"name":"d_checkString","path":"scripts/d_checkString/d_checkString.yy",},"order":23,},
     {"id":{"name":"g_runFirst","path":"scripts/g_runFirst/g_runFirst.yy",},"order":22,},
     {"id":{"name":"RedSelectorSpr","path":"sprites/RedSelectorSpr/RedSelectorSpr.yy",},"order":16,},
     {"id":{"name":"SubmitSpr","path":"sprites/SubmitSpr/SubmitSpr.yy",},"order":20,},
