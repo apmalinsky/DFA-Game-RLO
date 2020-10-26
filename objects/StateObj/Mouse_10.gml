@@ -43,15 +43,19 @@ if (global.is_state_selected){
 	//var transition;
 	//transition = instance_create(500, 500, TransitionObj);
 	//var transitionObj = TransitionObj;
-	//show_debug_message(transitionObj.name)
+	show_debug_message("entered")
+	
+	//var arrow;
+
+	//var arrow = instance_create(600, 600, StateObj);
+	global.saved_transition_instance = instance_create_depth(global.state_selected.x, global.state_selected.y, 0, TransitionObj);
 	
 	
-	var arrow = instance_create(global.state_selected.x + 300, global.state_selected.y + 300, StateObj);
     //draw_sprite_ext( sprite, subimg, x, y, xscale, yscale, rot, colour, alpha );
 	//var arrow_sprite = object_get_sprite(arrow);
 	//draw_sprite_ext(arrow_sprite, 0, global.state_selected.x, global.state_selected.y, 1, 1, 90, global.red, 0.5)
 	
-
+	
 
 
 

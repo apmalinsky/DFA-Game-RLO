@@ -8,10 +8,10 @@ if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, s
 	image_index = selected;
 	
 	if (selected){
-		global.selected_color = "blue"
+		global.selected_transition_color = global.blue
 	}
 	else {
-		global.selected_color = ""
+		global.selected_transition_color = ""
 	}
 
 	// check if another box is selected

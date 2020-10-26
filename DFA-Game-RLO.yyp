@@ -3,14 +3,22 @@
     {"id":{"name":"d_getStateObj","path":"scripts/d_getStateObj/d_getStateObj.yy",},"order":15,},
     {"id":{"name":"s_hasTarget","path":"scripts/s_hasTarget/s_hasTarget.yy",},"order":5,},
     {"id":{"name":"SubmitObj","path":"objects/SubmitObj/SubmitObj.yy",},"order":5,},
+<<<<<<< HEAD
+    {"id":{"name":"TransitionObj","path":"objects/TransitionObj/TransitionObj.yy",},"order":7,},
+=======
     {"id":{"name":"t_getSource","path":"scripts/t_getSource/t_getSource.yy",},"order":8,},
     {"id":{"name":"Star_gold","path":"sprites/Star_gold/Star_gold.yy",},"order":0,},
     {"id":{"name":"t_initTrans","path":"scripts/t_initTrans/t_initTrans.yy",},"order":14,},
+>>>>>>> origin/main
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
     {"id":{"name":"BlueSelectorObj","path":"objects/BlueSelectorObj/BlueSelectorObj.yy",},"order":2,},
     {"id":{"name":"t_clearTransitions","path":"scripts/t_clearTransitions/t_clearTransitions.yy",},"order":13,},
     {"id":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"order":3,},
+<<<<<<< HEAD
+    {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":22,},
+=======
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":0,},
+>>>>>>> origin/main
     {"id":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"order":0,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"t_getTarget","path":"scripts/t_getTarget/t_getTarget.yy",},"order":10,},
@@ -19,6 +27,11 @@
     {"id":{"name":"DFA_animation","path":"sprites/DFA_animation/DFA_animation.yy",},"order":0,},
     {"id":{"name":"g_runFirst","path":"scripts/g_runFirst/g_runFirst.yy",},"order":22,},
     {"id":{"name":"RedSelectorSpr","path":"sprites/RedSelectorSpr/RedSelectorSpr.yy",},"order":16,},
+<<<<<<< HEAD
+    {"id":{"name":"SubmitSpr","path":"sprites/SubmitSpr/SubmitSpr.yy",},"order":20,},
+    {"id":{"name":"Object7","path":"objects/Object7/Object7.yy",},"order":6,},
+    {"id":{"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},"order":21,},
+=======
     {"id":{"name":"t_getSymbol","path":"scripts/t_getSymbol/t_getSymbol.yy",},"order":9,},
     {"id":{"name":"g_initLevel","path":"scripts/g_initLevel/g_initLevel.yy",},"order":21,},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},"order":20,},
@@ -32,6 +45,7 @@
     {"id":{"name":"State_start","path":"sprites/State_start/State_start.yy",},"order":1,},
     {"id":{"name":"s_getSymbols","path":"scripts/s_getSymbols/s_getSymbols.yy",},"order":4,},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},"order":21,},
+>>>>>>> origin/main
     {"id":{"name":"BlueSelectorSpr","path":"sprites/BlueSelectorSpr/BlueSelectorSpr.yy",},"order":17,},
     {"id":{"name":"d_contains","path":"scripts/d_contains/d_contains.yy",},"order":16,},
     {"id":{"name":"Star_gray","path":"sprites/Star_gray/Star_gray.yy",},"order":1,},

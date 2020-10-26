@@ -1,39 +1,39 @@
 
 // testing commit show_debug_message("Changed");
 
-if (global.selected_color != "") {
+if (global.selected_transition_color != "") {
 	show_debug_message("Changed");
-	switch(global.selected_color){
-			case "red":
+	switch(global.selected_transition_color){
+			case global.red:
 			
 				draw_set_color(global.red)
 			
 			
-				if (image_blend == global.selected_color_rgb){
+				if (image_blend == global.selected__state_color_rgb){
 					image_blend = c_white;
 				}
 				else {
-					image_blend = global.selected_color_rgb;
+					image_blend = global.selected__state_color_rgb;
 				}
 				break;
-			case "green":
+			case global.green:
 			
 			
 				draw_set_color(global.green)
-				if (image_blend == global.selected_color_rgb){
+				if (image_blend == global.selected__state_color_rgb){
 					image_blend = c_white;
 				}
 				else {
-					image_blend = global.selected_color_rgb;
+					image_blend = global.selected__state_color_rgb;
 				}
 				break;
-			case "blue":
+			case global.blue:
 				draw_set_color(global.blue)
-				if (image_blend == global.selected_color_rgb){
+				if (image_blend == global.selected__state_color_rgb){
 					image_blend = c_white;
 				}
 				else {
-					image_blend = global.selected_color_rgb;
+					image_blend = global.selected__state_color_rgb;
 				}
 				break;
 			default:
@@ -46,7 +46,9 @@ if (global.selected_color != "") {
 		global.is_state_selected = true;
 		global.state_selected.id = self.id;
 		global.state_selected.x = x;
-		global.state_selected.y = y;
+		//show_debug_message(self.bbox_top)
+		global.state_selected.y = self.bbox_top;
+		
 		//updateStateSelected(id, self.x, self.y)
 		//show_debug_message(global.state_selected);
 	}

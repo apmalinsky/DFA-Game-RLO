@@ -23,11 +23,11 @@ if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, s
 	selected = !selected; //switch state of button
 	image_index = selected;
 	
-	if (selected){
-		global.selected_color = "red"
+if (selected){
+		global.selected_transition_color = global.red
 	}
 	else {
-		global.selected_color = ""
+		global.selected_transition_color = ""
 	}
 	
 	// check if another box is selected
