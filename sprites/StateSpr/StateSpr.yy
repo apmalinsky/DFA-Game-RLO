@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eafe9b95-8667-4da9-bc4f-2c2243a7a64d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "ProjectDemo2Code",
-    "path": "ProjectDemo2Code.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "StateSpr",

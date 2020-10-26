@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0cdd43a5-1b97-4df5-b730-f7ae2f1a8fa2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "ProjectDemo2Code",
-    "path": "ProjectDemo2Code.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "RedSelectorSpr",
