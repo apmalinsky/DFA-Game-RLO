@@ -24,7 +24,7 @@ if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, s
 	image_index = selected;
 	
 if (selected){
-		global.selected__transition_color = global.red
+		global.selected_transition_color = global.red
 	}
 	else {
 		global.selected_transition_color = ""

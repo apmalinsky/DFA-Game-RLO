@@ -9,31 +9,31 @@ if (global.selected_transition_color != "") {
 				draw_set_color(global.red)
 			
 			
-				if (image_blend == global.selected_color_rgb){
+				if (image_blend == global.selected__state_color_rgb){
 					image_blend = c_white;
 				}
 				else {
-					image_blend = global.selected_color_rgb;
+					image_blend = global.selected__state_color_rgb;
 				}
 				break;
 			case global.green:
 			
 			
 				draw_set_color(global.green)
-				if (image_blend == global.selected_color_rgb){
+				if (image_blend == global.selected__state_color_rgb){
 					image_blend = c_white;
 				}
 				else {
-					image_blend = global.selected_color_rgb;
+					image_blend = global.selected__state_color_rgb;
 				}
 				break;
 			case global.blue:
 				draw_set_color(global.blue)
-				if (image_blend == global.selected_color_rgb){
+				if (image_blend == global.selected__state_color_rgb){
 					image_blend = c_white;
 				}
 				else {
-					image_blend = global.selected_color_rgb;
+					image_blend = global.selected__state_color_rgb;
 				}
 				break;
 			default:
