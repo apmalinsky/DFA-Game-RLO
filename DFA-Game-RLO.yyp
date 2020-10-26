@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"d_getStateObj","path":"scripts/d_getStateObj/d_getStateObj.yy",},"order":15,},
+    {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":25,},
     {"id":{"name":"s_hasTarget","path":"scripts/s_hasTarget/s_hasTarget.yy",},"order":5,},
     {"id":{"name":"SubmitObj","path":"objects/SubmitObj/SubmitObj.yy",},"order":5,},
     {"id":{"name":"TransitionObj","path":"objects/TransitionObj/TransitionObj.yy",},"order":7,},
@@ -8,7 +9,6 @@
     {"id":{"name":"BlueSelectorObj","path":"objects/BlueSelectorObj/BlueSelectorObj.yy",},"order":2,},
     {"id":{"name":"t_clearTransitions","path":"scripts/t_clearTransitions/t_clearTransitions.yy",},"order":13,},
     {"id":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"order":3,},
-    {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":22,},
     {"id":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"order":0,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"t_getTarget","path":"scripts/t_getTarget/t_getTarget.yy",},"order":10,},
