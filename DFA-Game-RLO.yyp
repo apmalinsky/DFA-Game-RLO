@@ -18,7 +18,9 @@
     {"id":{"name":"t_getLabel","path":"scripts/t_getLabel/t_getLabel.yy",},"order":29,},
     {"id":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"order":3,},
     {"id":{"name":"d_reset","path":"scripts/d_reset/d_reset.yy",},"order":25,},
+    {"id":{"name":"Color_selector_blue_selected","path":"sprites/Color_selector_blue_selected/Color_selector_blue_selected.yy",},"order":3,},
     {"id":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"order":0,},
+    {"id":{"name":"Color_selector_red_selected","path":"sprites/Color_selector_red_selected/Color_selector_red_selected.yy",},"order":5,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"t_getTarget","path":"scripts/t_getTarget/t_getTarget.yy",},"order":10,},
     {"id":{"name":"t_tokenize","path":"scripts/t_tokenize/t_tokenize.yy",},"order":11,},
@@ -46,6 +48,7 @@
     {"id":{"name":"StateSpr","path":"sprites/StateSpr/StateSpr.yy",},"order":15,},
     {"id":{"name":"Color_selector_green","path":"sprites/Color_selector_green/Color_selector_green.yy",},"order":1,},
     {"id":{"name":"t_createTransition","path":"scripts/t_createTransition/t_createTransition.yy",},"order":6,},
+    {"id":{"name":"Color_selector_green_selected","path":"sprites/Color_selector_green_selected/Color_selector_green_selected.yy",},"order":4,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
