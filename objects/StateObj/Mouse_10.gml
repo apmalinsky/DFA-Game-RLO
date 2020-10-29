@@ -40,14 +40,14 @@ function getSelectedStateObj(){
 
 function getHoveredStateObj(selected_state_obj){
 	switch(id){
-		case 100022:
+		case 100019:
 			
 			return selected_state_obj.toA;
 			
-		case 100021:
+		case 100018:
 			return selected_state_obj.toB;
 		
-		case 100023:
+		case 100020:
 			return selected_state_obj.toC;
 	}
 			

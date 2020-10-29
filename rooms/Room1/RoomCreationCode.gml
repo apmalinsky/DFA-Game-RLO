@@ -29,8 +29,8 @@ global.hovered_transition = 0;
 global.sequence = [];
 
 
-//states 100022, 100021, 100023
-//transitions 100015, 100016, 100017, 100018, 100019, 100020
+//states 100019, 100018, 100020
+//transitions 100012, 100013, 100014, 100015, 100016, 100017, 100021
 
 global.addedTransition = false;
 
@@ -39,24 +39,24 @@ global.addedTransition = false;
 global.states_info = {
 	stateA: {
 		name: "stateA",
-		id: 100022,
-		toA: 100024, //loop
-		toB: 100015,
-		toC: 100019,
+		id: 100019,
+		toA: 100021, //loop
+		toB: 100012,
+		toC: 100016,
 	},
 	stateB: {
 		name: "stateB",
-		id: 100021,
-		toA: 100018,
-		toB: 100024, //loop
-		toC: 100016,
+		id: 100018,
+		toA: 100015,
+		toB: 100021, //loop
+		toC: 100013,
 	},
 	stateC: {
 		name: "stateC",
-		id: 100023,
-		toA: 100020,
-		toB: 100017,
-		toC: 100024, //loop
+		id: 100020,
+		toA: 100017,
+		toB: 100014,
+		toC: 100021, //loop
 	}
 
 }
@@ -71,6 +71,3 @@ global.states_info = {
 
 
 
-gml_pragma("global", "g_runFirst()");
-g_initLevel("Note1");
-g_initDFA();
