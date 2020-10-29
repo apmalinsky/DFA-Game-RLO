@@ -1,54 +1,101 @@
 {
   "resources": [
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
     {"id":{"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},"order":0,},
     {"id":{"name":"g_initLevel","path":"scripts/g_initLevel/g_initLevel.yy",},"order":27,},
+>>>>>>> main
     {"id":{"name":"d_getStateObj","path":"scripts/d_getStateObj/d_getStateObj.yy",},"order":15,},
     {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":25,},
     {"id":{"name":"s_hasTarget","path":"scripts/s_hasTarget/s_hasTarget.yy",},"order":5,},
+<<<<<<< HEAD
+=======
+    {"id":{"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},"order":0,},
+    {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":25,},
+>>>>>>> Stashed changes
+=======
     {"id":{"name":"d_remove","path":"scripts/d_remove/d_remove.yy",},"order":24,},
     {"id":{"name":"t_getSymbol","path":"scripts/t_getSymbol/t_getSymbol.yy",},"order":31,},
+>>>>>>> main
     {"id":{"name":"SubmitObj","path":"objects/SubmitObj/SubmitObj.yy",},"order":5,},
     {"id":{"name":"TransitionObj","path":"objects/TransitionObj/TransitionObj.yy",},"order":7,},
     {"id":{"name":"Play_normal","path":"sprites/Play_normal/Play_normal.yy",},"order":0,},
     {"id":{"name":"Play_click","path":"sprites/Play_click/Play_click.yy",},"order":2,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
+    {"id":{"name":"TransitionSpr","path":"sprites/TransitionSpr/TransitionSpr.yy",},"order":26,},
     {"id":{"name":"BlueSelectorObj","path":"objects/BlueSelectorObj/BlueSelectorObj.yy",},"order":2,},
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
     {"id":{"name":"g_initDFA","path":"scripts/g_initDFA/g_initDFA.yy",},"order":26,},
+>>>>>>> main
     {"id":{"name":"t_clearTransitions","path":"scripts/t_clearTransitions/t_clearTransitions.yy",},"order":13,},
     {"id":{"name":"t_getLabel","path":"scripts/t_getLabel/t_getLabel.yy",},"order":29,},
     {"id":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"order":3,},
+<<<<<<< HEAD
+    {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":22,},
+=======
+    {"id":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"order":3,},
+    {"id":{"name":"Color_selector_blue_selected","path":"sprites/Color_selector_blue_selected/Color_selector_blue_selected.yy",},"order":3,},
+>>>>>>> Stashed changes
+=======
     {"id":{"name":"d_reset","path":"scripts/d_reset/d_reset.yy",},"order":25,},
     {"id":{"name":"Color_selector_blue_selected","path":"sprites/Color_selector_blue_selected/Color_selector_blue_selected.yy",},"order":3,},
+>>>>>>> main
     {"id":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"order":0,},
     {"id":{"name":"Color_selector_red_selected","path":"sprites/Color_selector_red_selected/Color_selector_red_selected.yy",},"order":5,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
-    {"id":{"name":"t_getTarget","path":"scripts/t_getTarget/t_getTarget.yy",},"order":10,},
-    {"id":{"name":"t_tokenize","path":"scripts/t_tokenize/t_tokenize.yy",},"order":11,},
     {"id":{"name":"GreenSelectorSpr","path":"sprites/GreenSelectorSpr/GreenSelectorSpr.yy",},"order":18,},
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
     {"id":{"name":"t_getSource","path":"scripts/t_getSource/t_getSource.yy",},"order":30,},
     {"id":{"name":"Play_hover","path":"sprites/Play_hover/Play_hover.yy",},"order":1,},
+>>>>>>> main
     {"id":{"name":"DFA_animation","path":"sprites/DFA_animation/DFA_animation.yy",},"order":0,},
     {"id":{"name":"d_checkString","path":"scripts/d_checkString/d_checkString.yy",},"order":23,},
     {"id":{"name":"g_runFirst","path":"scripts/g_runFirst/g_runFirst.yy",},"order":22,},
+=======
+    {"id":{"name":"Play_hover","path":"sprites/Play_hover/Play_hover.yy",},"order":1,},
+    {"id":{"name":"TransitionObj2","path":"objects/TransitionObj2/TransitionObj2.yy",},"order":8,},
+    {"id":{"name":"DFA_animation","path":"sprites/DFA_animation/DFA_animation.yy",},"order":0,},
+>>>>>>> Stashed changes
     {"id":{"name":"RedSelectorSpr","path":"sprites/RedSelectorSpr/RedSelectorSpr.yy",},"order":16,},
     {"id":{"name":"SubmitSpr","path":"sprites/SubmitSpr/SubmitSpr.yy",},"order":20,},
     {"id":{"name":"Object7","path":"objects/Object7/Object7.yy",},"order":6,},
     {"id":{"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},"order":21,},
     {"id":{"name":"BlueSelectorSpr","path":"sprites/BlueSelectorSpr/BlueSelectorSpr.yy",},"order":17,},
+<<<<<<< Updated upstream
     {"id":{"name":"d_contains","path":"scripts/d_contains/d_contains.yy",},"order":16,},
+<<<<<<< HEAD
+=======
     {"id":{"name":"Color_selector_blue","path":"sprites/Color_selector_blue/Color_selector_blue.yy",},"order":2,},
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"Color_selector_blue","path":"sprites/Color_selector_blue/Color_selector_blue.yy",},"order":2,},
+>>>>>>> main
     {"id":{"name":"Star_gray","path":"sprites/Star_gray/Star_gray.yy",},"order":1,},
     {"id":{"name":"StateObj","path":"objects/StateObj/StateObj.yy",},"order":0,},
     {"id":{"name":"t_initTrans","path":"scripts/t_initTrans/t_initTrans.yy",},"order":32,},
     {"id":{"name":"State_i","path":"sprites/State_i/State_i.yy",},"order":0,},
     {"id":{"name":"Color_selector_red","path":"sprites/Color_selector_red/Color_selector_red.yy",},"order":0,},
     {"id":{"name":"GreenSelectorObj","path":"objects/GreenSelectorObj/GreenSelectorObj.yy",},"order":1,},
+<<<<<<< Updated upstream
     {"id":{"name":"d_add","path":"scripts/d_add/d_add.yy",},"order":18,},
     {"id":{"name":"s_getSymbols","path":"scripts/s_getSymbols/s_getSymbols.yy",},"order":28,},
     {"id":{"name":"StateSpr","path":"sprites/StateSpr/StateSpr.yy",},"order":15,},
     {"id":{"name":"Color_selector_green","path":"sprites/Color_selector_green/Color_selector_green.yy",},"order":1,},
     {"id":{"name":"t_createTransition","path":"scripts/t_createTransition/t_createTransition.yy",},"order":6,},
+<<<<<<< HEAD
+=======
+    {"id":{"name":"StateSpr","path":"sprites/StateSpr/StateSpr.yy",},"order":15,},
+    {"id":{"name":"Color_selector_green","path":"sprites/Color_selector_green/Color_selector_green.yy",},"order":1,},
     {"id":{"name":"Color_selector_green_selected","path":"sprites/Color_selector_green_selected/Color_selector_green_selected.yy",},"order":4,},
+>>>>>>> Stashed changes
+=======
+    {"id":{"name":"Color_selector_green_selected","path":"sprites/Color_selector_green_selected/Color_selector_green_selected.yy",},"order":4,},
+>>>>>>> main
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -72,7 +119,6 @@
     {"folderPath":"folders/Tile Sets.yy","order":2,"resourceVersion":"1.0","name":"Tile Sets","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sounds.yy","order":3,"resourceVersion":"1.0","name":"Sounds","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Paths.yy","order":4,"resourceVersion":"1.0","name":"Paths","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts.yy","order":5,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Shaders.yy","order":6,"resourceVersion":"1.0","name":"Shaders","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Fonts.yy","order":7,"resourceVersion":"1.0","name":"Fonts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Timelines.yy","order":8,"resourceVersion":"1.0","name":"Timelines","tags":[],"resourceType":"GMFolder",},
@@ -86,9 +132,19 @@
     {"folderPath":"folders/Sprites/States.yy","order":22,"resourceVersion":"1.0","name":"States","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Stars.yy","order":23,"resourceVersion":"1.0","name":"Stars","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/DFA_animation.yy","order":24,"resourceVersion":"1.0","name":"DFA_animation","tags":[],"resourceType":"GMFolder",},
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
     {"folderPath":"folders/Sprites/Play_button.yy","order":26,"resourceVersion":"1.0","name":"Play_button","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Backgrounds.yy","order":27,"resourceVersion":"1.0","name":"Backgrounds","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Color_selector.yy","order":28,"resourceVersion":"1.0","name":"Color_selector","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts.yy","order":15,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
+>>>>>>> Stashed changes
+=======
+    {"folderPath":"folders/Sprites/Play_button.yy","order":26,"resourceVersion":"1.0","name":"Play_button","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Backgrounds.yy","order":27,"resourceVersion":"1.0","name":"Backgrounds","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Color_selector.yy","order":28,"resourceVersion":"1.0","name":"Color_selector","tags":[],"resourceType":"GMFolder",},
+>>>>>>> main
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -2,15 +2,47 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
+  "origin": 7,
+=======
   "origin": 0,
+>>>>>>> origin/main:sprites/Star_gold/Star_gold.yy
+=======
+  "origin": 4,
+>>>>>>> origin/main
+=======
+  "origin": 7,
+>>>>>>> Stashed changes
+=======
+  "origin": 0,
+>>>>>>> main
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
+<<<<<<< HEAD
+  "bbox_left": 6,
+  "bbox_right": 55,
+  "bbox_top": 1,
+  "bbox_bottom": 58,
+=======
+  "bbox_left": 23,
+  "bbox_right": 42,
+  "bbox_top": 7,
+  "bbox_bottom": 63,
+>>>>>>> Stashed changes
+=======
   "bbox_left": 23,
   "bbox_right": 42,
   "bbox_top": 7,
   "bbox_bottom": 56,
+>>>>>>> main
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -54,6 +86,32 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
+    "xorigin": 32,
+    "yorigin": 64,
+    "eventToFunction": {},
+    "eventStubScript": null,
+=======
+    "xorigin": 32,
+    "yorigin": 32,
+=======
+    "xorigin": 32,
+    "yorigin": 64,
+>>>>>>> Stashed changes
+    "eventToFunction": {},
+    "eventStubScript": null,
+<<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
+>>>>>>> origin/main
+    "parent": {"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},
+    "resourceVersion": "1.3",
+    "name": "ArrowSpr",
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> main
     "xorigin": 0,
     "yorigin": 0,
     "eventToFunction": {},
