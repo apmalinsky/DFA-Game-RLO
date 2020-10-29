@@ -8,13 +8,13 @@ function getStateName(){
 	switch(id){
 	//each state id, return transition id between selected and entered state
 		
-	case 100022:
+	case 100019:
 		return "stateA"
 
-	case 100021:
+	case 100018:
 		return "stateB"
 
-	case 100023:
+	case 100020:
 		return "stateC"
 
 	}	
