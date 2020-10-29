@@ -21,9 +21,6 @@ global.state_selected = {name: "", id: 0, x: 0, y: 0};
 //global.transition_obj = TransitionObj;
 
 
-
-
-
 //store list of transition ids
 global.saved_transition_instance = 0;
 
@@ -74,3 +71,6 @@ global.states_info = {
 
 
 
+gml_pragma("global", "g_runFirst()");
+g_initLevel("Note1");
+g_initDFA();

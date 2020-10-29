@@ -28,4 +28,3 @@ else{
 	show_debug_message("Init file failed to open");
 	game_end();
 }
-
