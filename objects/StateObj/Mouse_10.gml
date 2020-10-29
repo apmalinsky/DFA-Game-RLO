@@ -1,4 +1,5 @@
-//show_debug_message("state: " + string(id))
+
+
 /*
 function findP1(startPoint, endPoint){
 	
@@ -7,6 +8,8 @@ function findP1(startPoint, endPoint){
 	
 	return {x: xMid, y: yMid}
 }
+
+
 function calculateBezierPoint(p0, p1, p2, t, pFinal){
 	//pFinal = pFinal || {};
 	pFinal.x = sqr(1-t) * p0.x + 2*t*(1-t)*p1.x + t*t*p2.x;
@@ -14,66 +17,12 @@ function calculateBezierPoint(p0, p1, p2, t, pFinal){
 		
 	return pFinal;
 }
+
 */
 
+//create all possible transitions and set invisible at beginning?
 
-window_set_cursor(cr_drag);
-
-
-
-function getSelectedStateObj(){
-	
-	//show_debug_message(global.states_info.stateA)
-	switch(global.state_selected.name){
-		case "stateA":
-			
-			return global.states_info.stateA;
-			
-		case "stateB":
-			return global.states_info.stateB;
-		
-		case "stateC":
-			return global.states_info.stateC;
-	}
-			
-}
-
-function getHoveredStateObj(selected_state_obj){
-	switch(id){
-		case 100019:
-			
-			return selected_state_obj.toA;
-			
-		case 100018:
-			return selected_state_obj.toB;
-		
-		case 100020:
-			return selected_state_obj.toC;
-	}
-			
-}
-
-
-
-
-
-function getTransitionId(){
-	//return transition id between selected and entered state
-	
-	//selected state
-	var selected_state = getSelectedStateObj()
-	show_debug_message(selected_state)
-	return getHoveredStateObj(selected_state);
-	//transitions 100015, 100016, 100017, 100018
-
-}
-
-
-
-
-
-
-
+//how to remove transition?
 
 
 
@@ -90,38 +39,26 @@ if (global.is_state_selected){
 	
 	//show_debug_message(TransitionObj)
 	
-
+	
+	//var transition;
+	//transition = instance_create(500, 500, TransitionObj);
+	//var transitionObj = TransitionObj;
 	show_debug_message("entered")
 	
-	//global.saved_transition_instance = instance_create_depth(global.state_selected.x, global.state_selected.y, 0, TransitionObj);
+	//var arrow;
+
+	//var arrow = instance_create(600, 600, StateObj);
+	global.saved_transition_instance = instance_create_depth(global.state_selected.x, global.state_selected.y, 0, TransitionObj);
 	
 	
     //draw_sprite_ext( sprite, subimg, x, y, xscale, yscale, rot, colour, alpha );
-	//var arrow_sprite = object_get_sprite(global.saved_transition_instance.object_index);
-	//show_debug_message(self.bbox_right)
-	//draw_sprite_ext(ArrowSpr, 0, global.state_selected.x, global.state_selected.y, 2, 2, 90, global.selected_transition_color, 0.75)
+	//var arrow_sprite = object_get_sprite(arrow);
+	//draw_sprite_ext(arrow_sprite, 0, global.state_selected.x, global.state_selected.y, 1, 1, 90, global.red, 0.5)
 	
-	//100015
-	//100016
-	//100017
-	//100018
-	//get the transition object connecting these states
-
 	
-	global.hovered_transition = getTransitionId()
-	with (global.hovered_transition) {
-		image_blend = global.selected_transition_color;
-		visible = true
-		image_alpha = 0.5;
-	}
 
 
-}
 
-/*
-	//make drawing transparent
-	draw_set_alpha(1);
-	
 
 /*
 	//make drawing transparent
@@ -151,9 +88,18 @@ if (global.is_state_selected){
 		curvePoint = nextCurvePoint;
 	}
 	*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //reset alpha
 //draw_set_alpha(1.0);
-
-
-
-
