@@ -2,6 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
   "origin": 7,
@@ -11,16 +12,26 @@
 =======
   "origin": 4,
 >>>>>>> origin/main
+=======
+  "origin": 7,
+>>>>>>> Stashed changes
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
+<<<<<<< Updated upstream
 <<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
 <<<<<<< HEAD
   "bbox_left": 6,
   "bbox_right": 55,
   "bbox_top": 1,
   "bbox_bottom": 58,
+=======
+  "bbox_left": 23,
+  "bbox_right": 42,
+  "bbox_top": 7,
+  "bbox_bottom": 63,
+>>>>>>> Stashed changes
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -126,6 +137,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
     "xorigin": 32,
@@ -135,6 +147,10 @@
 =======
     "xorigin": 32,
     "yorigin": 32,
+=======
+    "xorigin": 32,
+    "yorigin": 64,
+>>>>>>> Stashed changes
     "eventToFunction": {},
     "eventStubScript": null,
 <<<<<<< HEAD:sprites/ArrowSpr/ArrowSpr.yy
