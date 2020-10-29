@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "RedSelectorSpr",
-    "path": "sprites/RedSelectorSpr/RedSelectorSpr.yy",
+    "name": "TransitionSpr",
+    "path": "sprites/TransitionSpr/TransitionSpr.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"TransitionObj2","path":"objects/TransitionObj2/TransitionObj2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":6,"collisionObjectId":null,"parent":{"name":"TransitionObj2","path":"objects/TransitionObj2/TransitionObj2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "RedSelectorObj",
+  "name": "TransitionObj2",
   "tags": [],
   "resourceType": "GMObject",
 }
