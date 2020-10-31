@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "RedSelectorSpr",
-    "path": "sprites/RedSelectorSpr/RedSelectorSpr.yy",
+    "name": "Color_selector_red",
+    "path": "sprites/Color_selector_red/Color_selector_red.yy",
   },
   "solid": false,
   "visible": true,
