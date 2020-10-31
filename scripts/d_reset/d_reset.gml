@@ -1,6 +1,10 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-global.dfa.transitions = t_initTrans();
-global.dfa.states = [global.num_states];
-global.dfa.alphabet = [global.num_symbols];
+
+
+function d_reset(){
+	global.dfa.transitions = t_initTrans();
+	global.dfa.states = [global.num_states];
+	global.dfa.alphabet = [global.num_symbols];
+}
+
+

@@ -4,6 +4,7 @@ function g_runFirst(){
 global.strings=[];
 global.num_states=0;
 global.num_strings=0;
+global.num_symbols = 0;
 global.dfa = {
 	transitions: t_initTrans(),
 	states: [0],
@@ -12,3 +13,4 @@ global.dfa = {
 	final: ""
 }
 }
+

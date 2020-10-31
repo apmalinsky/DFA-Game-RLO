@@ -63,7 +63,9 @@ global.states_info = {
 
 
 
-
+//gml_pragma("global", "g_runFirst()");
+//g_initLevel("Note1");
+//g_initDFA();
 
 
 

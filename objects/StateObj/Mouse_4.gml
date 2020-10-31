@@ -72,12 +72,13 @@ if (global.selected_transition_color != "") {
 		else {
 			//fill in the saved_transition_instance to full color
 			with (global.hovered_transition) {
-				global.addedTransition = true;
 				image_alpha = 1.0;
 			}
 			with (global.state_selected.id) {
 				image_blend = c_white;
 			}
+			
+			global.addedTransition = true;
 			global.is_state_selected = false;
 			updateStateSelected(pointer_null, 0, 0, 0)
 		}
