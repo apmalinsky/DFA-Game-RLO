@@ -19,7 +19,7 @@ function calculateBezierPoint(p0, p1, p2, t, pFinal){
 
 window_set_cursor(cr_drag);
 
-
+//show_debug_message(global.addedTransition)
 
 function getSelectedStateObj(){
 	
@@ -40,14 +40,14 @@ function getSelectedStateObj(){
 
 function getHoveredStateObj(selected_state_obj){
 	switch(id){
-		case 100019:
+		case 100018:
 			
 			return selected_state_obj.toA;
 			
-		case 100018:
+		case 100017:
 			return selected_state_obj.toB;
 		
-		case 100020:
+		case 100019:
 			return selected_state_obj.toC;
 	}
 			
@@ -62,7 +62,7 @@ function getTransitionId(){
 	
 	//selected state
 	var selected_state = getSelectedStateObj()
-	show_debug_message(selected_state)
+	//show_debug_message(selected_state)
 	return getHoveredStateObj(selected_state);
 	//transitions 100015, 100016, 100017, 100018
 

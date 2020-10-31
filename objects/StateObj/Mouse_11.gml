@@ -9,16 +9,18 @@ window_set_cursor(cr_default);
 
 
 //get correct transition currently in alpha
-
+//show_debug_message(global.addedTransition)
 
 if (!global.addedTransition){
-	with (global.hovered_transition) {
-		visible = false
+	if (global.hovered_transition != 0){
+		with (global.hovered_transition) {
+			visible = false
+		}	
 	}
 	
 	
 }
 
-
 global.addedTransition = false;
 global.hovered_transition = 0;
+

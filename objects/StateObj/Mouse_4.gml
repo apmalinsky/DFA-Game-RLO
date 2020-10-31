@@ -8,13 +8,13 @@ function getStateName(){
 	switch(id){
 	//each state id, return transition id between selected and entered state
 		
-	case 100019:
+	case 100018:
 		return "stateA"
 
-	case 100018:
+	case 100017:
 		return "stateB"
 
-	case 100020:
+	case 100019:
 		return "stateC"
 
 	}	
@@ -72,12 +72,19 @@ if (global.selected_transition_color != "") {
 		else {
 			//fill in the saved_transition_instance to full color
 			with (global.hovered_transition) {
-				global.addedTransition = true;
 				image_alpha = 1.0;
 			}
 			with (global.state_selected.id) {
 				image_blend = c_white;
 			}
+			
+			//update color symbol
+			//createTransition(global.state_selected.name, global.selected_transition_color_symbol, getStateName(), string(tID))
+			
+			global.addedTransition = true;
+			
+			//add the transition to the DFA
+			
 			global.is_state_selected = false;
 			updateStateSelected(pointer_null, 0, 0, 0)
 		}
