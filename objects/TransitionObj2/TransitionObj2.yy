@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "ArrowSpr",
-    "path": "sprites/ArrowSpr/ArrowSpr.yy",
+    "name": "TransitionSpr",
+    "path": "sprites/TransitionSpr/TransitionSpr.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"TransitionObj","path":"objects/TransitionObj/TransitionObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"TransitionObj2","path":"objects/TransitionObj2/TransitionObj2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":6,"collisionObjectId":null,"parent":{"name":"TransitionObj2","path":"objects/TransitionObj2/TransitionObj2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TransitionObj",
+  "name": "TransitionObj2",
   "tags": [],
   "resourceType": "GMObject",
 }
