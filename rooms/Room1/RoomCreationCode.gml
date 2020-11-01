@@ -71,17 +71,17 @@ global.states_info = {
 
 
 
-global.strings=[];
 global.num_states = 3;
+global.strings=array_create(global.num_states, 0);
 global.num_strings = 3;
 global.num_symbols = 3;
 
 global.dfa = {
-//	transitions: initTrans(),
-    //states: array_create(global.num_states, 0),
-//	alphabet: array_create(global.num_symbols, 0),
-//	start: "s1",
-//	final: "s"+global.num_states
+	transitions: initTrans(),
+    states: array_create(global.num_states, 0),
+	alphabet: array_create(global.num_symbols, 0),
+	start: "s1",
+	final: "s"+string(global.num_states)
 }
 
 
