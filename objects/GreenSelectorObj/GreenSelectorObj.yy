@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "GreenSelectorSpr",
-    "path": "sprites/GreenSelectorSpr/GreenSelectorSpr.yy",
+    "name": "Color_selector_green",
+    "path": "sprites/Color_selector_green/Color_selector_green.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,8 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"GreenSelectorObj","path":"objects/GreenSelectorObj/GreenSelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"GreenSelectorObj","path":"objects/GreenSelectorObj/GreenSelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":6,"collisionObjectId":null,"parent":{"name":"GreenSelectorObj","path":"objects/GreenSelectorObj/GreenSelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":11,"eventType":6,"collisionObjectId":null,"parent":{"name":"GreenSelectorObj","path":"objects/GreenSelectorObj/GreenSelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
