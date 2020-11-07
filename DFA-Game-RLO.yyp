@@ -91,8 +91,6 @@
     {"folderPath":"folders/Sprites/Color_selector.yy","order":28,"resourceVersion":"1.0","name":"Color_selector","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Goals.yy","order":29,"resourceVersion":"1.0","name":"Goals","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Transitions.yy","order":30,"resourceVersion":"1.0","name":"Transitions","tags":[],"resourceType":"GMFolder",},
-
-  
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

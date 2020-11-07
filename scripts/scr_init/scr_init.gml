@@ -8,6 +8,7 @@
 
 function scr_init(init){
 
+
 var str = "/"+init+".txt";
 var i, file;
 file = file_text_open_read(working_directory + str);
@@ -25,6 +26,7 @@ if(file!=-1){
 	global.dfa.states = [global.num_states];
 	global.dfa.alphabet = [global.num_symbols];
 	global.dfa.final = "s"+string(global.num_states);
+
 
 	file_text_close(file);
 }

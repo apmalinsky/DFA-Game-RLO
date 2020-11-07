@@ -32,6 +32,7 @@ function updateStateSelected(name, id, x, y){
 
 audio_play_sound(button_click, 10, false);
 
+
 if (global.selected_transition_color != "") {
 	show_debug_message("Changed");
 	
@@ -70,6 +71,7 @@ if (global.selected_transition_color != "") {
 		
 		//select other state to make transition
 		else {
+
 			
 			
 			if (!global.duplicate_hovered_transition){
@@ -98,6 +100,7 @@ if (global.selected_transition_color != "") {
 			}
 			
 			
+
 		}
 		
 

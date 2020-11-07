@@ -5,6 +5,17 @@ global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
 
 
+
+//global.red = make_colour_rgb(157, 11, 14); 
+//global.green = make_colour_rgb(0, 166, 82);
+//global.blue = make_colour_rgb(0, 114, 187);
+
+
+global.red = make_colour_rgb(250, 94, 90); 
+global.green = make_colour_rgb(75, 230, 90);
+global.blue = make_colour_rgb(74, 136, 251);
+
+
 //global.red = make_colour_rgb(157, 11, 14); 
 //global.green = make_colour_rgb(0, 166, 82);
 //global.blue = make_colour_rgb(0, 114, 187);
@@ -79,6 +90,7 @@ global.strings=array_create(global.num_states, 0);
 global.num_strings = 3;
 global.num_symbols = 3;
 
+
 global.dfa = {
 	transitions: initTrans(),
     states: array_create(global.num_states, 0),
@@ -86,6 +98,7 @@ global.dfa = {
 	start: "s1",
 	final: "s"+string(global.num_states)
 }
+
 
 
 /*

@@ -3,6 +3,7 @@ function reset(){
 	global.dfa.transitions = initTrans();
 	global.dfa.states = array_create(global.num_states, 0);
 	global.dfa.alphabet = array_create(global.num_symbols, 0);
+
 }
 
 //clears transitions data if clear button
@@ -21,6 +22,7 @@ function initTrans(){
 function getStateObj(s_name){
 		for (var i=0;i<array_length_1d(global.dfa.states); i++){
 			var state = global.dfa.states[i];
+
 			if(state.name==s_name)
 				return state;
 	}
@@ -55,6 +57,7 @@ function remove(arr, element){
 	return found;
 }
 
+
 //adds element to arr if it doesn't exist, and returns true on success
 function add(arr, element){
 	for (var i=0;i<array_length_1d(arr); i++){
@@ -65,10 +68,6 @@ function add(arr, element){
 		}
 	}
 }
-
-
-
-
 
 
 
@@ -91,6 +90,7 @@ function checkString(string){
 	return true;
 }
 
+
 //checks whether all strings for this level are accepted by the DFA, returns boolean, see
 //checkString for per string code. Assumes all level strings are stored in global.strings
 function checkAllStrings(){
@@ -101,5 +101,6 @@ function checkAllStrings(){
 	}
 	return true;
 }
+
 
 

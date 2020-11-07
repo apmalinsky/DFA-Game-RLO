@@ -1,3 +1,4 @@
+
 //add the transition to the dfas array
 function createTransition(s1, s2, sym, tID){ 
 	global.dfa.transitions = add(global.dfa.transitions, getLabel(s1,s2,sym,tID));   
@@ -49,4 +50,5 @@ function tokenize(transitionLabel, index){
 			return string_copy(transitionLabel, 17, string_length(transitionLabel))
 	}
 }	
+
 
