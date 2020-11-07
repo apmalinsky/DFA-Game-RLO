@@ -8,23 +8,25 @@
 
 function scr_init(init){
 
-var str = "\\"+init+".txt";
-var i, file;
-file = file_text_open_read(working_directory + src);
-if(file!=-1){
-	num_states = real(file_text_readln(file));
-	show_debug_message(num_states);
-	num_strings = real(file_text_readln(file));
-	show_debug_message(num_strings);
 
-	strings=[num_strings];
-	for (var i = 0;i<num_strings;i++){
-		strings[i] = file_text_readln(file);
-		show_debug_message(strings[i]);
+var str = "/"+init+".txt";
+var i, file;
+file = file_text_open_read(working_directory + str);
+if(file!=-1){
+	global.num_states = real(file_text_readln(file));
+	show_debug_message(global.num_states);
+	global.num_strings = real(file_text_readln(file));
+	show_debug_message(global.num_strings);
+
+	global.strings=[global.num_strings];
+	for (var i = 0;i<global.num_strings;i++){
+		global.strings[i] = file_text_readln(file);
+		show_debug_message(global.strings[i]);
 	}
-	dfa.states = [num_states];
-	dfa.alphabet = [num_symbols];
-	dfa.final = "s"+num_states;
+	global.dfa.states = [global.num_states];
+	global.dfa.alphabet = [global.num_symbols];
+	global.dfa.final = "s"+string(global.num_states);
+
 
 	file_text_close(file);
 }

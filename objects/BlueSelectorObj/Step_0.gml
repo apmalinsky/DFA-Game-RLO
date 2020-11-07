@@ -9,10 +9,12 @@ if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, s
 	audio_play_sound(button_click, 10, false);
 	
 	if (selected){
-		global.selected_transition_color = global.blue
+		global.selected_transition_color = global.blue;
+		global.selected_transition_color_symbol = "b";
 	}
 	else {
 		global.selected_transition_color = ""
+		global.selected_transition_color_symbol = "";
 	}
 
 	// check if another box is selected
