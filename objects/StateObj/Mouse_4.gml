@@ -30,7 +30,7 @@ function updateStateSelected(name, id, x, y){
 	global.state_selected.y = y;	
 }
 
-
+audio_play_sound(button_click, 10, false);
 
 if (global.selected_transition_color != "") {
 	show_debug_message("Changed");
@@ -70,23 +70,34 @@ if (global.selected_transition_color != "") {
 		
 		//select other state to make transition
 		else {
-			//fill in the saved_transition_instance to full color
-			with (global.hovered_transition) {
-				image_alpha = 1.0;
+			
+			
+			if (!global.duplicate_hovered_transition){
+				//fill in the saved_transition_instance to full color
+				with (global.hovered_transition) {
+					image_alpha = 1.0;
+				}
+				with (global.state_selected.id) {
+					image_blend = c_white;
+				}
+			
+				//update color symbol
+				//add transition to dfa
+				createTransition(global.state_selected.name, global.selected_transition_color_symbol, getStateName(), string(global.hovered_transition))
+			
+				//show_debug_message(global.dfa.transitions)
+			
+			
+				global.addedTransition = true;
+			
+				//add the transition to the DFA
+			
+				global.is_state_selected = false;
+				updateStateSelected(pointer_null, 0, 0, 0)
+				
 			}
-			with (global.state_selected.id) {
-				image_blend = c_white;
-			}
 			
-			//update color symbol
-			//createTransition(global.state_selected.name, global.selected_transition_color_symbol, getStateName(), string(tID))
 			
-			global.addedTransition = true;
-			
-			//add the transition to the DFA
-			
-			global.is_state_selected = false;
-			updateStateSelected(pointer_null, 0, 0, 0)
 		}
 		
 

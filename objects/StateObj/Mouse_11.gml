@@ -12,7 +12,7 @@ window_set_cursor(cr_default);
 //show_debug_message(global.addedTransition)
 
 if (!global.addedTransition){
-	if (global.hovered_transition != 0){
+	if (global.hovered_transition != 0 && !global.duplicate_hovered_transition){
 		with (global.hovered_transition) {
 			visible = false
 		}	
@@ -23,4 +23,6 @@ if (!global.addedTransition){
 
 global.addedTransition = false;
 global.hovered_transition = 0;
+global.duplicate_hovered_transition = false;
 
+show_debug_message(global.dfa.transitions)

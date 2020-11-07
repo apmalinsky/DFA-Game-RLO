@@ -6,12 +6,15 @@ color_selected = "";
 if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, self)) {
 	selected = !selected; //switch state of button
 	image_index = selected;
+	audio_play_sound(button_click, 10, false);
 	
 if (selected){
 		global.selected_transition_color = global.green
+		global.selected_transition_color_symbol = "g";
 	}
 	else {
 		global.selected_transition_color = ""
+		global.selected_transition_color_symbol = "";
 	}
 
 	// check if another box is selected

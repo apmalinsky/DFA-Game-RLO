@@ -1,4 +1,5 @@
 game_set_speed(30, gamespeed_fps)
+audio_play_sound(theme, 10, false);
 
 global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
@@ -13,9 +14,10 @@ global.red = make_colour_rgb(250, 94, 90);
 global.green = make_colour_rgb(75, 230, 90);
 global.blue = make_colour_rgb(74, 136, 251);
 
-global.num_red_used = 0;
-global.num_green_used = 0;
-global.num_blue_used = 0;
+global.num_red_left = 3;
+global.num_green_left = 3;
+global.num_blue_left = 3;
+global.total_num_left = 0; //r + g + b
 
 
 global.selected__state_color_rgb = make_colour_rgb(157, 157, 0);
@@ -33,6 +35,7 @@ global.state_selected = {name: "", id: 0, x: 0, y: 0};
 global.saved_transition_instance = 0;
 
 global.hovered_transition = 0;
+global.duplicate_hovered_transition = false;
 
 global.sequence = [];
 
@@ -71,36 +74,28 @@ global.states_info = {
 
 
 
-global.strings=[];
 global.num_states = 3;
+global.strings=array_create(global.num_states, 0);
 global.num_strings = 3;
 global.num_symbols = 3;
 
 global.dfa = {
-//	transitions: initTrans(),
-    //states: array_create(global.num_states, 0),
-//	alphabet: array_create(global.num_symbols, 0),
-//	start: "s1",
-//	final: "s"+global.num_states
+	transitions: initTrans(),
+    states: array_create(global.num_states, 0),
+	alphabet: array_create(global.num_symbols, 0),
+	start: "s1",
+	final: "s"+string(global.num_states)
 }
 
 
-
-
-
-
-
-
-
-
-
-//gml_pragma("global", "g_runFirst()");
-//g_initLevel("Note1");
-//g_initDFA();
-
-
-
-
+/*
+global.dfa = {
+	transitions:{}
+	states_info:
+	start_state:
+	end_state:
+}
+*/
 
 
 

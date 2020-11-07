@@ -1,52 +1,52 @@
-
+//add the transition to the dfas array
 function createTransition(s1, s2, sym, tID){ 
-	add(dfa.transitions, getLabel(s1,s2,sym, tID));   //add the transition if it doesn't exist, defined script_dfa
+	global.dfa.transitions = add(global.dfa.transitions, getLabel(s1,s2,sym,tID));   
+	//show_debug_message(global.dfa.transitions)
+	//show_debug_message(getSource(getLabel(s1,s2,sym,tID)));
+	//show_debug_message(getSymbol(getLabel(s1,s2,sym,tID)));
+	//show_debug_message(getTarget(getLabel(s1,s2,sym,tID)));
+	//show_debug_message(getArrowID(getLabel(s1,s2,sym,tID)));
 }
-	
+
+
+
 //produces the string representing this transtion, from s1 to s2 via the symbol sym
 function getLabel(s1, s2, sym, tID){
-	return s1.name+"-"+sym.name+"-"+s2.name + tID; //convention for identifying transition
+	return s1 + "-" + sym + "-" + s2 + "-" + tID; //convention for identifying transition
 }
 
-//"stateA-r-stateB"	
+//"stateA-r-stateB-100018"	
 //get name of the source state
-function getSource(transition){
-	return tokenize(transition)[0];
+function getSource(transitionLabel){
+	return tokenize(transitionLabel, 0);
 }
 	
 //get name of the symbol for the transition
-function getSymbol(transition){
-return tokenize(transition)[1];
+function getSymbol(transitionLabel){
+return tokenize(transitionLabel, 1);
 }
 	
 //get name of the target for the transition
-function getTarget(transition){
-	return tokenize(transition)[2];
+function getTarget(transitionLabel){
+	return tokenize(transitionLabel, 2);
+}
+
+//get name object id of transition arrow
+function getArrowID(transitionLabel){
+	return tokenize(transitionLabel, 3);
 }
 	
-//splits the name into its tokens: source, symbol, target
-function tokenize(transition){
-	var s1="";
-	var sym="";
-	var s2="";
-	var res=[3];
-	var count=0;
-	for(var i =0; i<string_length(transition); i++){
-		if(string_char_at(transition,i)=="-"){
-			count++;
-		}
-		else{
-			if(count==0)
-				s1=s1+string_char_at(transition,i);
-			else if (count==1)
-				sym=sym+string_char_at(transition,i);
-			else
-				s2=s2+string_char_at(transition,i);
-		}
+//splits the name into its tokens: source, symbol, target, arrowID
+function tokenize(transitionLabel, index){
+	switch(index){
+		case 0:
+			return string_copy(transitionLabel, 0, 6)
+		case 1:
+			return string_copy(transitionLabel, 8, 6)
+		case 2:
+			return string_char_at(transitionLabel, 15)
+		case 3:
+			return string_copy(transitionLabel, 17, string_length(transitionLabel))
 	}
-	res[0]=s1;
-	res[1]=sym;
-	res[2]=s2;
-	return res;
-	}	
+}	
 
