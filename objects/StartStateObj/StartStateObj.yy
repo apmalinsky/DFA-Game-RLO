@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Transition_short",
-    "path": "sprites/Transition_short/Transition_short.yy",
+    "name": "State_start",
+    "path": "sprites/State_start/State_start.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "TransitionObjects",
-    "path": "folders/Objects/TransitionObjects.yy",
+    "name": "StateObjects",
+    "path": "folders/Objects/StateObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TransitionShortObj",
+  "name": "StartStateObj",
   "tags": [],
   "resourceType": "GMObject",
 }

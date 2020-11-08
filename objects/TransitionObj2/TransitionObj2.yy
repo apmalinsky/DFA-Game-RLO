@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "TransitionObjects",
+    "path": "folders/Objects/TransitionObjects.yy",
   },
   "resourceVersion": "1.0",
   "name": "TransitionObj2",

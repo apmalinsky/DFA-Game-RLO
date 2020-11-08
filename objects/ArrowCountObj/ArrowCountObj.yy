@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ArrowCountSpr",
+    "path": "sprites/ArrowCountSpr/ArrowCountSpr.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -18,8 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"SelectorObj","path":"objects/SelectorObj/SelectorObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"ArrowCountObj","path":"objects/ArrowCountObj/ArrowCountObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -28,7 +30,7 @@
     "path": "folders/Objects/SelectorGroup.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SelectorObj",
+  "name": "ArrowCountObj",
   "tags": [],
   "resourceType": "GMObject",
 }
