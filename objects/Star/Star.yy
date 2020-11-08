@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "star_gray_temp",
+    "path": "sprites/star_gray_temp/star_gray_temp.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
