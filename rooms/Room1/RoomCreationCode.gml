@@ -87,6 +87,25 @@ global.dfa = {
 	final: "s"+string(global.num_states)
 }
 
+string1 = "b";
+string2 = "bg";
+string3 = "bgbg";
+
+x_pos = 895;
+y_pos = 545;
+
+in1 = instance_create_layer(x_pos, y_pos, "Instances", Input_sequence);
+in1.sequence = string1;
+in2 = instance_create_layer(x_pos, y_pos + 53, "Instances",  Input_sequence);
+in2.sequence = string2;
+in3 = instance_create_layer(x_pos, y_pos + 130, "Instances",  Input_sequence);
+in3.sequence = string3;
+
+
+in1.alarm[0] = 1;
+in2.alarm[0] = 1;
+in3.alarm[0] = 1;
+
 
 
 /*
