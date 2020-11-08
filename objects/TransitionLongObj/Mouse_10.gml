@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 
-//show_debug_message("transition: " + string(id))
+show_debug_message("transition: " + string(id))
