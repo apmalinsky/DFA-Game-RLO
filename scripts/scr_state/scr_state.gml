@@ -6,13 +6,13 @@ function getStateName(){
 	switch(id){
 	//each state id, return transition id between selected and entered state
 		
-	case 100018:
+	case 100020:
 		return "stateA"
 
-	case 100017:
+	case 100021:
 		return "stateB"
 
-	case 100019:
+	case 100022:
 		return "stateC"
 
 	}	
@@ -44,6 +44,7 @@ function doStateLeftClick(){
 			with (global.state_selected.id) {
 				image_blend = global.selected__state_color_rgb;
 			}
+			
 			
 			//global.state_selected.id = self.id;
 			//global.state_selected.x = x;
@@ -136,14 +137,14 @@ function getSelectedStateObj(){
 
 function getHoveredStateObj(selected_state_obj){
 	switch(id){
-		case 100018:
+		case 100020:
 			
 			return selected_state_obj.toA;
 			
-		case 100017:
+		case 100021:
 			return selected_state_obj.toB;
 		
-		case 100019:
+		case 100022:
 			return selected_state_obj.toC;
 	}
 			

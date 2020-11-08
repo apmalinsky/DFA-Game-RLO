@@ -49,24 +49,24 @@ global.addedTransition = false;
 global.states_info = {
 	stateA: {
 		name: "stateA",
-		id: 100018,
-		toA: 100020, //loop
-		toB: 100011,
-		toC: 100015,
+		id: 100020,
+		toA: 100011, //loop
+		toB: 100023,
+		toC: 100024,
 	},
 	stateB: {
 		name: "stateB",
-		id: 100017,
-		toA: 100014,
-		toB: 100021, //loop
-		toC: 100012,
+		id: 100021,
+		toA: 100028,
+		toB: 100011, //loop
+		toC: 100026,
 	},
 	stateC: {
 		name: "stateC",
-		id: 100019,
-		toA: 100016,
-		toB: 100013,
-		toC: 100021, //loop
+		id: 100022,
+		toA: 100025,
+		toB: 100027,
+		toC: 100011, //loop
 	}
 
 }
