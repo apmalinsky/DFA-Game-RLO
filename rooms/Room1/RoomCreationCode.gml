@@ -88,7 +88,7 @@ global.dfa = {
 }
 
 
-string1 = "b";
+string1 = "rrrr";
 string2 = "bg";
 string3 = "bgbg";
 
@@ -97,8 +97,10 @@ y_pos = 545;
 
 in1 = instance_create_layer(x_pos, y_pos, "Instances", Input_sequence);
 in1.sequence = string1;
+
 in2 = instance_create_layer(x_pos, y_pos + 64, "Instances",  Input_sequence);
 in2.sequence = string2;
+
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
 
