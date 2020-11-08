@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"Sequence_box","path":"objects/Sequence_box/Sequence_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Goal_Objs",
+    "path": "folders/Objects/Goal_Objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Object7",
+  "name": "Sequence_box",
   "tags": [],
   "resourceType": "GMObject",
 }
