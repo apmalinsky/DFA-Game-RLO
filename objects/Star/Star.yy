@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "star_gray_temp",
-    "path": "sprites/star_gray_temp/star_gray_temp.yy",
+    "name": "Star_gray_64x64",
+    "path": "sprites/Star_gray_64x64/Star_gray_64x64.yy",
   },
   "solid": false,
   "visible": true,
