@@ -74,8 +74,8 @@ global.states_info = {
 
 
 global.num_states = 3;
-global.strings=array_create(global.num_states, 0);
 global.num_strings = 3;
+global.strings=array_create(global.num_strings, 0);
 global.num_symbols = 3;
 
 
@@ -91,6 +91,10 @@ global.dfa = {
 string1 = "rrrr";
 string2 = "bg";
 string3 = "bgbg";
+
+global.string[0]=string1;
+global.string[1]=string2;
+global.string[2]=string3;
 
 x_pos = 895;
 y_pos = 545;

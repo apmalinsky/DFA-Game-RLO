@@ -281,14 +281,18 @@ function hasTarget(s1, sym){
 
 	var trans = global.dfa.transitions;
 
-	var res = [2];
+	var res = [3];
 	res[0]=false;
 	res[1]="";
+	res[2]=0;
 	for (var i=0;i<array_length_1d(trans); i++){
-		var t = tokenize(trans[i]);
-		if(t[0]==s1 && t[1]==sym){
+		var st = tokenize(trans[i],0);
+		var symb = tokenize(trans[i],1);
+		//if a match, store true and the target state symbol
+		if(st==s1 && symb==sym){
 			res[0]=true;
-			res[1]=t[2];
+			res[1]=tokenize(trans[i],2);
+			res[2]=tokenize(trans[i],3);
 		}
 	}
 	return res;

@@ -27,6 +27,7 @@
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"GreenSelectorSpr","path":"sprites/GreenSelectorSpr/GreenSelectorSpr.yy",},"order":3,},
     {"id":{"name":"Play_hover","path":"sprites/Play_hover/Play_hover.yy",},"order":1,},
+    {"id":{"name":"scr_screenObjs","path":"scripts/scr_screenObjs/scr_screenObjs.yy",},"order":4,},
     {"id":{"name":"DFA_animation","path":"sprites/DFA_animation/DFA_animation.yy",},"order":0,},
     {"id":{"name":"RedSelectorSpr","path":"sprites/RedSelectorSpr/RedSelectorSpr.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":2,},
