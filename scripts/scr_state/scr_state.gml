@@ -1,5 +1,4 @@
 
-var availableIndex = 0; //tracking for next available transition
 var hoveredStateObj = {}
 
 function getStateName(){
@@ -7,13 +6,13 @@ function getStateName(){
 	//each state id, return transition id between selected and entered state
 		
 	case 100011:
-		return "stateA"
+		return "s1"
 
 	case 100012:
-		return "stateB"
+		return "s2"
 
 	case 100013:
-		return "stateC"
+		return "s3"
 	}	
 }
 
@@ -37,7 +36,7 @@ function doStateLeftClick(){
 			updateStateSelected(getStateName(), self.id, x, self.bbox_top)
 
 			with (global.state_selected.id) {
-				image_blend = global.selected__state_color_rgb;
+				image_blend = global.selected_state_color_rgb;
 			}
 		}
 		else {
@@ -61,7 +60,6 @@ function doStateLeftClick(){
 						image_blend = c_white;
 					}
 			
-					//update color symbol
 					//add transition to dfa
 					createTransition(global.state_selected.name, getStateName(), global.selected_transition_color_symbol, string(global.hovered_transition))
 					global.addedTransition = true;
@@ -70,7 +68,7 @@ function doStateLeftClick(){
 					global.is_state_selected = false;
 					updateStateSelected(pointer_null, 0, 0, 0)
 					
-					//add the transitionID index to the state object
+					//add the tID to the tostate object's indices
 					addTransitionIndex();
 				}
 			}
@@ -86,75 +84,96 @@ function doStateLeftClick(){
 
 
 function getSelectedStateObj(){
-	
 	switch(global.state_selected.name){
-		case "stateA":
+		case "s1":
+			return global.states_info.s1;
 			
-			return global.states_info.stateA;
-			
-		case "stateB":
-			return global.states_info.stateB;
+		case "s2":
+			return global.states_info.s2;
 		
-		case "stateC":
-			return global.states_info.stateC;
+		case "s3":
+			return global.states_info.s3;
 	}
-			
 }
 
 
-
-/*
-		toA: {
-			addedIndices: [-1,1,-1], //0,1,2
-			transitions: [100016, 100032, 100031]
-		}, 
-		toB: {
-			addedIndices: [-1,-1,-1], //0,1,2
-			transitions: [100026, 100025, 100018]
-		},
- */
+function getStateObjByName(name){
+	switch(name){
+		case "s1":
+			return global.states_info.s1;
+		
+		case "s2":
+			return global.states_info.s2;
+		
+		case "s3":
+			return global.states_info.s3;
+	}
+}
 
 
 function getHoveredStateObj(selected_state_obj){
 	switch(id){
 		case 100011:
-			return selected_state_obj.toA;
+			return selected_state_obj.to1;
 			
 		case 100012:
-			return selected_state_obj.toB;
+			return selected_state_obj.to2;
 		
 		case 100013:
-			return selected_state_obj.toC;
+			return selected_state_obj.to3;
 	}
-
 }
 
 
+function getToObjByTargetName(sourceObj, targetName){
+	switch(targetName){
+		case "s1":
+			return sourceObj.to1;
+			
+		case "s2":
+			return sourceObj.to2;
+		
+		case "s3":
+			return sourceObj.to3;
+	}
+}
 
-//return next available transition id between selected and entered state
-function getTransitionId(){
-	//var hoveredStateObj = getHoveredStateObj(getSelectedStateObj());
-	hoveredStateObj = getHoveredStateObj(getSelectedStateObj());
-	//show_debug_message(hoveredStateObj)
-	//hoveredStateObj.addedIndices[1] = 1
-	//show_debug_message(hoveredStateObj)
-	//show_debug_message(global.states_info.stateA.toB.addedIndices)
-	var addedIndices = hoveredStateObj.addedIndices;
-	//show_debug_message(addedIndices)
 
-	
-	for (i = 0; i < array_length_1d(addedIndices); i += 1){
-		if (addedIndices[i] == -1){
-			availableIndex = i;
-			//show_debug_message("added transition: " + string(hoveredStateObj.transitions[i]))
-			return hoveredStateObj.transitions[i];
+function getNextAvailableIndex(indices){
+	for (i = 0; i < array_length_1d(indices); i += 1){
+		if (indices[i] == -1){
+			return i;
 		}
 	}
 }
 
+//return next available transition id between selected and entered state
+function getTransitionId(){
+	hoveredStateObj = getHoveredStateObj(getSelectedStateObj());
+	//setHoveredStateObj()
+	show_debug_message(hoveredStateObj) // this somehow fixes the order error
+	var addedIndices = hoveredStateObj.addedIndices;
+
+	return hoveredStateObj.transitions[getNextAvailableIndex(addedIndices)];
+}
+
+
+
+
 
 function addTransitionIndex(){
-	hoveredStateObj.addedIndices[availableIndex] = availableIndex;
+	var nextAvailableIndex = getNextAvailableIndex(hoveredStateObj.addedIndices);
+	hoveredStateObj.addedIndices[nextAvailableIndex] = hoveredStateObj.transitions[nextAvailableIndex];
+}
+
+function removeTransitionIndex(tID){
+	var addedIndices = getStateIndicesByTransitionID(tID);
+
+	for (i = 0; i < array_length_1d(addedIndices); i += 1){
+		if (addedIndices[i] == tID){
+			addedIndices[i] = -1;
+		}
+	}
 }
 
 
@@ -204,6 +223,10 @@ function doStateHover(){
 				show_debug_message("duplicate")
 				global.duplicate_hovered_transition = true;
 			}
+		}
+		else {
+			show_debug_message("NO TRANSTIONS AVAILABLE")
+			global.duplicate_hovered_transition = true;
 		}
 	}
 }

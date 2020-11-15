@@ -1,8 +1,8 @@
 //resets the DFA, maybe for new level
 function reset(){
 	global.dfa.transitions = initTrans();
-	global.dfa.states = array_create(global.num_states, 0);
-	global.dfa.alphabet = array_create(global.num_symbols, 0);
+	global.dfa.states = initStates();
+	global.dfa.alphabet = initAlphabet();
 
 }
 
@@ -18,6 +18,26 @@ function initTrans(){
 	return array_create(global.total_num_left, "");
 }
 
+
+//initialize the states array
+function initStates(){
+	var states = array_create(global.num_states, "");
+	
+	for (var i = 0; i < global.num_states; i++){
+		states[i] = "s" + string(i);
+	}
+	
+	return states;
+}
+
+
+//initialize the alphabet array
+function initAlphabet(){
+	array_create(global.num_symbols, "")
+	
+}
+
+
 //returns the state object associated with a state name
 function getStateObj(s_name){
 		for (var i=0;i<array_length_1d(global.dfa.states); i++){
@@ -29,7 +49,7 @@ function getStateObj(s_name){
 	return -1;
 }
 
-// checks if arr contains element, returns boolean
+
 //checks if same colored transition in dfa transitions
 function contains(arr, source, target, symbol){
 	for (var i=0;i<array_length_1d(arr); i++){
@@ -40,29 +60,22 @@ function contains(arr, source, target, symbol){
 	return false;
 }
 
-//removes element from arr if exists, also shifts the array elements 
-//returns true if exists, false else
-function remove(arr, element){
-	var found = false;
+
+//removes element from arr
+function remove(arr, tID){
 	for (var i=0;i<array_length_1d(arr); i++){
-		if(arr[i]==element){
-			found=true;
-			for (var j=i;j<array_length_1d(arr)-1;j++){
-				arr[@j]=arr[@j+1];
-			}
-			arr[@array_length_1d(arr)-1]="";
-			break;
+		if(getArrowID(arr[i]) == tID){
+			arr[i] = "";
 		}
 	}
-	return found;
+	return arr;
 }
 
 
-//adds element to arr if it doesn't exist, and returns true on success
+//adds element to arr
 function add(arr, element){
 	for (var i=0;i<array_length_1d(arr); i++){
 		if(arr[i] = ""){
-			//arr[@i]=element;
 			arr[i] = element;
 			return arr;
 		}
