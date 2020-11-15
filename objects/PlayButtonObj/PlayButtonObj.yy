@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ButtonObjects",
+    "path": "folders/Objects/ButtonObjects.yy",
   },
   "resourceVersion": "1.0",
   "name": "PlayButtonObj",

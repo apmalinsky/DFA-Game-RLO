@@ -1,14 +1,15 @@
 {
   "resources": [
     {"id":{"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},"order":0,},
-    {"id":{"name":"PlayButtonObj","path":"objects/PlayButtonObj/PlayButtonObj.yy",},"order":12,},
+    {"id":{"name":"PlayButtonObj","path":"objects/PlayButtonObj/PlayButtonObj.yy",},"order":0,},
     {"id":{"name":"Goal_red","path":"sprites/Goal_red/Goal_red.yy",},"order":2,},
     {"id":{"name":"TransitionObj2","path":"objects/TransitionObj2/TransitionObj2.yy",},"order":1,},
     {"id":{"name":"button_click","path":"sounds/button_click/button_click.yy",},"order":0,},
     {"id":{"name":"TransitionSpr","path":"sprites/TransitionSpr/TransitionSpr.yy",},"order":11,},
     {"id":{"name":"State_start","path":"sprites/State_start/State_start.yy",},"order":3,},
+    {"id":{"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"order":17,},
     {"id":{"name":"ArrowSpr","path":"sprites/ArrowSpr/ArrowSpr.yy",},"order":9,},
-    {"id":{"name":"SubmitObj","path":"objects/SubmitObj/SubmitObj.yy",},"order":5,},
+    {"id":{"name":"SubmitButtonObj","path":"objects/SubmitButtonObj/SubmitButtonObj.yy",},"order":1,},
     {"id":{"name":"star_gold_temp","path":"sprites/star_gold_temp/star_gold_temp.yy",},"order":6,},
     {"id":{"name":"blue_goal","path":"objects/blue_goal/blue_goal.yy",},"order":0,},
     {"id":{"name":"Play_normal","path":"sprites/Play_normal/Play_normal.yy",},"order":0,},
@@ -56,6 +57,7 @@
     {"id":{"name":"Color_selector_green","path":"sprites/Color_selector_green/Color_selector_green.yy",},"order":1,},
     {"id":{"name":"Star_gray_64x64","path":"sprites/Star_gray_64x64/Star_gray_64x64.yy",},"order":8,},
     {"id":{"name":"green_goal","path":"objects/green_goal/green_goal.yy",},"order":1,},
+    {"id":{"name":"ResetButtonObj","path":"objects/ResetButtonObj/ResetButtonObj.yy",},"order":2,},
     {"id":{"name":"Star","path":"objects/Star/Star.yy",},"order":3,},
     {"id":{"name":"Color_selector_green_selected","path":"sprites/Color_selector_green_selected/Color_selector_green_selected.yy",},"order":4,},
     {"id":{"name":"StartStateObj","path":"objects/StartStateObj/StartStateObj.yy",},"order":1,},
@@ -110,6 +112,7 @@
     {"folderPath":"folders/Objects/StateObjects.yy","order":15,"resourceVersion":"1.0","name":"StateObjects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/TransitionObjects.yy","order":16,"resourceVersion":"1.0","name":"TransitionObjects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Goal_Objs.yy","order":20,"resourceVersion":"1.0","name":"Goal_Objs","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/ButtonObjects.yy","order":21,"resourceVersion":"1.0","name":"ButtonObjects","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

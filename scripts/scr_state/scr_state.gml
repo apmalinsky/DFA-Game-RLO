@@ -55,6 +55,8 @@ function doStateLeftClick(){
 					//fill in the saved_transition_instance to full color
 					with (global.hovered_transition) {
 						image_alpha = 1.0;
+						//show_debug_message(object_get_name(object_index))
+						sprite_index = getTransitionAnimation(object_get_name(object_index));
 					}
 					with (global.state_selected.id) {
 						image_blend = c_white;
@@ -77,8 +79,15 @@ function doStateLeftClick(){
 }
 
 
-
-
+//short or long, to find the right animation sprite
+function getTransitionAnimation(obj_name){
+	switch(obj_name){
+		case "TransitionShortObj":
+			return Transition_short_animation;
+		case "TransitionLongObj":
+			return Transition_long_animation;
+	}
+}
 
 
 

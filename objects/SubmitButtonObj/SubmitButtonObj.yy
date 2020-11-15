@@ -21,16 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"SubmitObj","path":"objects/SubmitObj/SubmitObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"SubmitButtonObj","path":"objects/SubmitButtonObj/SubmitButtonObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ButtonObjects",
+    "path": "folders/Objects/ButtonObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SubmitObj",
+  "name": "SubmitButtonObj",
   "tags": [],
   "resourceType": "GMObject",
 }
