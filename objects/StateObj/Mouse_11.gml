@@ -11,6 +11,8 @@ window_set_cursor(cr_default);
 //get correct transition currently in alpha
 //show_debug_message(global.addedTransition)
 
+
+
 doStateLeave();
 
 

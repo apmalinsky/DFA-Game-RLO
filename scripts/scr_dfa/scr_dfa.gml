@@ -30,10 +30,10 @@ function getStateObj(s_name){
 }
 
 // checks if arr contains element, returns boolean
-//checks if transition id in dfa transitions
-function contains(arr, element){
+//checks if same colored transition in dfa transitions
+function contains(arr, source, target, symbol){
 	for (var i=0;i<array_length_1d(arr); i++){
-		if(getArrowID(arr[i]) == string(element)){
+		if(getSource(arr[i]) == source && getTarget(arr[i]) == target && getSymbol(arr[i]) == symbol){
 			return true;
 		}
 	}
@@ -43,7 +43,7 @@ function contains(arr, element){
 //removes element from arr if exists, also shifts the array elements 
 //returns true if exists, false else
 function remove(arr, element){
-	var found=false;
+	var found = false;
 	for (var i=0;i<array_length_1d(arr); i++){
 		if(arr[i]==element){
 			found=true;

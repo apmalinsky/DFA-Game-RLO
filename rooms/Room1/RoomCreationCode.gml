@@ -4,44 +4,24 @@ audio_play_sound(theme, 10, false);
 global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
 
-
-
 //global.red = make_colour_rgb(157, 11, 14); 
 //global.green = make_colour_rgb(0, 166, 82);
 //global.blue = make_colour_rgb(0, 114, 187);
-
-
 global.red = make_colour_rgb(250, 94, 90); 
 global.green = make_colour_rgb(75, 230, 90);
 global.blue = make_colour_rgb(74, 136, 251);
-
-
-global.num_red_left = 3;
-global.num_green_left = 3;
-global.num_blue_left = 3;
+global.num_red_left = 7;
+global.num_green_left = 7;
+global.num_blue_left = 7;
 global.total_num_left = 0; //r + g + b
-
-
 global.selected__state_color_rgb = make_colour_rgb(157, 157, 0);
-
-
 global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};
-
-
-//store list of transition ids
-global.saved_transition_instance = 0;
-
+global.is_hovering_state = false;
 global.hovered_transition = 0;
 global.duplicate_hovered_transition = false;
-
 global.sequence = [];
-
-
-//states 100019, 100018, 100020
-//transitions 100012, 100013, 100014, 100015, 100016, 100017, 100021
-
 global.addedTransition = false;
 
 
@@ -49,25 +29,52 @@ global.addedTransition = false;
 global.states_info = {
 	stateA: {
 		name: "stateA",
-		id: 100020,
-		toA: 100011, //loop
-		toB: 100023,
-		toC: 100024,
+		id: 100011,
+		toA: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100010, 100010, 100010]
+		},
+		toB: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100014, 100022, 100021]
+		},
+		toC: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100030, 100029, 100015]
+		}
 	},
 	stateB: {
 		name: "stateB",
-		id: 100021,
-		toA: 100028,
-		toB: 100011, //loop
-		toC: 100026,
+		id: 100012,
+		toA: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100027, 100028, 100019]
+		},
+		toB: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100010, 100010, 100010]
+		},
+		toC: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100017, 100023, 100024]
+		} 
 	},
 	stateC: {
 		name: "stateC",
-		id: 100022,
-		toA: 100025,
-		toB: 100027,
-		toC: 100011, //loop
-	}
+		id: 100013,
+		toA: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100016, 100032, 100031]
+		}, 
+		toB: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100026, 100025, 100018]
+		},
+		toC: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100010, 100010, 100010]
+		}
+	},
 
 }
 
@@ -75,7 +82,7 @@ global.states_info = {
 
 global.num_states = 3;
 global.num_strings = 3;
-global.strings=array_create(global.num_strings, 0);
+global.strings = array_create(global.num_strings, 0);
 global.num_symbols = 3;
 
 

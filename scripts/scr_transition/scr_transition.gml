@@ -4,31 +4,31 @@ function createTransition(s1, s2, sym, tID){
 	global.dfa.transitions = add(global.dfa.transitions, getLabel(s1,s2,sym,tID));   
 	//show_debug_message(global.dfa.transitions)
 	//show_debug_message(getSource(getLabel(s1,s2,sym,tID)));
-	//show_debug_message(getSymbol(getLabel(s1,s2,sym,tID)));
 	//show_debug_message(getTarget(getLabel(s1,s2,sym,tID)));
+	//show_debug_message(getSymbol(getLabel(s1,s2,sym,tID)));
 	//show_debug_message(getArrowID(getLabel(s1,s2,sym,tID)));
 }
 
 
-
+//"stateA-stateB-r-100018"	
 //produces the string representing this transtion, from s1 to s2 via the symbol sym
 function getLabel(s1, s2, sym, tID){
-	return s1 + "-" + sym + "-" + s2 + "-" + tID; //convention for identifying transition
+	return s1 + "-" + s2 + "-" + sym + "-" + tID; //convention for identifying transition
 }
 
-//"stateA-r-stateB-100018"	
 //get name of the source state
 function getSource(transitionLabel){
 	return tokenize(transitionLabel, 0);
 }
 	
-//get name of the symbol for the transition
-function getSymbol(transitionLabel){
-return tokenize(transitionLabel, 1);
-}
-	
 //get name of the target for the transition
 function getTarget(transitionLabel){
+	return tokenize(transitionLabel, 1);
+}
+
+//get name of the symbol for the transition
+function getSymbol(transitionLabel){
+	//show_debug_message(tokenize(transitionLabel, 2))
 	return tokenize(transitionLabel, 2);
 }
 
@@ -50,5 +50,8 @@ function tokenize(transitionLabel, index){
 			return string_copy(transitionLabel, 17, string_length(transitionLabel))
 	}
 }	
+
+
+
 
 

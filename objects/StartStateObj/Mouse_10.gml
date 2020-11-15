@@ -13,7 +13,7 @@ audio_play_sound(button_hover, 10, false);
 //show_debug_message(global.addedTransition)
 
 
-
+//image_alpha = 0.5;
 
 
 doStateHover();

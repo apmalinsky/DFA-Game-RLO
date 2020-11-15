@@ -8,5 +8,5 @@ depth = 1
 //show_debug_message("transition created")
 
 
-//visible = false
+visible = false
 
