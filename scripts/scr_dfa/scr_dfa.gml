@@ -1,15 +1,35 @@
-//resets the DFA, maybe for new level
-function reset(){
+//reset the DFA, maybe for new level
+function resetDFA(){
 	global.dfa.transitions = initTrans();
 	global.dfa.states = initStates();
 	global.dfa.alphabet = initAlphabet();
-
 }
 
-//clears transitions data if clear button
+//set all transitions invisible
 function clearTransitions(){
-	global.dfa.transitions = initTrans();
+	with (TransitionShortObj){
+		visible = false;
+	}
+	
+	with (TransitionLongObj){
+		visible = false;
+	}
 }
+
+//reset state addedIndices
+function resetStateIndices(){
+	global.states_info.s1.to1.addedIndices = [-1,-1,-1]
+	global.states_info.s1.to2.addedIndices = [-1,-1,-1]
+	global.states_info.s1.to3.addedIndices = [-1,-1,-1]
+	global.states_info.s2.to1.addedIndices = [-1,-1,-1]
+	global.states_info.s2.to2.addedIndices = [-1,-1,-1]
+	global.states_info.s2.to3.addedIndices = [-1,-1,-1]
+	global.states_info.s3.to1.addedIndices = [-1,-1,-1]
+	global.states_info.s3.to2.addedIndices = [-1,-1,-1]
+	global.states_info.s3.to3.addedIndices = [-1,-1,-1]
+}
+
+
 
 //used to initialize the transition array, 20 is arbitrary, just wanted to be big enough, need
 //(num_states choose 2) + num_states max
