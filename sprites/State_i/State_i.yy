@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 256,
-  "bbox_right": 790,
-  "bbox_top": 228,
-  "bbox_bottom": 762,
+  "bbox_left": 70,
+  "bbox_right": 450,
+  "bbox_top": 60,
+  "bbox_bottom": 440,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1038,
-  "height": 1038,
+  "width": 512,
+  "height": 512,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4dea3b88-4989-41e5-8d6c-957332101ce1","path":"sprites/State_i/State_i.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4dea3b88-4989-41e5-8d6c-957332101ce1","path":"sprites/State_i/State_i.yy",},"LayerId":{"name":"ede4a7f2-182e-4a57-828c-b97d47daaad0","path":"sprites/State_i/State_i.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"State_i","path":"sprites/State_i/State_i.yy",},"resourceVersion":"1.0","name":"4dea3b88-4989-41e5-8d6c-957332101ce1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d23052ec-ca89-4f75-8280-8bb27111c152","path":"sprites/State_i/State_i.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d23052ec-ca89-4f75-8280-8bb27111c152","path":"sprites/State_i/State_i.yy",},"LayerId":{"name":"a161f0bd-8188-4e1f-be36-c4ef23c4bd14","path":"sprites/State_i/State_i.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"State_i","path":"sprites/State_i/State_i.yy",},"resourceVersion":"1.0","name":"d23052ec-ca89-4f75-8280-8bb27111c152","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"State_i","path":"sprites/State_i/State_i.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4b467f0e-e249-4460-8dcd-0ded6bcfd61c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4dea3b88-4989-41e5-8d6c-957332101ce1","path":"sprites/State_i/State_i.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"066c6cb0-8f98-44a9-8b47-0e112331861c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d23052ec-ca89-4f75-8280-8bb27111c152","path":"sprites/State_i/State_i.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 32,
-    "yorigin": 32,
+    "xorigin": 256,
+    "yorigin": 256,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"State_i","path":"sprites/State_i/State_i.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ede4a7f2-182e-4a57-828c-b97d47daaad0","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a161f0bd-8188-4e1f-be36-c4ef23c4bd14","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "States",
