@@ -2,5 +2,5 @@
 
 
 
-sprite_index = Transition_long;
+sprite_index = Transition_long_3;
 
