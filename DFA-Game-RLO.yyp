@@ -84,6 +84,7 @@
     {"id":{"name":"Transition_long_3_animation","path":"sprites/Transition_long_3_animation/Transition_long_3_animation.yy",},"order":5,},
     {"id":{"name":"theme","path":"sounds/theme/theme.yy",},"order":2,},
     {"id":{"name":"Goal_green","path":"sprites/Goal_green/Goal_green.yy",},"order":0,},
+    {"id":{"name":"scr_playButton","path":"scripts/scr_playButton/scr_playButton.yy",},"order":5,},
     {"id":{"name":"scr_init","path":"scripts/scr_init/scr_init.yy",},"order":2,},
     {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},"order":0,},
     {"id":{"name":"scr_dfa","path":"scripts/scr_dfa/scr_dfa.yy",},"order":1,},
