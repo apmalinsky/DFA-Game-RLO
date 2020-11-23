@@ -1,5 +1,7 @@
-show_debug_message("transition: " + string(id))
 
+if (global.editMode){
+	show_debug_message("Transition: " + string(id))
+}
 
 if (visible){
 	
@@ -7,6 +9,5 @@ if (visible){
 
 	image_alpha = 0.5;
 
-	//show_debug_message("transition: " + string(id))
 
 }

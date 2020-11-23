@@ -12,6 +12,7 @@
     {"id":{"name":"blue_goal","path":"objects/blue_goal/blue_goal.yy",},"order":0,},
     {"id":{"name":"Play_normal","path":"sprites/Play_normal/Play_normal.yy",},"order":0,},
     {"id":{"name":"Goal_blue","path":"sprites/Goal_blue/Goal_blue.yy",},"order":1,},
+    {"id":{"name":"scr_editMode","path":"scripts/scr_editMode/scr_editMode.yy",},"order":6,},
     {"id":{"name":"Transition_short_2_animation","path":"sprites/Transition_short_2_animation/Transition_short_2_animation.yy",},"order":3,},
     {"id":{"name":"TransitionSelfObj3","path":"objects/TransitionSelfObj3/TransitionSelfObj3.yy",},"order":9,},
     {"id":{"name":"Star_gray","path":"sprites/Star_gray/Star_gray.yy",},"order":4,},
@@ -28,6 +29,7 @@
     {"id":{"name":"Transition_short","path":"sprites/Transition_short/Transition_short.yy",},"order":0,},
     {"id":{"name":"Transition_short_3","path":"sprites/Transition_short_3/Transition_short_3.yy",},"order":4,},
     {"id":{"name":"Color_selector_red_selected","path":"sprites/Color_selector_red_selected/Color_selector_red_selected.yy",},"order":5,},
+    {"id":{"name":"TransitionParentObj","path":"objects/TransitionParentObj/TransitionParentObj.yy",},"order":10,},
     {"id":{"name":"Transition_long_2_animation","path":"sprites/Transition_long_2_animation/Transition_long_2_animation.yy",},"order":3,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"TransitionSelfObj2","path":"objects/TransitionSelfObj2/TransitionSelfObj2.yy",},"order":8,},
@@ -102,8 +104,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
     {"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},
+    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
     {"name":"Room2","path":"rooms/Room2/Room2.yy",},
   ],
   "Folders": [

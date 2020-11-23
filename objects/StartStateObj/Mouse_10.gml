@@ -1,5 +1,6 @@
-show_debug_message("state: " + string(id))
-
+if (global.editMode){
+	show_debug_message("State: " + string(id))
+}
 
 
 

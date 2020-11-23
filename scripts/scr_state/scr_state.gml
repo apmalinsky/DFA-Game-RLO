@@ -8,10 +8,10 @@ function getStateName(){
 	case 100011:
 		return "s1"
 
-	case 100012:
+	case 100013:
 		return "s2"
 
-	case 100013:
+	case 100014:
 		return "s3"
 	}	
 }
@@ -79,13 +79,64 @@ function doStateLeftClick(){
 }
 
 
+function doStateRightClick(){
+	
+	if (global.selected_transition_color != "") {
+		//show_debug_message("Changed");
+	
+		if (global.is_state_selected){
+			if (global.state_selected.id == self.id){
+				if (!global.duplicate_hovered_transition){
+					//fill in the saved_transition_instance to full color
+					with (global.hovered_transition) {
+						image_alpha = 1.0;
+						//show_debug_message(object_get_name(object_index))
+						sprite_index = getTransitionAnimation(object_get_name(object_index));
+					}
+					with (global.state_selected.id) {
+						image_blend = c_white;
+					}
+			
+					//add transition to dfa
+					createTransition(global.state_selected.name, global.state_selected.name, global.selected_transition_color_symbol, string(global.hovered_transition))
+					global.addedTransition = true;
+			
+					//add the transition to the DFA
+					global.is_state_selected = false;
+					updateStateSelected(pointer_null, 0, 0, 0)
+					
+					//add the tID to the tostate object's indices
+					addTransitionIndex();
+				}			
+			}
+		}
+	}
+}
+
+
 //short or long, to find the right animation sprite
 function getTransitionAnimation(obj_name){
 	switch(obj_name){
-		case "TransitionShortObj":
-			return Transition_short_animation;
-		case "TransitionLongObj":
-			return Transition_long_animation;
+		case "TransitionShortObj1":
+			return Transition_short_1_animation;
+		case "TransitionShortObj2":
+			return Transition_short_2_animation;
+		case "TransitionShortObj3":
+			return Transition_short_3_animation;
+			
+		case "TransitionLongObj1":
+			return Transition_long_1_animation;
+		case "TransitionLongObj2":
+			return Transition_long_2_animation;
+		case "TransitionLongObj3":
+			return Transition_long_3_animation;
+			
+		case "TransitionSelfObj1":
+			return Transition_self_1_animation;
+		case "TransitionSelfObj2":
+			return Transition_self_2_animation;
+		case "TransitionSelfObj3":
+			return Transition_self_3_animation;
 	}
 }
 
@@ -125,10 +176,10 @@ function getHoveredStateObj(selected_state_obj){
 		case 100011:
 			return selected_state_obj.to1;
 			
-		case 100012:
+		case 100013:
 			return selected_state_obj.to2;
 		
-		case 100013:
+		case 100014:
 			return selected_state_obj.to3;
 	}
 }

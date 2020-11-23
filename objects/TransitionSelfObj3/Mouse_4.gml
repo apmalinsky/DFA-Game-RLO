@@ -1,5 +1,7 @@
 
-
+if (global.editMode){
+	show_debug_message("Transition: " + string(id))
+}
 
 
 if (visible){

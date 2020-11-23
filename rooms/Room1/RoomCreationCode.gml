@@ -1,6 +1,17 @@
 game_set_speed(30, gamespeed_fps)
 audio_play_sound(theme, 10, false);
 
+
+//switch for edit mode, when making new rooms
+global.editMode = false;
+
+
+if(global.editMode){
+	editOn();
+	show_debug_message("EDITING")
+}
+
+
 global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
 
@@ -26,53 +37,54 @@ global.addedTransition = false;
 
 
 
+
 global.states_info = {
 	s1: {
 		name: "s1",
 		id: 100011,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100010, 100010, 100010]
+			transitions: [100033, 100034, 100035]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100014, 100022, 100021]
+			transitions: [100031, 100030, 100032]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100030, 100029, 100015]
+			transitions: [100017, 100018, 100019]
 		}
 	},
 	s2: {
 		name: "s2",
-		id: 100012,
+		id: 100013,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100027, 100028, 100019]
+			transitions: [100016, 100020, 100015]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100010, 100010, 100010]
+			transitions: [100040, 100039, 100041]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100017, 100023, 100024]
+			transitions: [100028, 100027, 100029]
 		} 
 	},
 	s3: {
 		name: "s3",
-		id: 100013,
+		id: 100014,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100016, 100032, 100031]
+			transitions: [100021, 100023, 100022]
 		}, 
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100026, 100025, 100018]
+			transitions: [100025, 100024, 100026]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100010, 100010, 100010]
+			transitions: [100038, 100037, 100036]
 		}
 	},
 
