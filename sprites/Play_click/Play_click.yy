@@ -117,7 +117,7 @@
   ],
   "parent": {
     "name": "Play_button",
-    "path": "folders/Sprites/Play_button.yy",
+    "path": "folders/Sprites/Buttons/Play_button.yy",
   },
   "resourceVersion": "1.0",
   "name": "Play_click",

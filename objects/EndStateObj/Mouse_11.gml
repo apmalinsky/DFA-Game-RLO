@@ -11,6 +11,9 @@ window_set_cursor(cr_default);
 //get correct transition currently in alpha
 //show_debug_message(global.addedTransition)
 
+
+sprite_index = State_end;
+
 doStateLeave();
 
 

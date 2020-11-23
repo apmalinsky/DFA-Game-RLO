@@ -1,4 +1,4 @@
-//show_debug_message("state: " + string(id))
+show_debug_message("state: " + string(id))
 
 
 
@@ -14,7 +14,7 @@ audio_play_sound(button_hover, 10, false);
 
 
 
-
+sprite_index = State_end_current;
 
 doStateHover();
 

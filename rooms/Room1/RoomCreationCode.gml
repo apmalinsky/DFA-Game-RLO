@@ -108,8 +108,8 @@ global.string[0]=string1;
 global.string[1]=string2;
 global.string[2]=string3;
 
-x_pos = 895;
-y_pos = 545;
+x_pos = 901;
+y_pos = 564;
 
 in1 = instance_create_layer(x_pos, y_pos, "Instances", Input_sequence);
 in1.sequence = string1;
