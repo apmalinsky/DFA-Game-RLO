@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 24,
-  "bbox_right": 487,
+  "bbox_left": 0,
+  "bbox_right": 0,
   "bbox_top": 0,
-  "bbox_bottom": 511,
+  "bbox_bottom": 0,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 512,
-  "height": 512,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8e153400-6f3a-4be2-9ffd-fdc3e0f1165b","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8e153400-6f3a-4be2-9ffd-fdc3e0f1165b","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"LayerId":{"name":"f05bca30-e492-43ca-9e1f-8ed0909abe71","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"resourceVersion":"1.0","name":"8e153400-6f3a-4be2-9ffd-fdc3e0f1165b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"62193781-f2ac-4dea-9154-9010084b7494","path":"sprites/NextButton/NextButton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"62193781-f2ac-4dea-9154-9010084b7494","path":"sprites/NextButton/NextButton.yy",},"LayerId":{"name":"e96353e0-4711-4c8d-8837-8be0e8d6bb60","path":"sprites/NextButton/NextButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"NextButton","path":"sprites/NextButton/NextButton.yy",},"resourceVersion":"1.0","name":"62193781-f2ac-4dea-9154-9010084b7494","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},
+    "spriteId": {"name":"NextButton","path":"sprites/NextButton/NextButton.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a3d1256c-3b23-4b8b-9e78-c8583d4622bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e153400-6f3a-4be2-9ffd-fdc3e0f1165b","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ec64023d-5325-4b34-b7e3-1dfd3947e0ec","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62193781-f2ac-4dea-9154-9010084b7494","path":"sprites/NextButton/NextButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},
+    "parent": {"name":"NextButton","path":"sprites/NextButton/NextButton.yy",},
     "resourceVersion": "1.3",
-    "name": "ResetButtonSpr",
+    "name": "NextButton",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f05bca30-e492-43ca-9e1f-8ed0909abe71","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e96353e0-4711-4c8d-8837-8be0e8d6bb60","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Buttons",
     "path": "folders/Sprites/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ResetButtonSpr",
+  "name": "NextButton",
   "tags": [],
   "resourceType": "GMSprite",
 }

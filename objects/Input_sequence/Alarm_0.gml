@@ -19,4 +19,4 @@ for(i=0; i<string_length(sequence); i++){
 	
 }
 
-star = instance_create_layer((self.x + (64 * 6) - 5), self.y, "Instances", Star);
+star = instance_create_layer((self.x + (64 * 6) - 10), self.y, "Instances", Star);

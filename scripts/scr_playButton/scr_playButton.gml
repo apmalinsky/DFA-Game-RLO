@@ -11,9 +11,7 @@ function checkInput(num){
 
 	for (var i=0; i<string_length(global.inputs[num].sequence);i++){
 		var sym = string_char_at(global.inputs[num].sequence,i+1);
-		show_debug_message(sym);
 		res = hasTarget(curr, sym);
-		show_debug_message(sym);
 		if(res[0]) {
 			//if target found
 			curr=res[1];
