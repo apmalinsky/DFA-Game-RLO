@@ -2,7 +2,9 @@
   "resources": [
     {"id":{"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},"order":0,},
     {"id":{"name":"PlayButtonObj","path":"objects/PlayButtonObj/PlayButtonObj.yy",},"order":0,},
+    {"id":{"name":"fail","path":"sounds/fail/fail.yy",},"order":3,},
     {"id":{"name":"Goal_red","path":"sprites/Goal_red/Goal_red.yy",},"order":2,},
+    {"id":{"name":"Success","path":"sounds/Success/Success.yy",},"order":4,},
     {"id":{"name":"button_click","path":"sounds/button_click/button_click.yy",},"order":0,},
     {"id":{"name":"State_start","path":"sprites/State_start/State_start.yy",},"order":3,},
     {"id":{"name":"Transition_self_1","path":"sprites/Transition_self_1/Transition_self_1.yy",},"order":0,},
@@ -50,6 +52,7 @@
     {"id":{"name":"State_i_current","path":"sprites/State_i_current/State_i_current.yy",},"order":5,},
     {"id":{"name":"Transition_long_animation","path":"sprites/Transition_long_animation/Transition_long_animation.yy",},"order":2,},
     {"id":{"name":"ArrowCountObj","path":"objects/ArrowCountObj/ArrowCountObj.yy",},"order":3,},
+    {"id":{"name":"input_taken","path":"sounds/input_taken/input_taken.yy",},"order":5,},
     {"id":{"name":"Star_gold_64x64","path":"sprites/Star_gold_64x64/Star_gold_64x64.yy",},"order":7,},
     {"id":{"name":"EndStateObj","path":"objects/EndStateObj/EndStateObj.yy",},"order":2,},
     {"id":{"name":"Transition_self_3_animation","path":"sprites/Transition_self_3_animation/Transition_self_3_animation.yy",},"order":5,},

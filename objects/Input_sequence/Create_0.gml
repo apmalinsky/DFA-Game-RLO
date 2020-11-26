@@ -3,4 +3,6 @@
 
 sequence = "";
 
+beaten = false;
+
 

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+sequence_objs = [];
 
 var i;
 for(i=0; i<string_length(sequence); i++){
@@ -14,8 +15,8 @@ for(i=0; i<string_length(sequence); i++){
 	if(letter == "r"){goal = red_goal;}
 
 	
-	instance_create_layer((self.x + (64 * i)), self.y, "Instances", goal);
+	sequence_objs[i] = instance_create_layer((self.x + (64 * i)), self.y, "Instances", goal);
 	
 }
 
-instance_create_layer((self.x + (64 * 6)), self.y, "Instances", Star);
+star = instance_create_layer((self.x + (64 * 6) - 5), self.y, "Instances", Star);

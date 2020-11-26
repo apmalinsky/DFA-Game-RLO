@@ -1,6 +1,3 @@
-game_set_speed(30, gamespeed_fps)
-audio_play_sound(theme, 10, false);
-
 
 //switch for edit mode, when making new rooms
 global.editMode = false;
@@ -112,13 +109,9 @@ global.dfa = {
 }
 
 
-string1 = "rrrr";
+string1 = "rb";
 string2 = "bg";
-string3 = "bgbg";
-
-global.string[0]=string1;
-global.string[1]=string2;
-global.string[2]=string3;
+string3 = "gg";
 
 x_pos = 901;
 y_pos = 564;
@@ -132,6 +125,9 @@ in2.sequence = string2;
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
 
+global.inputs[0] = in1;
+global.inputs[1] = in2;
+global.inputs[2] = in3;
 
 in1.alarm[0] = 1;
 in2.alarm[0] = 1;
