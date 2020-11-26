@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Goal_blue",
-    "path": "sprites/Goal_blue/Goal_blue.yy",
+    "name": "Goal_end",
+    "path": "sprites/Goal_end/Goal_end.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"blue_goal","path":"objects/blue_goal/blue_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"blue_goal","path":"objects/blue_goal/blue_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"input_goal","path":"objects/input_goal/input_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"input_goal","path":"objects/input_goal/input_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Goal_Objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "blue_goal",
+  "name": "input_goal",
   "tags": [],
   "resourceType": "GMObject",
 }

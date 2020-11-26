@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "State_i",
-    "path": "sprites/State_i/State_i.yy",
+    "name": "State_start",
+    "path": "sprites/State_start/State_start.yy",
   },
   "solid": false,
   "visible": true,

@@ -15,6 +15,7 @@ function checkInput(num){
 		if(res[0]) {
 			//if target found
 			curr=res[1];
+			show_debug_message(curr)
 			global.inputs[num].sequence_objs[i].image_alpha=0.5;
 			global.inputs[num].sequence_objs[i].alarm[0] = 1;
 			audio_play_sound(input_taken, 11, false);
@@ -26,10 +27,20 @@ function checkInput(num){
 			//animateTransition(res[2]);   res[2] contains the transition arrow object id, assumes function is written
 		}
 		else{
+			global.inputs[num].sequence_objs[i].alarm[1] = 1;
 			var tend = get_timer() + 500000; //wait .5 seconds
 			while(get_timer()<tend){}
 			return false;
 		}
+		
+	
+	}
+	
+	if (curr != "s3"){
+		global.inputs[num].end_obj.alarm[1] = 1;
+		global.inputs[num].end_obj.image_alpha=0.5;
+		return false;
+	
 	}
 	
 	//reached if could always find a target until the end of the string
@@ -51,6 +62,7 @@ function checkAllStrings(){
 			audio_play_sound(Success, 11, false);
 			var tend = get_timer() + 500000;
 			show_debug_message(global.inputs[i].star);
+			global.inputs[i].end_obj.sprite_index = Completed_goal;
 			global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 			while(get_timer()<tend){}
 			

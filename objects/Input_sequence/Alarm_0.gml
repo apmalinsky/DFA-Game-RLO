@@ -6,7 +6,7 @@ sequence_objs = [];
 var i;
 for(i=0; i<string_length(sequence); i++){
 	
-	var goal
+	var goal;
 
 	letter = string_char_at(sequence, i+1);
 	
@@ -20,3 +20,4 @@ for(i=0; i<string_length(sequence); i++){
 }
 
 star = instance_create_layer((self.x + (64 * 6) - 10), self.y, "Instances", Star);
+end_obj = instance_create_layer((self.x + (64 * 5) - 10), self.y, "Instances", input_goal);
