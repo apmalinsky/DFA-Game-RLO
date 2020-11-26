@@ -40,17 +40,9 @@ function doStateLeftClick(){
 			}
 		}
 		else {
-			//if select the selected state (de-select it)
-			if (global.state_selected.id == self.id){
-				global.is_state_selected = false;
-				with (global.state_selected.id) {
-					image_blend = c_white;
-				}
-				updateStateSelected(pointer_null, 0, 0, 0)
-			}
-		
+
 			//select other state to make transition
-			else {
+				
 				if (!global.duplicate_hovered_transition){
 					//fill in the saved_transition_instance to full color
 					with (global.hovered_transition) {
@@ -76,7 +68,7 @@ function doStateLeftClick(){
 			}
 		}
 	}
-}
+
 
 
 function doStateRightClick(){
@@ -346,6 +338,8 @@ function getSymbols(s1){
 function hasTarget(s1, sym){
 
 	var trans = global.dfa.transitions;
+	show_debug_message(trans);
+
 
 	var res = [3];
 	res[0]=false;
@@ -353,12 +347,18 @@ function hasTarget(s1, sym){
 	res[2]=0;
 	for (var i=0;i<array_length_1d(trans); i++){
 		var st = tokenize(trans[i],0);
-		var symb = tokenize(trans[i],1);
+		var symb = tokenize(trans[i],2);
+		//show_debug_message(s1);
+		//show_debug_message(st);
+		show_debug_message(sym);
+	    //show_debug_message(symb);
+		//show_debug_message("next")
 		//if a match, store true and the target state symbol
 		if(st==s1 && symb==sym){
 			res[0]=true;
-			res[1]=tokenize(trans[i],2);
-			res[2]=tokenize(trans[i],3);
+			res[1]=tokenize(trans[i],1);
+			res[2]=tokenize(trans[i],4);
+			//show_debug_message(res);
 		}
 	}
 	return res;

@@ -1,30 +1,37 @@
 //checks if a string is in the language defined by the DFA
 function checkInput(num){
 	
-	if(global.inputs[num].sequence=="")
+	if(global.inputs[num].sequence==""){
 	    show_debug_message("Empty Input Seen");
 		return true;
+		}
 	var curr = global.dfa.start;
 	var res=[1];
 	res[0]=false;
 
 	for (var i=0; i<string_length(global.inputs[num].sequence);i++){
-		var sym = string_char_at(global.inputs[num].sequence,i);
+		var sym = string_char_at(global.inputs[num].sequence,i+1);
+		show_debug_message(sym);
 		res = hasTarget(curr, sym);
+		show_debug_message(sym);
 		if(res[0]) {
 			//if target found
 			curr=res[1];
-			audio_play_sound(input_taken, 11, false);
 			global.inputs[num].sequence_objs[i].image_alpha=0.5;
-			var tend = get_timer() + 300000; //wait .3 seconds
+			global.inputs[num].sequence_objs[i].alarm[0] = 1;
+			audio_play_sound(input_taken, 11, false);
+			var tend = get_timer() + 500000; //wait .5 seconds
 			while(get_timer()<tend){}
+			
+			show_debug_message("found transitions");
 			//animate
 			//animateTransition(res[2]);   res[2] contains the transition arrow object id, assumes function is written
 		}
-		else
-			var tend = get_timer() + 300000; //wait .3 seconds
+		else{
+			var tend = get_timer() + 500000; //wait .5 seconds
 			while(get_timer()<tend){}
-			return false;	
+			return false;
+		}
 	}
 	
 	//reached if could always find a target until the end of the string
@@ -42,12 +49,14 @@ function checkAllStrings(){
 			return false;
 			}
 		else {
-			global.inputs[i].beaten = true
+			global.inputs[i].beaten = true;
 			audio_play_sound(Success, 11, false);
-			var tend = get_timer() + 700000;
+			var tend = get_timer() + 500000;
+			show_debug_message(global.inputs[i].star);
+			global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 			while(get_timer()<tend){}
 			
-			object_set_sprite(global.inputs[i].star, Star_gold_64x64); //changes the star sprite to indicate success on string, not written
+			
 		}
 	}
 	return true; //this true represents all strings ran successfully in the dfa
