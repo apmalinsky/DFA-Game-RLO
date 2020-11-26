@@ -57,6 +57,7 @@
     {"id":{"name":"Failed_green","path":"sprites/Failed_green/Failed_green.yy",},"order":8,},
     {"id":{"name":"Completed_green","path":"sprites/Completed_green/Completed_green.yy",},"order":5,},
     {"id":{"name":"Transition_long_animation","path":"sprites/Transition_long_animation/Transition_long_animation.yy",},"order":2,},
+    {"id":{"name":"pop","path":"sounds/pop/pop.yy",},"order":6,},
     {"id":{"name":"ArrowCountObj","path":"objects/ArrowCountObj/ArrowCountObj.yy",},"order":3,},
     {"id":{"name":"input_taken","path":"sounds/input_taken/input_taken.yy",},"order":5,},
     {"id":{"name":"Failed_red","path":"sprites/Failed_red/Failed_red.yy",},"order":9,},
