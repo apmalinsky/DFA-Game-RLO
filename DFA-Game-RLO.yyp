@@ -35,6 +35,7 @@
     {"id":{"name":"Color_selector_red_selected","path":"sprites/Color_selector_red_selected/Color_selector_red_selected.yy",},"order":5,},
     {"id":{"name":"TransitionParentObj","path":"objects/TransitionParentObj/TransitionParentObj.yy",},"order":10,},
     {"id":{"name":"Transition_long_2_animation","path":"sprites/Transition_long_2_animation/Transition_long_2_animation.yy",},"order":3,},
+    {"id":{"name":"Background_level","path":"sprites/Background_level/Background_level.yy",},"order":1,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"TransitionSelfObj2","path":"objects/TransitionSelfObj2/TransitionSelfObj2.yy",},"order":8,},
     {"id":{"name":"Play_hover","path":"sprites/Play_hover/Play_hover.yy",},"order":1,},
