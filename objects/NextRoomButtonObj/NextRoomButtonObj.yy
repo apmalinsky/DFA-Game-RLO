@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "NextRoomButtonSpr",
-    "path": "sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",
+    "name": "Next_level_button",
+    "path": "sprites/Next_level_button/Next_level_button.yy",
   },
   "solid": false,
   "visible": true,

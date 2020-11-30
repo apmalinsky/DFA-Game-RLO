@@ -1,9 +1,4 @@
 
-if (room == Room3) {
-	show_debug_message("ROOOOM 3")
-	
-}
-
 
 //switch for edit mode, when making new rooms
 //global.editMode = true;
