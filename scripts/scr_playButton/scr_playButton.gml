@@ -1,3 +1,50 @@
+
+
+
+
+function animateTransition(tID){
+	with (real(tID)) {
+		sprite_index = getTransitionAnimation(object_get_name(object_index));
+	}
+}
+
+/*
+var animationSequence = array_create(10, 0);
+
+
+function animateTransitions(){
+	//show_debug_message(real(tID))
+	
+	for (var i=0; i<array_length_1d(animationSequence);i++){
+		if (animationSequence[i] == 0){
+			break;
+		}
+		else {
+			with (animationSequence[i]) {
+				sprite_index = getTransitionAnimation(object_get_name(object_index));
+			}
+		}
+	}
+}
+
+
+
+function addAnimation(tID){
+	for (var i=0; i<array_length_1d(animationSequence);i++){
+		if (animationSequence[i] == 0){
+			animationSequence[i] = real(tID)
+		}
+	}
+
+}
+
+
+function resetAnimationSequence(){
+	animationSequence = array_create(10, 0);
+}
+
+*/
+
 //checks if a string is in the language defined by the DFA
 function checkInput(num){
 	
@@ -24,7 +71,8 @@ function checkInput(num){
 			
 			show_debug_message("found transitions");
 			//animate
-			//animateTransition(res[2]);   res[2] contains the transition arrow object id, assumes function is written
+			//addAnimation(res[2]);
+			animateTransition(res[2]);   //res[2] contains the transition arrow object id, assumes function is written
 		}
 		else{
 			global.inputs[num].sequence_objs[i].alarm[1] = 1;

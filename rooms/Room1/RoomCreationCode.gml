@@ -1,7 +1,7 @@
 
 //switch for edit mode, when making new rooms
+//global.editMode = true;
 global.editMode = false;
-
 
 if(global.editMode){
 	editOn();
@@ -33,55 +33,55 @@ global.sequence = [];
 global.addedTransition = false;
 
 
-
+global.stateIDs = [100042,100044,100045]
 
 global.states_info = {
 	s1: {
 		name: "s1",
-		id: 100011,
+		id: 100042,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100033, 100034, 100035]
+			transitions: [100064, 100065, 100066]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100031, 100030, 100032]
+			transitions: [100062, 100061, 100063]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100017, 100018, 100019]
+			transitions: [100048, 100049, 100050]
 		}
 	},
 	s2: {
 		name: "s2",
-		id: 100013,
+		id: 100044,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100016, 100020, 100015]
+			transitions: [100047, 100051, 100046]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100040, 100039, 100041]
+			transitions: [100071, 100070, 100072]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100028, 100027, 100029]
+			transitions: [100059, 100058, 100060]
 		} 
 	},
 	s3: {
 		name: "s3",
-		id: 100014,
+		id: 100045,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100021, 100023, 100022]
+			transitions: [100052, 100054, 100053]
 		}, 
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100025, 100024, 100026]
+			transitions: [100056, 100055, 100057]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100038, 100037, 100036]
+			transitions: [100069, 100068, 100067]
 		}
 	},
 

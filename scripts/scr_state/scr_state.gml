@@ -3,16 +3,15 @@ var hoveredStateObj = {}
 
 function getStateName(){
 	switch(id){
-	//each state id, return transition id between selected and entered state
-		
-	case 100011:
-		return "s1"
+	//each state id, return transition id between selected and entered state			
+		case global.stateIDs[0]:
+			return "s1"
 
-	case 100013:
-		return "s2"
+		case global.stateIDs[1]:
+			return "s2"
 
-	case 100014:
-		return "s3"
+		case global.stateIDs[2]:
+			return "s3"
 	}	
 }
 
@@ -67,7 +66,11 @@ function doStateLeftClick(){
 				}
 			}
 		}
-	}
+
+
+	//for drawing self loops right away
+	doStateHover();
+}
 
 
 
@@ -165,13 +168,13 @@ function getStateObjByName(name){
 
 function getHoveredStateObj(selected_state_obj){
 	switch(id){
-		case 100011:
+		case global.stateIDs[0]:
 			return selected_state_obj.to1;
 			
-		case 100013:
+		case global.stateIDs[1]:
 			return selected_state_obj.to2;
 		
-		case 100014:
+		case global.stateIDs[2]:
 			return selected_state_obj.to3;
 	}
 }
@@ -338,7 +341,8 @@ function getSymbols(s1){
 function hasTarget(s1, sym){
 
 	var trans = global.dfa.transitions;
-	show_debug_message(trans);
+	show_debug_message("WWWWWWWW")
+	//show_debug_message(trans);
 
 
 	var res = [3];
@@ -350,15 +354,15 @@ function hasTarget(s1, sym){
 		var symb = tokenize(trans[i],2);
 		//show_debug_message(s1);
 		//show_debug_message(st);
-		show_debug_message(sym);
+		//show_debug_message(sym);
 	    //show_debug_message(symb);
 		//show_debug_message("next")
 		//if a match, store true and the target state symbol
 		if(st==s1 && symb==sym){
 			res[0]=true;
 			res[1]=tokenize(trans[i],1);
-			res[2]=tokenize(trans[i],4);
-			//show_debug_message(res);
+			res[2]=tokenize(trans[i],3);
+			//show_debug_message(res[2]);
 		}
 	}
 	return res;

@@ -1,95 +1,117 @@
 
+//switch for edit mode, when making new rooms
+//global.editMode = true;
+global.editMode = false;
+
+if(global.editMode){
+	editOn();
+	show_debug_message("EDITING")
+}
+
 
 global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
 
-
-
 //global.red = make_colour_rgb(157, 11, 14); 
 //global.green = make_colour_rgb(0, 166, 82);
 //global.blue = make_colour_rgb(0, 114, 187);
-
-
 global.red = make_colour_rgb(250, 94, 90); 
 global.green = make_colour_rgb(75, 230, 90);
 global.blue = make_colour_rgb(74, 136, 251);
-
-
-global.num_red_left = 3;
-global.num_green_left = 3;
-global.num_blue_left = 3;
+global.num_red_left = 7;
+global.num_green_left = 7;
+global.num_blue_left = 7;
 global.total_num_left = 0; //r + g + b
-
-
-global.selected__state_color_rgb = make_colour_rgb(157, 157, 0);
-
-
+global.selected_state_color_rgb = make_colour_rgb(157, 157, 0);
 global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};
-
-
-//store list of transition ids
-global.saved_transition_instance = 0;
-
+global.is_hovering_state = false;
 global.hovered_transition = 0;
 global.duplicate_hovered_transition = false;
-
 global.sequence = [];
-
-
-//states 100019, 100018, 100020
-//transitions 100012, 100013, 100014, 100015, 100016, 100017, 100021
-
 global.addedTransition = false;
 
 
+global.stateIDs = [100005,100007,100008]
 
 global.states_info = {
-	stateA: {
-		name: "stateA",
-		id: 100020,
-		toA: 100011, //loop
-		toB: 100023,
-		toC: 100024,
+	s1: {
+		name: "s1",
+		id: 100005,
+		to1: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100027, 100028, 100029]
+		},
+		to2: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100025, 100024, 100026]
+		},
+		to3: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100011, 100012, 100013]
+		}
 	},
-	stateB: {
-		name: "stateB",
-		id: 100021,
-		toA: 100028,
-		toB: 100011, //loop
-		toC: 100026,
+	s2: {
+		name: "s2",
+		id: 100007,
+		to1: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100010, 100014, 100009]
+		},
+		to2: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100034, 100033, 100035]
+		},
+		to3: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100022, 100021, 100023]
+		} 
 	},
-	stateC: {
-		name: "stateC",
-		id: 100022,
-		toA: 100025,
-		toB: 100027,
-		toC: 100011, //loop
-	}
+	s3: {
+		name: "s3",
+		id: 100008,
+		to1: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100015, 100017, 100016]
+		}, 
+		to2: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100019, 100018, 100020]
+		},
+		to3: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100032, 100031, 100030]
+		}
+	},
 
 }
 
+//not sure if we just count total stars or per level, see scr_sceenObjs for how it might work
+global.num_levels = 1;
+global.star_count = 0;
+global.level_stars = array_create(global.num_levels, 0);
 
 
+//Logic global vars
 global.num_states = 3;
 global.num_strings = 3;
-global.strings=array_create(global.num_strings, 0);
+global.strings = array_create(global.num_strings, 0);
 global.num_symbols = 3;
 
 
 global.dfa = {
 	transitions: initTrans(),
-    states: array_create(global.num_states, 0),
-	alphabet: array_create(global.num_symbols, 0),
+    states: initStates(),
+	alphabet: initAlphabet(),
 	start: "s1",
-	final: "s"+string(global.num_states)
+	final: "s3"
 }
 
 
-string1 = "rrrr";
-string2 = "bg";
-string3 = "bgbg";
+string1 = "bg";
+string2 = "rgb";
+string3 = "brgrb";
 
 x_pos = 901;
 y_pos = 564;
@@ -103,7 +125,6 @@ in2.sequence = string2;
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
 
-
 global.inputs[0] = in1;
 global.inputs[1] = in2;
 global.inputs[2] = in3;
@@ -114,13 +135,4 @@ in3.alarm[0] = 1;
 
 
 
-
-
-/*
-global.dfa = {
-	transitions:{}
-	states_info:
-	start_state:
-	end_state:
-}
-*/
+global.runningDFA = false;
