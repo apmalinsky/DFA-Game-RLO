@@ -19,5 +19,7 @@ for(i=0; i<string_length(sequence); i++){
 	
 }
 
+//show_debug_message("WWWWWWWWWWWWWWWWWWWWWWWWWWW")
+//show_debug_message(sequence_objs)
 star = instance_create_layer((self.x + (64 * 6) - 10), self.y, "Instances", Star);
 end_obj = instance_create_layer((self.x + (64 * 5) - 10), self.y, "Instances", input_goal);

@@ -73,7 +73,7 @@ function doStateLeftClick(){
 }
 
 
-
+/*
 function doStateRightClick(){
 	
 	if (global.selected_transition_color != "") {
@@ -107,7 +107,7 @@ function doStateRightClick(){
 		}
 	}
 }
-
+*/
 
 //short or long, to find the right animation sprite
 function getTransitionAnimation(obj_name){

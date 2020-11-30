@@ -33,55 +33,55 @@ global.sequence = [];
 global.addedTransition = false;
 
 
-global.stateIDs = [100042,100044,100045]
+global.stateIDs = [100043,100045,100046]
 
 global.states_info = {
 	s1: {
 		name: "s1",
-		id: 100042,
+		id: 100043,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100064, 100065, 100066]
+			transitions: [100065, 100066, 100067]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100062, 100061, 100063]
+			transitions: [100063, 100062, 100064]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100048, 100049, 100050]
+			transitions: [100049, 100050, 100051]
 		}
 	},
 	s2: {
 		name: "s2",
-		id: 100044,
+		id: 100045,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100047, 100051, 100046]
+			transitions: [100048, 100052, 100047]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100071, 100070, 100072]
+			transitions: [100072, 100071, 100073]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100059, 100058, 100060]
+			transitions: [100060, 100059, 100061]
 		} 
 	},
 	s3: {
 		name: "s3",
-		id: 100045,
+		id: 100046,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100052, 100054, 100053]
+			transitions: [100053, 100055, 100054]
 		}, 
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100056, 100055, 100057]
+			transitions: [100057, 100056, 100058]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100069, 100068, 100067]
+			transitions: [100070, 100069, 100068]
 		}
 	},
 
@@ -134,5 +134,25 @@ in2.alarm[0] = 1;
 in3.alarm[0] = 1;
 
 
-
 global.runningDFA = false;
+
+/*
+global.animationSequence = {
+	
+	seq1: {
+		tIDs: [0, 0, 0, 0, 0]
+		goalIDs: []
+	},
+	seq2: [0, 0, 0, 0, 0],
+	seq3: [0, 0, 0, 0, 0],
+}
+
+*/
+
+
+global.doingAnimation = false;
+global.animatingTransition = 0;
+//global.doneAnimation = false;
+
+
+

@@ -11,5 +11,10 @@ global.runningDFA = true;
 checkAllStrings();
 
 
-
+if (global.star_count >= 2){
+	with (NextRoomButtonObj){
+		visible = true;
+	}
+	
+}
 

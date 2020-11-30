@@ -6,10 +6,12 @@ function animateTransition(tID){
 	with (real(tID)) {
 		sprite_index = getTransitionAnimation(object_get_name(object_index));
 	}
+	
+	return true;
 }
 
 /*
-var animationSequence = array_create(10, 0);
+
 
 
 function animateTransitions(){
@@ -45,6 +47,8 @@ function resetAnimationSequence(){
 
 */
 
+
+
 //checks if a string is in the language defined by the DFA
 function checkInput(num){
 	
@@ -62,9 +66,33 @@ function checkInput(num){
 		if(res[0]) {
 			//if target found
 			curr=res[1];
-			show_debug_message(curr)
+			//show_debug_message(curr)
+			
+			
+			global.doingAnimation = true;
+			global.animatingTransition = res[2];
+			
+			//object_set_sprite(global.animatingTransition, getTransitionAnimation(object_get_name(global.animatingTransition)));
+			
+			while(global.doingAnimation){
+				animateTransition(global.animatingTransition);
+				global.doingAnimation = false;
+			}
+			
+			
+			
 			global.inputs[num].sequence_objs[i].image_alpha=0.5;
+			
 			global.inputs[num].sequence_objs[i].alarm[0] = 1;
+			/*
+			with (global.inputs[num].sequence_objs[i]) {
+				//sprite_index = getTransitionAnimation(object_get_name(object_index));
+				sprite_index = Completed_red;
+			}
+			*/
+
+			
+			
 			audio_play_sound(input_taken, 11, false);
 			var tend = get_timer() + 500000; //wait .5 seconds
 			while(get_timer()<tend){}
@@ -72,7 +100,7 @@ function checkInput(num){
 			show_debug_message("found transitions");
 			//animate
 			//addAnimation(res[2]);
-			animateTransition(res[2]);   //res[2] contains the transition arrow object id, assumes function is written
+			//animateTransition(res[2]);   //res[2] contains the transition arrow object id, assumes function is written
 		}
 		else{
 			global.inputs[num].sequence_objs[i].alarm[1] = 1;
@@ -112,6 +140,7 @@ function checkAllStrings(){
 			show_debug_message(global.inputs[i].star);
 			global.inputs[i].end_obj.sprite_index = Completed_goal;
 			global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
+			global.star_count += 1;
 			while(get_timer()<tend){}
 			
 			

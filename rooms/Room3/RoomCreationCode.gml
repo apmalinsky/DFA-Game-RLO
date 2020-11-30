@@ -20,55 +20,55 @@ if(global.editMode){
 initCommonVars();
 
 
-global.stateIDs = [100079,100081,100082]
+global.stateIDs = [100081,100083,100084]
 
 global.states_info = {
 		s1: {
 			name: "s1",
-			id: 100079,
+			id: 100081,
 			to1: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100101, 100102, 100103]
+				transitions: [100103, 100104, 100105]
 			},
 			to2: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100099, 100098, 100100]
+				transitions: [100101, 100100, 100102]
 			},
 			to3: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100085, 100086, 100087]
+				transitions: [100087, 100088, 100089]
 			}
 		},
 		s2: {
 			name: "s2",
-			id: 100081,
+			id: 100083,
 			to1: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100084, 100088, 100083]
+				transitions: [100086, 100090, 100085]
 			},
 			to2: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100108, 100107, 100109]
+				transitions: [100110, 100109, 100111]
 			},
 			to3: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100096, 100095, 100097]
+				transitions: [100098, 100097, 100099]
 			} 
 		},
 		s3: {
 			name: "s3",
-			id: 100082,
+			id: 100084,
 			to1: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100089, 100091, 100090]
+				transitions: [100091, 100093, 100092]
 			}, 
 			to2: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100093, 100092, 100094]
+				transitions: [100095, 100094, 100096]
 			},
 			to3: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100106, 100105, 100104]
+				transitions: [100108, 100107, 100106]
 			}
 		},
 
