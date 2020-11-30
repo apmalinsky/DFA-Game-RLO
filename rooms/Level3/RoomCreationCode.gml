@@ -15,6 +15,32 @@ if(global.editMode){
 initCommonVars();
 
 
+//switch for edit mode, when making new rooms
+//global.editMode = true;
+global.editMode = false;
+
+if(global.editMode){
+	editOn();
+	show_debug_message("EDITING")
+}
+
+
+global.num_red_left = 2;
+global.num_green_left = 2;
+global.num_blue_left = 2;
+
+global.red_count = instance_create_layer(125, 35, "Instances", ArrowCountObj);
+global.red_count.image_index = global.num_red_left;
+global.red_count.color = "r";
+global.green_count = instance_create_layer(125, 125, "Instances", ArrowCountObj);
+global.green_count.image_index = global.num_green_left; 
+global.green_count.color = "g";
+global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
+global.blue_count.image_index = global.num_blue_left;
+global.blue_count.color = "b";
+
+
+
 global.stateIDs = [100081,100083,100084]
 
 global.states_info = {
