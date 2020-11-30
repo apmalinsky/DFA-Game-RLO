@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"75a5f8ce-bb0f-47bd-9891-463c1ddad3c5","path":"sprites/Homescreen/Homescreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"75a5f8ce-bb0f-47bd-9891-463c1ddad3c5","path":"sprites/Homescreen/Homescreen.yy",},"LayerId":{"name":"aa81cfae-ebe7-4e4e-8700-8539966f1088","path":"sprites/Homescreen/Homescreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},"resourceVersion":"1.0","name":"75a5f8ce-bb0f-47bd-9891-463c1ddad3c5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"533f285d-507c-4a81-bae2-17ddb8e45ae7","path":"sprites/Background_select_level/Background_select_level.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"533f285d-507c-4a81-bae2-17ddb8e45ae7","path":"sprites/Background_select_level/Background_select_level.yy",},"LayerId":{"name":"e7930e4d-7534-4771-9f17-9727ac0ecb5c","path":"sprites/Background_select_level/Background_select_level.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Background_select_level","path":"sprites/Background_select_level/Background_select_level.yy",},"resourceVersion":"1.0","name":"533f285d-507c-4a81-bae2-17ddb8e45ae7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},
+    "spriteId": {"name":"Background_select_level","path":"sprites/Background_select_level/Background_select_level.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cd69050d-0ed2-4cd5-bb80-dec1a102b2a3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75a5f8ce-bb0f-47bd-9891-463c1ddad3c5","path":"sprites/Homescreen/Homescreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6c4df750-3e7a-4cd0-a509-fdc12d0ee719","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"533f285d-507c-4a81-bae2-17ddb8e45ae7","path":"sprites/Background_select_level/Background_select_level.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Homescreen","path":"sprites/Homescreen/Homescreen.yy",},
+    "parent": {"name":"Background_select_level","path":"sprites/Background_select_level/Background_select_level.yy",},
     "resourceVersion": "1.3",
-    "name": "Homescreen",
+    "name": "Background_select_level",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aa81cfae-ebe7-4e4e-8700-8539966f1088","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e7930e4d-7534-4771-9f17-9727ac0ecb5c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Backgrounds",
     "path": "folders/Sprites/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Homescreen",
+  "name": "Background_select_level",
   "tags": [],
   "resourceType": "GMSprite",
 }
