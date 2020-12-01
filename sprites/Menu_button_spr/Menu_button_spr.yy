@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 63,
-  "bbox_top": 0,
-  "bbox_bottom": 63,
+  "bbox_left": 4,
+  "bbox_right": 122,
+  "bbox_top": 2,
+  "bbox_bottom": 123,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 128,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0d1b4292-fb14-471d-a50a-144d5039a382","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d1b4292-fb14-471d-a50a-144d5039a382","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},"LayerId":{"name":"c2d92195-9acd-428f-b184-111152bf8ec2","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"NextRoomButtonSpr","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},"resourceVersion":"1.0","name":"0d1b4292-fb14-471d-a50a-144d5039a382","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0ca66259-7d61-45ff-b1f7-1c3e3c63c38c","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0ca66259-7d61-45ff-b1f7-1c3e3c63c38c","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},"LayerId":{"name":"5b4ac507-4c01-4408-9f61-08363b031742","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Menu_button_spr","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},"resourceVersion":"1.0","name":"0ca66259-7d61-45ff-b1f7-1c3e3c63c38c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"NextRoomButtonSpr","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},
+    "spriteId": {"name":"Menu_button_spr","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cc51a4f8-3681-4e87-8f8e-465e04e3a811","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d1b4292-fb14-471d-a50a-144d5039a382","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6c5d42d5-30ba-49a2-b3d7-00c321cf49ca","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ca66259-7d61-45ff-b1f7-1c3e3c63c38c","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"NextRoomButtonSpr","path":"sprites/NextRoomButtonSpr/NextRoomButtonSpr.yy",},
+    "parent": {"name":"Menu_button_spr","path":"sprites/Menu_button_spr/Menu_button_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "NextRoomButtonSpr",
+    "name": "Menu_button_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c2d92195-9acd-428f-b184-111152bf8ec2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5b4ac507-4c01-4408-9f61-08363b031742","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Buttons",
     "path": "folders/Sprites/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "NextRoomButtonSpr",
+  "name": "Menu_button_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

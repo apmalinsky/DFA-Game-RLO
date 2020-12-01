@@ -4,7 +4,7 @@
 resetDFA();
 clearTransitions();
 resetStateIndices();
-
+resetArrowCounts();
 
 
 

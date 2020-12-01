@@ -43,55 +43,55 @@ global.sequence = [];
 global.addedTransition = false;
 
 
-global.stateIDs = [100043,100045,100046]
+global.stateIDs = [100005,100007,100008]
 
 global.states_info = {
 	s1: {
 		name: "s1",
-		id: 100043,
+		id: 100005,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100065, 100066, 100067]
+			transitions: [100027, 100028, 100029]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100063, 100062, 100064]
+			transitions: [100025, 100024, 100026]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100049, 100050, 100051]
+			transitions: [100011, 100012, 100013]
 		}
 	},
 	s2: {
 		name: "s2",
-		id: 100045,
+		id: 100007,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100048, 100052, 100047]
+			transitions: [100010, 100014, 10009]
 		},
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100072, 100071, 100073]
+			transitions: [100034, 100033, 100035]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100060, 100059, 100061]
+			transitions: [100022, 100021, 100023]
 		} 
 	},
 	s3: {
 		name: "s3",
-		id: 100046,
+		id: 100008,
 		to1: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100053, 100055, 100054]
+			transitions: [100015, 100017, 100016]
 		}, 
 		to2: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100057, 100056, 100058]
+			transitions: [100019, 100018, 100020]
 		},
 		to3: {
 			addedIndices: [-1,-1,-1],
-			transitions: [100070, 100069, 100068]
+			transitions: [100032, 100031, 100030]
 		}
 	},
 

@@ -1,19 +1,5 @@
 
 
-//switch for edit mode, when making new rooms
-//global.editMode = true;
-global.editMode = false;
-
-
-if(global.editMode){
-	editOn();
-	show_debug_message("EDITING")
-}
-
-
-
-initCommonVars();
-
 
 //switch for edit mode, when making new rooms
 //global.editMode = true;
@@ -25,6 +11,15 @@ if(global.editMode){
 }
 
 
+global.selected_transition_color = "";
+global.selected_transition_color_symbol = ""
+
+//global.red = make_colour_rgb(157, 11, 14); 
+//global.green = make_colour_rgb(0, 166, 82);
+//global.blue = make_colour_rgb(0, 114, 187);
+global.red = make_colour_rgb(250, 94, 90); 
+global.green = make_colour_rgb(75, 230, 90);
+global.blue = make_colour_rgb(74, 136, 251);
 global.num_red_left = 2;
 global.num_green_left = 2;
 global.num_blue_left = 2;
@@ -38,58 +33,68 @@ global.green_count.color = "g";
 global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
 global.blue_count.image_index = global.num_blue_left;
 global.blue_count.color = "b";
+global.total_num_left = 0; //r + g + b
+global.selected_state_color_rgb = make_colour_rgb(157, 157, 0);
+global.is_state_selected = false;
+//store state id, x, and y coordinates
+global.state_selected = {name: "", id: 0, x: 0, y: 0};
+global.is_hovering_state = false;
+global.hovered_transition = 0;
+global.duplicate_hovered_transition = false;
+global.sequence = [];
+global.addedTransition = false;
 
 
 
-global.stateIDs = [100081,100083,100084]
+global.stateIDs = [100172,100174,100175]
 
 global.states_info = {
 		s1: {
 			name: "s1",
-			id: 100081,
+			id: 100172,
 			to1: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100103, 100104, 100105]
+				transitions: [100194, 100195, 100196]
 			},
 			to2: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100101, 100100, 100102]
+				transitions: [100192, 100191, 100193]
 			},
 			to3: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100087, 100088, 100089]
+				transitions: [100178, 100179, 100180]
 			}
 		},
 		s2: {
 			name: "s2",
-			id: 100083,
+			id: 100174,
 			to1: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100086, 100090, 100085]
+				transitions: [100177, 100181, 100176]
 			},
 			to2: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100110, 100109, 100111]
+				transitions: [100201, 100200, 100202]
 			},
 			to3: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100098, 100097, 100099]
+				transitions: [100189, 100188, 100190]
 			} 
 		},
 		s3: {
 			name: "s3",
-			id: 100084,
+			id: 100175,
 			to1: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100091, 100093, 100092]
+				transitions: [100182, 100184, 100183]
 			}, 
 			to2: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100095, 100094, 100096]
+				transitions: [100186, 100185, 100187]
 			},
 			to3: {
 				addedIndices: [-1,-1,-1],
-				transitions: [100108, 100107, 100106]
+				transitions: [100199, 100198, 100197]
 			}
 		},
 
@@ -102,7 +107,11 @@ global.num_levels = 1;
 global.star_count = 0;
 global.level_stars = array_create(global.num_levels, 0);
 
-
+//Logic global vars
+global.num_states = 3;
+global.num_strings = 3;
+global.strings = array_create(global.num_strings, 0);
+global.num_symbols = 3;
 
 
 

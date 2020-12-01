@@ -7,11 +7,33 @@ function resetDFA(){
 
 //set all transitions invisible
 function clearTransitions(){
-	with (TransitionShortObj){
+	with (TransitionShortObj1){
+		visible = false;
+	}
+	with (TransitionShortObj2){
+		visible = false;
+	}
+	with (TransitionShortObj3){
 		visible = false;
 	}
 	
-	with (TransitionLongObj){
+	with (TransitionLongObj1){
+		visible = false;
+	}
+	with (TransitionLongObj2){
+		visible = false;
+	}
+	with (TransitionLongObj3){
+		visible = false;
+	}
+	
+	with (TransitionSelfObj1){
+		visible = false;
+	}
+	with (TransitionSelfObj2){
+		visible = false;
+	}
+	with (TransitionSelfObj3){
 		visible = false;
 	}
 }
@@ -29,6 +51,17 @@ function resetStateIndices(){
 	global.states_info.s3.to3.addedIndices = [-1,-1,-1]
 }
 
+
+function resetArrowCounts(){
+	global.num_red_left = 2;
+	global.num_green_left = 2;
+	global.num_blue_left = 2;
+	
+	
+	global.red_count.alarm[0] = 1;
+	global.green_count.alarm[0] = 1;
+	global.blue_count.alarm[0] = 1;
+}
 
 
 //used to initialize the transition array, 20 is arbitrary, just wanted to be big enough, need
