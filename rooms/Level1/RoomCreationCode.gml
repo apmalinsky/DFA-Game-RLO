@@ -28,7 +28,9 @@ global.red_count.color = "r";
 global.green_count = instance_create_layer(125, 125, "Instances", ArrowCountObj);
 global.green_count.image_index = global.num_green_left; 
 global.green_count.color = "g";
-//global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
+
+global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
+global.blue_count.visible = false;
 //global.blue_count.image_index = global.num_blue_left;
 //global.blue_count.color = "b";
 

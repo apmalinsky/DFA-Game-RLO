@@ -57,7 +57,6 @@ function resetArrowCounts(){
 	global.num_green_left = 2;
 	global.num_blue_left = 2;
 	
-	
 	global.red_count.alarm[0] = 1;
 	global.green_count.alarm[0] = 1;
 	global.blue_count.alarm[0] = 1;
