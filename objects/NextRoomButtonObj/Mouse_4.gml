@@ -4,7 +4,7 @@
 if (visible){
 	
 	
-	if (room == Level3){
+	if (room == Level5){
 		room_goto(HomeScreen);
 	}
 	else {

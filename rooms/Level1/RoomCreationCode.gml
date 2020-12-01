@@ -120,9 +120,9 @@ global.dfa = {
 }
 
 
-string1 = "r";
-string2 = "gr";
-string3 = "rggr";
+string1 = "g";
+string2 = "rgr";
+string3 = "rggg";
 
 x_pos = 901;
 y_pos = 564;
