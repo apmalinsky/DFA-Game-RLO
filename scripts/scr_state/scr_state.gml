@@ -31,27 +31,20 @@ function doStateLeftClick(){
 		//show_debug_message("Changed");
 	
 		if (!global.is_state_selected){
+			if (symToNumLeft(global.selected_transition_color_symbol) > 0){
 			global.is_state_selected = true;
 			updateStateSelected(getStateName(), self.id, x, self.bbox_top)
 
 			with (global.state_selected.id) {
 				image_blend = global.selected_state_color_rgb;
-			}
+			}}
 		}
 		else {
 
 			//select other state to make transition
 				
 				if (!global.duplicate_hovered_transition){
-					//fill in the saved_transition_instance to full color
-					with (global.hovered_transition) {
-						image_alpha = 1.0;
-						//show_debug_message(object_get_name(object_index))
-						sprite_index = getTransitionAnimation(object_get_name(object_index));
-					}
-					with (global.state_selected.id) {
-						image_blend = c_white;
-					}
+
 			
 					//add transition to dfa
 					createTransition(global.state_selected.name, getStateName(), global.selected_transition_color_symbol, string(global.hovered_transition))
@@ -268,9 +261,10 @@ function doStateHover(){
 			if (!contains(global.dfa.transitions, global.state_selected.name, getStateName(), global.selected_transition_color_symbol)){
 				show_debug_message("not duplicate")
 				with (global.hovered_transition) {
+					if (symToNumLeft(global.selected_transition_color_symbol) > 0){
 					image_blend = global.selected_transition_color;
 					visible = true
-					image_alpha = 0.5;
+					image_alpha = 0.5;}
 				}
 				global.duplicate_hovered_transition = false;
 			}
@@ -284,6 +278,16 @@ function doStateHover(){
 			global.duplicate_hovered_transition = true;
 		}
 	}
+}
+
+function symToNumLeft(sym){
+
+	if(sym = "r") return global.num_red_left 
+	if(sym = "g") return global.num_green_left 
+	if(sym = "b") return global.num_blue_left 
+
+
+
 }
 
 

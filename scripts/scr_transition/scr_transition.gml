@@ -1,7 +1,69 @@
 
 //add the transition to the dfas array
 function createTransition(s1, s2, sym, tID){ 
-	global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));   
+	
+	
+	if (sym = "r") {
+		
+		if(global.num_red_left > 0 ){
+			show_debug_message(global.num_red_left)
+			global.num_red_left -= 1;
+			global.red_count.alarm[2] = 1;
+			global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));
+			
+			with (global.hovered_transition) {
+				image_alpha = 1.0;						//show_debug_message(object_get_name(object_index))
+				sprite_index = getTransitionAnimation(object_get_name(object_index));
+			}
+			with (global.state_selected.id) {
+				image_blend = c_white;
+			}			
+		
+		}}
+		
+		
+	    else if (sym = "b") {
+		
+			if(global.num_blue_left > 0 ){
+				show_debug_message(global.num_blue_left)
+				global.num_blue_left -= 1;
+				global.blue_count.alarm[2] = 1;
+				global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));
+
+			with (global.hovered_transition) {
+				image_alpha = 1.0;						//show_debug_message(object_get_name(object_index))
+				sprite_index = getTransitionAnimation(object_get_name(object_index));
+			}
+			with (global.state_selected.id) {
+				image_blend = c_white;
+			}
+		
+			}}
+		
+		
+		else if (sym = "g") {
+		
+			if(global.num_green_left > 0 ){
+				show_debug_message(global.num_green_left)
+				global.num_green_left -= 1;
+				global.green_count.alarm[2] = 1;
+				global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));
+				
+			with (global.hovered_transition) {
+				image_alpha = 1.0;						//show_debug_message(object_get_name(object_index))
+				sprite_index = getTransitionAnimation(object_get_name(object_index));
+			}
+			with (global.state_selected.id) {
+				image_blend = c_white;
+			}
+		
+			}}
+		
+		else audio_play_sound(fail, 11, false)
+		
+	
+	
+	
 	//show_debug_message(getSource(createLabel(s1,s2,sym,tID)));
 	//show_debug_message(getTarget(createLabel(s1,s2,sym,tID)));
 	//show_debug_message(getSymbol(createLabel(s1,s2,sym,tID)));
@@ -71,8 +133,33 @@ function getStateIndicesByTransitionID(tID){
 
 function removeTransition(tID){	
 	
+	sym = tokenize(getLabelByTransitionID(global.dfa.transitions, tID), 2);
+	
 	removeTransitionIndex(tID);
-	global.dfa.transitions = remove(global.dfa.transitions, tID); 
+	global.dfa.transitions = remove(global.dfa.transitions, tID);
+	if (sym = "r") {
+		
+		global.num_red_left += 1;
+		global.red_count.alarm[2] = 1;
+		
+		
+		}
+		
+	if (sym = "b") {
+		
+		global.num_blue_left += 1;
+		global.blue_count.alarm[2] = 1;
+		
+		
+		}
+		
+	if (sym = "g") {
+		
+		global.num_green_left += 1;
+		global.green_count.alarm[2] = 1;
+		
+		
+		}
 	
 }
 
