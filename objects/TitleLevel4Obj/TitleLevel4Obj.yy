@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Title_level3",
-    "path": "sprites/Title_level3/Title_level3.yy",
+    "name": "Title_level4",
+    "path": "sprites/Title_level4/Title_level4.yy",
   },
   "solid": false,
   "visible": true,

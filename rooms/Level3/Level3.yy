@@ -97,13 +97,10 @@
     {"name":"inst_2732E9F0","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_D2238CD","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_4C6B1A54","path":"rooms/Level3/Level3.yy",},
-<<<<<<< HEAD
     {"name":"inst_4E501793","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_33B82912","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_7D83D144","path":"rooms/Level3/Level3.yy",},
-=======
     {"name":"inst_29FE9598","path":"rooms/Level3/Level3.yy",},
->>>>>>> b0c27476fe7e8972bcbdfa1739576fddcb020380
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

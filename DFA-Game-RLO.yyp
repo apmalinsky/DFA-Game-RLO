@@ -32,12 +32,9 @@
     {"id":{"name":"Input_sequence","path":"objects/Input_sequence/Input_sequence.yy",},"order":4,},
     {"id":{"name":"TransitionShortObj2","path":"objects/TransitionShortObj2/TransitionShortObj2.yy",},"order":5,},
     {"id":{"name":"BlueSelectorObj","path":"objects/BlueSelectorObj/BlueSelectorObj.yy",},"order":2,},
-<<<<<<< HEAD
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":6,},
     {"id":{"name":"Title_level1","path":"sprites/Title_level1/Title_level1.yy",},"order":0,},
-=======
     {"id":{"name":"Level4","path":"rooms/Level4/Level4.yy",},"order":6,},
->>>>>>> b0c27476fe7e8972bcbdfa1739576fddcb020380
     {"id":{"name":"Transition_short_1","path":"sprites/Transition_short_1/Transition_short_1.yy",},"order":0,},
     {"id":{"name":"Color_selector_blue_selected","path":"sprites/Color_selector_blue_selected/Color_selector_blue_selected.yy",},"order":3,},
     {"id":{"name":"RedSelectorObj","path":"objects/RedSelectorObj/RedSelectorObj.yy",},"order":0,},
@@ -61,7 +58,6 @@
     {"id":{"name":"DFA_animation","path":"sprites/DFA_animation/DFA_animation.yy",},"order":0,},
     {"id":{"name":"TransitionSelfObj1","path":"objects/TransitionSelfObj1/TransitionSelfObj1.yy",},"order":7,},
     {"id":{"name":"TransitionLongObj2","path":"objects/TransitionLongObj2/TransitionLongObj2.yy",},"order":3,},
-    {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":2,},
     {"id":{"name":"src_creationCodes","path":"scripts/src_creationCodes/src_creationCodes.yy",},"order":8,},
     {"id":{"name":"Transition_long_2","path":"sprites/Transition_long_2/Transition_long_2.yy",},"order":2,},
     {"id":{"name":"Level5_selector","path":"sprites/Level5_selector/Level5_selector.yy",},"order":4,},
@@ -161,15 +157,12 @@
   },
   "RoomOrder": [
     {"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},
+    {"name":"MenuLevels","path":"rooms/MenuLevels/MenuLevels.yy",},
     {"name":"Level1","path":"rooms/Level1/Level1.yy",},
     {"name":"Level2","path":"rooms/Level2/Level2.yy",},
     {"name":"Level3","path":"rooms/Level3/Level3.yy",},
-<<<<<<< HEAD
-    {"name":"MenuLevels","path":"rooms/MenuLevels/MenuLevels.yy",},
-=======
     {"name":"Level4","path":"rooms/Level4/Level4.yy",},
     {"name":"Level5","path":"rooms/Level5/Level5.yy",},
->>>>>>> b0c27476fe7e8972bcbdfa1739576fddcb020380
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

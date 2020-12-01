@@ -1,4 +1,3 @@
-
 //switch for edit mode, when making new rooms
 //global.editMode = true;
 global.editMode = false;
@@ -157,13 +156,9 @@ global.animationSequence = {
 	seq2: [0, 0, 0, 0, 0],
 	seq3: [0, 0, 0, 0, 0],
 }
-
 */
 
 
 global.doingAnimation = false;
 global.animatingTransition = 0;
 //global.doneAnimation = false;
-
-
-

@@ -58,7 +58,7 @@
     {"spriteId":{"name":"Background_level","path":"sprites/Background_level/Background_level.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/Level1/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/Level2/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_8CCFAC1","path":"rooms/Level2/Level2.yy",},
@@ -97,14 +97,9 @@
     {"name":"inst_2732E9F0","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_D2238CD","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_4C6B1A54","path":"rooms/Level2/Level2.yy",},
-<<<<<<< HEAD
     {"name":"inst_4E501793","path":"rooms/Level2/Level2.yy",},
-    {"name":"inst_7C9193F5","path":"rooms/Level2/Level2.yy",},
-    {"name":"inst_2F76AB75","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_37FE8C47","path":"rooms/Level2/Level2.yy",},
-=======
     {"name":"inst_29FE9598","path":"rooms/Level2/Level2.yy",},
->>>>>>> b0c27476fe7e8972bcbdfa1739576fddcb020380
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
