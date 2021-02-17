@@ -136,7 +136,3 @@ function add(arr, element){
 		}
 	}
 }
-
-
-
-

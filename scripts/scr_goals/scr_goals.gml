@@ -26,6 +26,9 @@ function reset_input(goal_id){
 		goal_id.sprite_index = Goal_end
 	
 	}
+	if(sprite_id = Completed_NA_goal || sprite_id = Failed_NA_goal){
+		goal_id.sprite_index = Goal_NA_end
+	}
 }
 
 function reset_all_goals(){

@@ -131,12 +131,15 @@ y_pos = 564;
 
 in1 = instance_create_layer(x_pos, y_pos, "Instances", Input_sequence);
 in1.sequence = string1;
+in1.acceptingOrNot = true;
 
 in2 = instance_create_layer(x_pos, y_pos + 64, "Instances",  Input_sequence);
 in2.sequence = string2;
+in2.acceptingOrNot = true;
 
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
+in3.acceptingOrNot = false;
 
 global.inputs[0] = in1;
 global.inputs[1] = in2;

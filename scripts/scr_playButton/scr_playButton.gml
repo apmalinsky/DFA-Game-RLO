@@ -120,6 +120,7 @@ function checkInput(num){
 	}
 	
 	//reached if could always find a target until the end of the string
+	global.inputs[num].end_obj.alarm[0] = 1;
 	return true;
 }
 
@@ -130,20 +131,37 @@ function checkAllStrings(){
 	for (var i=0;i<array_length_1d(global.inputs); i++){
 		show_debug_message(global.inputs[i].sequence);
 		if(!checkInput(i)){
-			audio_play_sound(fail, 11, false);
-			return false;
+			if(global.inputs[i].acceptingOrNot){
+				audio_play_sound(fail, 11, false);
+				return false;
 			}
+			else{
+				global.inputs[i].beaten = true;
+				audio_play_sound(Success, 11, false);
+				var tend = get_timer() + 500000;
+				show_debug_message(global.inputs[i].star);
+				global.inputs[i].end_obj.sprite_index = Completed_NA_goal;
+				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
+				global.star_count += 1;
+				while(get_timer()<tend){}
+				//Failed_goal
+			}
+		}
 		else {
-			global.inputs[i].beaten = true;
-			audio_play_sound(Success, 11, false);
-			var tend = get_timer() + 500000;
-			show_debug_message(global.inputs[i].star);
-			global.inputs[i].end_obj.sprite_index = Completed_goal;
-			global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
-			global.star_count += 1;
-			while(get_timer()<tend){}
-			
-			
+			if(global.inputs[i].acceptingOrNot){
+				global.inputs[i].beaten = true;
+				audio_play_sound(Success, 11, false);
+				var tend = get_timer() + 500000;
+				show_debug_message(global.inputs[i].star);
+				global.inputs[i].end_obj.sprite_index = Completed_goal;
+				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
+				global.star_count += 1;
+				while(get_timer()<tend){}
+			}
+			else{
+				audio_play_sound(fail, 11, false);
+				return false;
+			}
 		}
 	}
 	return true; //this true represents all strings ran successfully in the dfa
