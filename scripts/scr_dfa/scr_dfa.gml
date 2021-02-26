@@ -1,15 +1,67 @@
-//resets the DFA, maybe for new level
-function reset(){
+//reset the DFA, maybe for new level
+function resetDFA(){
 	global.dfa.transitions = initTrans();
-	global.dfa.states = array_create(global.num_states, 0);
-	global.dfa.alphabet = array_create(global.num_symbols, 0);
-
+	global.dfa.states = initStates();
+	global.dfa.alphabet = initAlphabet();
 }
 
-//clears transitions data if clear button
+//set all transitions invisible
 function clearTransitions(){
-	global.dfa.transitions = initTrans();
+	with (TransitionShortObj1){
+		visible = false;
+	}
+	with (TransitionShortObj2){
+		visible = false;
+	}
+	with (TransitionShortObj3){
+		visible = false;
+	}
+	
+	with (TransitionLongObj1){
+		visible = false;
+	}
+	with (TransitionLongObj2){
+		visible = false;
+	}
+	with (TransitionLongObj3){
+		visible = false;
+	}
+	
+	with (TransitionSelfObj1){
+		visible = false;
+	}
+	with (TransitionSelfObj2){
+		visible = false;
+	}
+	with (TransitionSelfObj3){
+		visible = false;
+	}
 }
+
+//reset state addedIndices
+function resetStateIndices(){
+	global.states_info.s1.to1.addedIndices = [-1,-1,-1]
+	global.states_info.s1.to2.addedIndices = [-1,-1,-1]
+	global.states_info.s1.to3.addedIndices = [-1,-1,-1]
+	global.states_info.s2.to1.addedIndices = [-1,-1,-1]
+	global.states_info.s2.to2.addedIndices = [-1,-1,-1]
+	global.states_info.s2.to3.addedIndices = [-1,-1,-1]
+	global.states_info.s3.to1.addedIndices = [-1,-1,-1]
+	global.states_info.s3.to2.addedIndices = [-1,-1,-1]
+	global.states_info.s3.to3.addedIndices = [-1,-1,-1]
+}
+
+
+function resetArrowCounts(){
+	global.num_red_left = 2;
+	global.num_green_left = 2;
+	global.num_blue_left = 2;
+	
+	global.red_count.alarm[0] = 1;
+	global.green_count.alarm[0] = 1;
+	global.blue_count.alarm[0] = 1;
+}
+
 
 //used to initialize the transition array, 20 is arbitrary, just wanted to be big enough, need
 //(num_states choose 2) + num_states max
@@ -17,6 +69,26 @@ function initTrans(){
 	global.total_num_left = global.num_red_left + global.num_green_left + global.num_blue_left;
 	return array_create(global.total_num_left, "");
 }
+
+
+//initialize the states array
+function initStates(){
+	var states = array_create(global.num_states, "");
+	
+	for (var i = 0; i < global.num_states; i++){
+		states[i] = "s" + string(i);
+	}
+	
+	return states;
+}
+
+
+//initialize the alphabet array
+function initAlphabet(){
+	array_create(global.num_symbols, "")
+	
+}
+
 
 //returns the state object associated with a state name
 function getStateObj(s_name){
@@ -29,78 +101,38 @@ function getStateObj(s_name){
 	return -1;
 }
 
-// checks if arr contains element, returns boolean
-//checks if transition id in dfa transitions
-function contains(arr, element){
+//&& getTarget(arr[i]) == target
+//checks if there is a transition with source state and a given symbol,
+//should prevent both duplicate transitions and non-determinism, returns true in this case
+//this would need to change for a non-deterministic DFA and would need to explicitly handle duplicate case
+function contains(arr, source, target, symbol){
 	for (var i=0;i<array_length_1d(arr); i++){
-		if(getArrowID(arr[i]) == string(element)){
+		if(getSource(arr[i]) == source && getSymbol(arr[i]) == symbol){
 			return true;
 		}
 	}
 	return false;
 }
 
-//removes element from arr if exists, also shifts the array elements 
-//returns true if exists, false else
-function remove(arr, element){
-	var found=false;
+
+
+//removes element from arr
+function remove(arr, tID){
 	for (var i=0;i<array_length_1d(arr); i++){
-		if(arr[i]==element){
-			found=true;
-			for (var j=i;j<array_length_1d(arr)-1;j++){
-				arr[@j]=arr[@j+1];
-			}
-			arr[@array_length_1d(arr)-1]="";
-			break;
+		if(getArrowID(arr[i]) == tID){
+			arr[i] = "";
 		}
 	}
-	return found;
+	return arr;
 }
 
 
-//adds element to arr if it doesn't exist, and returns true on success
+//adds element to arr
 function add(arr, element){
 	for (var i=0;i<array_length_1d(arr); i++){
-		if(arr[i] = ""){
-			//arr[@i]=element;
+		if(arr[i] == ""){
 			arr[i] = element;
 			return arr;
 		}
 	}
 }
-
-
-
-//checks if a string is in the language defined by the DFA
-function checkString(string){
-	if(string=="")
-		return true;
-	var curr = global.dfa.start;
-	var res=[2];
-	res[0]=false;
-	res[1]="";
-	for (var i=0; i<string_length(string);i++){
-		var sym = string_char_at(string,i);
-		res = hasTarget(curr, sym)
-		if(res[0])
-			curr=res[1];
-		else
-			return false;	
-	}
-	return true;
-}
-
-
-//checks whether all strings for this level are accepted by the DFA, returns boolean, see
-//checkString for per string code. Assumes all level strings are stored in global.strings
-function checkAllStrings(){
-	for (var i=0;i<array_length_1d(global.strings); i++){
-	if(!checkString(global.strings[i])){
-		return false;
-		}
-	}
-	return true;
-}
-
-
-

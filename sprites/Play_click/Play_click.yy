@@ -68,7 +68,7 @@
     "spriteId": {"name":"Play_click","path":"sprites/Play_click/Play_click.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -117,7 +117,7 @@
   ],
   "parent": {
     "name": "Play_button",
-    "path": "folders/Sprites/Play_button.yy",
+    "path": "folders/Sprites/Buttons/Play_button.yy",
   },
   "resourceVersion": "1.0",
   "name": "Play_click",

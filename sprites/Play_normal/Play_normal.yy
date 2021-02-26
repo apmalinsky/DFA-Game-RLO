@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Play_button",
-    "path": "folders/Sprites/Play_button.yy",
+    "path": "folders/Sprites/Buttons/Play_button.yy",
   },
   "resourceVersion": "1.0",
   "name": "Play_normal",
