@@ -83,7 +83,7 @@
     {"id":{"name":"pop","path":"sounds/pop/pop.yy",},"order":6,},
     {"id":{"name":"ArrowCountObj","path":"objects/ArrowCountObj/ArrowCountObj.yy",},"order":3,},
     {"id":{"name":"input_taken","path":"sounds/input_taken/input_taken.yy",},"order":5,},
-    {"id":{"name":"LevelDesign3States","path":"rooms/LevelDesign3States/LevelDesign3States.yy",},"order":10,},
+    {"id":{"name":"LevelDesign3States","path":"rooms/LevelDesign3States/LevelDesign3States.yy",},"order":0,},
     {"id":{"name":"NextRoomButtonObj","path":"objects/NextRoomButtonObj/NextRoomButtonObj.yy",},"order":2,},
     {"id":{"name":"Failed_red","path":"sprites/Failed_red/Failed_red.yy",},"order":9,},
     {"id":{"name":"Star_gold_64x64","path":"sprites/Star_gold_64x64/Star_gold_64x64.yy",},"order":7,},
@@ -212,6 +212,7 @@
     {"folderPath":"folders/Sprites/Titles_levels.yy","order":9,"resourceVersion":"1.0","name":"Titles_levels","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Titles.yy","order":23,"resourceVersion":"1.0","name":"Titles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tutorial.yy","order":10,"resourceVersion":"1.0","name":"Tutorial","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/LevelDesigns.yy","order":11,"resourceVersion":"1.0","name":"LevelDesigns","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
