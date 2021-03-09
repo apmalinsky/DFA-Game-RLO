@@ -9,11 +9,6 @@ if(global.editMode){
 }
 
 
-
-// create states and transitions
-genAllStates3State()
-genAllTransitions3State()
-
 global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
 
@@ -49,6 +44,60 @@ global.duplicate_hovered_transition = false;
 global.sequence = [];
 global.addedTransition = false;
 
+
+global.stateIDs = [100126,100128,100129]
+
+global.states_info = {
+	s1: {
+		name: "s1",
+		id: 100126,
+		to1: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100148, 100149, 100150]
+		},
+		to2: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100146, 100145, 100147]
+		},
+		to3: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100132, 100133, 100134]
+		}
+	},
+	s2: {
+		name: "s2",
+		id: 100128,
+		to1: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100131, 100135, 100130]
+		},
+		to2: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100155, 100154, 100156]
+		},
+		to3: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100143, 100142, 100144]
+		} 
+	},
+	s3: {
+		name: "s3",
+		id: 100129,
+		to1: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100136, 100138, 100137]
+		}, 
+		to2: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100140, 100139, 100141]
+		},
+		to3: {
+			addedIndices: [-1,-1,-1],
+			transitions: [100153, 100152, 100151]
+		}
+	},
+
+}
 
 //not sure if we just count total stars or per level, see scr_sceenObjs for how it might work
 global.num_levels = 1;
