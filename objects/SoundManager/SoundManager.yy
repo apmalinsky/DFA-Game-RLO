@@ -17,17 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
-  "properties": [
-    {"varType":3,"value":"False","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"inAnimation","tags":[],"resourceType":"GMObjectProperty",},
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"SoundManager","path":"objects/SoundManager/SoundManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "TransitionObjects",
-    "path": "folders/Objects/TransitionObjects.yy",
+    "name": "SoundObjects",
+    "path": "folders/Objects/SoundObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TransitionParentObj",
+  "name": "SoundManager",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -83,12 +83,14 @@
     {"id":{"name":"input_taken","path":"sounds/input_taken/input_taken.yy",},"order":5,},
     {"id":{"name":"NextRoomButtonObj","path":"objects/NextRoomButtonObj/NextRoomButtonObj.yy",},"order":2,},
     {"id":{"name":"Failed_red","path":"sprites/Failed_red/Failed_red.yy",},"order":9,},
+    {"id":{"name":"SoundManager","path":"objects/SoundManager/SoundManager.yy",},"order":0,},
     {"id":{"name":"Star_gold_64x64","path":"sprites/Star_gold_64x64/Star_gold_64x64.yy",},"order":7,},
     {"id":{"name":"EndStateObj","path":"objects/EndStateObj/EndStateObj.yy",},"order":2,},
     {"id":{"name":"Level5_selector_hover","path":"sprites/Level5_selector_hover/Level5_selector_hover.yy",},"order":9,},
     {"id":{"name":"Transition_self_3_animation","path":"sprites/Transition_self_3_animation/Transition_self_3_animation.yy",},"order":5,},
     {"id":{"name":"StateObj","path":"objects/StateObj/StateObj.yy",},"order":0,},
     {"id":{"name":"Completed_goal","path":"sprites/Completed_goal/Completed_goal.yy",},"order":15,},
+    {"id":{"name":"scr_sound","path":"scripts/scr_sound/scr_sound.yy",},"order":9,},
     {"id":{"name":"Failed_blue","path":"sprites/Failed_blue/Failed_blue.yy",},"order":7,},
     {"id":{"name":"State_i","path":"sprites/State_i/State_i.yy",},"order":0,},
     {"id":{"name":"Goal_end","path":"sprites/Goal_end/Goal_end.yy",},"order":13,},
@@ -205,9 +207,15 @@
     {"folderPath":"folders/Objects/SelectorLevels.yy","order":22,"resourceVersion":"1.0","name":"SelectorLevels","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Titles_levels.yy","order":9,"resourceVersion":"1.0","name":"Titles_levels","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Titles.yy","order":23,"resourceVersion":"1.0","name":"Titles","tags":[],"resourceType":"GMFolder",},
+<<<<<<< Updated upstream
+=======
+    {"folderPath":"folders/Objects/SoundObjects.yy","order":24,"resourceVersion":"1.0","name":"SoundObjects","tags":[],"resourceType":"GMFolder",},
+>>>>>>> Stashed changes
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"Music","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.3","name":"SoundEffects","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},

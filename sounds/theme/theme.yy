@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "Music",
+    "path": "audiogroups/Music",
   },
   "soundFile": "theme.mp3",
   "duration": 41.4352,
