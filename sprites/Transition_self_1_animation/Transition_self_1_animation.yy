@@ -41,7 +41,7 @@
     "spriteId": {"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 5.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
