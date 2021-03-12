@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "SoundEffects",
-    "path": "audiogroups/SoundEffects",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "input_taken.mp3",
   "duration": 0.396837,
