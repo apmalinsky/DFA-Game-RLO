@@ -172,7 +172,6 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"LevelTutorial","path":"rooms/LevelTutorial/LevelTutorial.yy",},},
     {"roomId":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
     {"roomId":{"name":"MenuLevels","path":"rooms/MenuLevels/MenuLevels.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
@@ -180,6 +179,7 @@
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"roomId":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
+    {"roomId":{"name":"LevelTutorial","path":"rooms/LevelTutorial/LevelTutorial.yy",},},
     {"roomId":{"name":"LevelDesign3States","path":"rooms/LevelDesign3States/LevelDesign3States.yy",},},
   ],
   "Folders": [
