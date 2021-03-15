@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "SettingsButton",
+    "path": "sprites/SettingsButton/SettingsButton.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SoundObjects",
-    "path": "folders/Objects/SoundObjects.yy",
+    "name": "ButtonObjects",
+    "path": "folders/Objects/ButtonObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SoundManager",
+  "name": "SettingsButtonObj",
   "tags": [],
   "resourceType": "GMObject",
 }

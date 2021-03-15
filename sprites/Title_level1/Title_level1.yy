@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b503d0f8-056e-4913-95a3-8f6646ad29ff","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Titles_levels",
-    "path": "folders/Sprites/Titles_levels.yy",
+    "name": "Titles",
+    "path": "folders/Sprites/Titles.yy",
   },
   "resourceVersion": "1.0",
   "name": "Title_level1",

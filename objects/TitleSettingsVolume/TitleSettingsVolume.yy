@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Title_settings_volume",
+    "path": "sprites/Title_settings_volume/Title_settings_volume.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SoundObjects",
-    "path": "folders/Objects/SoundObjects.yy",
+    "name": "Titles",
+    "path": "folders/Objects/Titles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SoundManager",
+  "name": "TitleSettingsVolume",
   "tags": [],
   "resourceType": "GMObject",
 }
