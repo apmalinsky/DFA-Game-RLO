@@ -1,6 +1,5 @@
 
-
-
+room_persistent = true;
 //switch for edit mode, when making new rooms
 //global.editMode = true;
 global.editMode = false;

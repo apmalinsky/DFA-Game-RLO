@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SettingsButtonSpr",
-    "path": "sprites/SettingsButtonSpr/SettingsButtonSpr.yy",
+    "name": "ExitButtonSpr",
+    "path": "sprites/ExitButtonSpr/ExitButtonSpr.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"SettingsButtonObj","path":"objects/SettingsButtonObj/SettingsButtonObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"ExitButtonObj","path":"objects/ExitButtonObj/ExitButtonObj.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +30,7 @@
     "path": "folders/Objects/ButtonObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SettingsButtonObj",
+  "name": "ExitButtonObj",
   "tags": [],
   "resourceType": "GMObject",
 }
