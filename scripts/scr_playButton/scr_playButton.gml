@@ -3,22 +3,9 @@
 
 
 function animateTransition(tID){
-	if(!global.firstAnimationInitialized){
-		global.firstAnimationInitialized = true;
-		with (real(tID)) {
-			sprite_index = getTransitionAnimation(object_get_name(object_index));
-			inAnimation = true;
-		}
-	}else{
-		ds_queue_enqueue(global.animatingQueue, "playAnimation");
-		ds_queue_enqueue(global.animatingQueue, real(tID));
-		with (real(tID)) {
-		    ds_queue_enqueue(global.animatingQueue, getTransitionAnimation(object_get_name(object_index)));
-		}
+	with (real(tID)) {
+		sprite_index = getTransitionAnimation(object_get_name(object_index));
 	}
-	//with (real(tID)) {
-		//sprite_index = getTransitionAnimation(object_get_name(object_index));
-	//}
 	
 	return true;
 }
@@ -105,10 +92,10 @@ function checkInput(num){
 			*/
 
 			
-			addSoundEffectsToQueue(input_taken, 11, false);
-			//audio_play_sound(input_taken, 11, false);
-			//var tend = get_timer() + 500000; //wait .5 seconds
-			//while(get_timer()<tend){}
+			
+			audio_play_sound(input_taken, 11, false);
+			var tend = get_timer() + 500000; //wait .5 seconds
+			while(get_timer()<tend){}
 			
 			show_debug_message("found transitions");
 			//animate
@@ -117,8 +104,8 @@ function checkInput(num){
 		}
 		else{
 			global.inputs[num].sequence_objs[i].alarm[1] = 1;
-			//var tend = get_timer() + 500000; //wait .5 seconds
-			//while(get_timer()<tend){}
+			var tend = get_timer() + 500000; //wait .5 seconds
+			while(get_timer()<tend){}
 			return false;
 		}
 		
@@ -141,53 +128,38 @@ function checkInput(num){
 //checks whether all strings for this level are accepted by the DFA, returns boolean, see
 //checkString for per string code. Assumes all level strings are stored in global.strings
 function checkAllStrings(){
-	if(!ds_queue_empty(global.animatingQueue)){
-		show_debug_message("NOT EMPTY");
-		while(!ds_queue_empty(global.animatingQueue)){
-			show_debug_message(ds_queue_dequeue(global.animatingQueue));
-		}
-		show_debug_message("NOT EMPTY");
-	}
-	else{
-		show_debug_message("EMPTY");
-	}
-	global.firstAnimationInitialized = false;
 	for (var i=0;i<array_length_1d(global.inputs); i++){
 		show_debug_message(global.inputs[i].sequence);
 		if(!checkInput(i)){
 			if(global.inputs[i].acceptingOrNot){
-				addSoundEffectsToQueue(fail, 11, false);
-				//audio_play_sound(fail, 11, false);
+				audio_play_sound(fail, 11, false);
 				return false;
 			}
 			else{
 				global.inputs[i].beaten = true;
-				addSoundEffectsToQueue(Success, 11, false);
-				//audio_play_sound(Success, 11, false);
-				//var tend = get_timer() + 500000;
+				audio_play_sound(Success, 11, false);
+				var tend = get_timer() + 500000;
 				show_debug_message(global.inputs[i].star);
 				global.inputs[i].end_obj.sprite_index = Completed_NA_goal;
 				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 				global.star_count += 1;
-				//while(get_timer()<tend){}
+				while(get_timer()<tend){}
 				//Failed_goal
 			}
 		}
 		else {
 			if(global.inputs[i].acceptingOrNot){
 				global.inputs[i].beaten = true;
-				addSoundEffectsToQueue(Success, 11, false);
-				//audio_play_sound(Success, 11, false);
-				//var tend = get_timer() + 500000;
+				audio_play_sound(Success, 11, false);
+				var tend = get_timer() + 500000;
 				show_debug_message(global.inputs[i].star);
 				global.inputs[i].end_obj.sprite_index = Completed_goal;
 				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 				global.star_count += 1;
-				//while(get_timer()<tend){}
+				while(get_timer()<tend){}
 			}
 			else{
-				addSoundEffectsToQueue(fail, 11, false);
-				//audio_play_sound(fail, 11, false);
+				audio_play_sound(fail, 11, false);
 				return false;
 			}
 		}
