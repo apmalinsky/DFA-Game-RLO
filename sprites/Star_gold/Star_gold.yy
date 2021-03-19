@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"176dbd50-7b7b-4875-9f20-6ce7bff45f70","path":"sprites/Star_gold/Star_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"176dbd50-7b7b-4875-9f20-6ce7bff45f70","path":"sprites/Star_gold/Star_gold.yy",},"LayerId":{"name":"d3e505c6-66a9-45d1-a2fd-7de2fed6c69d","path":"sprites/Star_gold/Star_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"176dbd50-7b7b-4875-9f20-6ce7bff45f70","path":"sprites/Star_gold/Star_gold.yy",},"LayerId":{"name":"d3e505c6-66a9-45d1-a2fd-7de2fed6c69d","path":"sprites/Star_gold/Star_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"Star_gold","path":"sprites/Star_gold/Star_gold.yy",},"resourceVersion":"1.0","name":"176dbd50-7b7b-4875-9f20-6ce7bff45f70","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
