@@ -44,7 +44,7 @@
     "spriteId": {"name":"Transition_short_2_animation","path":"sprites/Transition_short_2_animation/Transition_short_2_animation.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 5.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

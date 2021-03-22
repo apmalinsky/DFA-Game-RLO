@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 150,
-  "bbox_right": 359,
-  "bbox_top": 189,
-  "bbox_bottom": 363,
+  "bbox_left": 147,
+  "bbox_right": 354,
+  "bbox_top": 170,
+  "bbox_bottom": 367,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,36 +24,60 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d6bd52bc-614a-4bec-9e3f-69e49d161e0d","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d6bd52bc-614a-4bec-9e3f-69e49d161e0d","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce91f83c-de1b-42e7-843a-16c41d43d4f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"d6bd52bc-614a-4bec-9e3f-69e49d161e0d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5083b7dd-3021-4589-807b-d4f9dfa083ee","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5083b7dd-3021-4589-807b-d4f9dfa083ee","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce91f83c-de1b-42e7-843a-16c41d43d4f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"5083b7dd-3021-4589-807b-d4f9dfa083ee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5a3d15a2-569b-4fb4-ba44-be2d6d47dd34","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a3d15a2-569b-4fb4-ba44-be2d6d47dd34","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce91f83c-de1b-42e7-843a-16c41d43d4f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"5a3d15a2-569b-4fb4-ba44-be2d6d47dd34","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"50a896a8-a156-466c-84b1-de9637285111","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"50a896a8-a156-466c-84b1-de9637285111","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce91f83c-de1b-42e7-843a-16c41d43d4f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"50a896a8-a156-466c-84b1-de9637285111","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"30c7dfda-566e-47a4-9398-94fdf62e1f3a","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"30c7dfda-566e-47a4-9398-94fdf62e1f3a","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"30c7dfda-566e-47a4-9398-94fdf62e1f3a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c6b4deb1-d3bd-4d9d-91c3-47e0e9eb93a9","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c6b4deb1-d3bd-4d9d-91c3-47e0e9eb93a9","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"c6b4deb1-d3bd-4d9d-91c3-47e0e9eb93a9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"04ac5e0e-ff57-4285-87ac-a0206d9d0ae7","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"04ac5e0e-ff57-4285-87ac-a0206d9d0ae7","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"04ac5e0e-ff57-4285-87ac-a0206d9d0ae7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c3a787f4-1948-4751-9a61-0d3fdf063f1f","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c3a787f4-1948-4751-9a61-0d3fdf063f1f","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"c3a787f4-1948-4751-9a61-0d3fdf063f1f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7d226de1-0586-43b3-ade2-b665317340e6","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7d226de1-0586-43b3-ade2-b665317340e6","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"7d226de1-0586-43b3-ade2-b665317340e6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f7892e32-69dc-4885-9eaa-96c938ec202c","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f7892e32-69dc-4885-9eaa-96c938ec202c","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"f7892e32-69dc-4885-9eaa-96c938ec202c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0da31e98-1c7e-4438-ac3a-d3e2d11639f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0da31e98-1c7e-4438-ac3a-d3e2d11639f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"0da31e98-1c7e-4438-ac3a-d3e2d11639f1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0c495610-4429-41b4-8441-f421e7b63c06","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0c495610-4429-41b4-8441-f421e7b63c06","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"0c495610-4429-41b4-8441-f421e7b63c06","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f36296a-c2f5-46bd-ad0f-d1c1d418eb93","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f36296a-c2f5-46bd-ad0f-d1c1d418eb93","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"6f36296a-c2f5-46bd-ad0f-d1c1d418eb93","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"15225c97-a091-43ae-99a0-4541ed1d487c","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"15225c97-a091-43ae-99a0-4541ed1d487c","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"LayerId":{"name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","name":"15225c97-a091-43ae-99a0-4541ed1d487c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 10.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"939a6211-85dd-410d-8a0d-a58ca82eb2b7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d6bd52bc-614a-4bec-9e3f-69e49d161e0d","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b2cd011f-6354-441e-a14d-14716f1dd800","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5083b7dd-3021-4589-807b-d4f9dfa083ee","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"56af7d4c-3f8a-4d58-95da-3ecd5be17acc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a3d15a2-569b-4fb4-ba44-be2d6d47dd34","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"676f4ec5-f067-4f95-a70c-de8e28407376","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50a896a8-a156-466c-84b1-de9637285111","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"52116b7b-10c5-411b-acf9-d6a05d3e3b6c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"30c7dfda-566e-47a4-9398-94fdf62e1f3a","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"924254fb-4f92-414e-bb95-aaf5cb1b1047","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6b4deb1-d3bd-4d9d-91c3-47e0e9eb93a9","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c9cdf180-42bd-4b5c-8383-4d86cea8ad1c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04ac5e0e-ff57-4285-87ac-a0206d9d0ae7","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cc5413e2-98f4-41c1-95ea-4644de113a45","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3a787f4-1948-4751-9a61-0d3fdf063f1f","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c84cb299-6d4a-4d57-aee7-d5381f0f59f8","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d226de1-0586-43b3-ade2-b665317340e6","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"28bc6410-6871-4012-aa06-cc2004206c50","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f7892e32-69dc-4885-9eaa-96c938ec202c","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"068f2984-2bb6-45ca-a8a5-28e2e869f2c9","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0da31e98-1c7e-4438-ac3a-d3e2d11639f1","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"902fd561-8a74-42fd-b354-ff1b71c1fe89","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0c495610-4429-41b4-8441-f421e7b63c06","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"21605e83-b98f-4f9e-bd56-2e9f221f64c8","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f36296a-c2f5-46bd-ad0f-d1c1d418eb93","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4ccd9dc7-4fb1-497c-ba2b-5d4b8ad1b552","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"15225c97-a091-43ae-99a0-4541ed1d487c","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -77,7 +101,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce91f83c-de1b-42e7-843a-16c41d43d4f1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ce866db0-9de9-4ffc-a11a-ef533c848c25","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Transitions_Self",
