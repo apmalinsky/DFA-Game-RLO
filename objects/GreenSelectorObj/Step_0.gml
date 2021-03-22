@@ -8,19 +8,9 @@ if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, s
 	image_index = selected;
 	audio_play_sound(button_click, 10, false);
 	
-	if (selected){
+if (selected){
 		global.selected_transition_color = global.green
 		global.selected_transition_color_symbol = "g";
-		
-		//show_debug_message(global.currentMask)
-		if (global.inTutorial && global.currentMask == 4){
-			//show_debug_message("green arrow selected")
-			
-			show_debug_message("mask 4 now")
-			nextTutorialMask();
-		}
-		
-		
 	}
 	else {
 		global.selected_transition_color = ""

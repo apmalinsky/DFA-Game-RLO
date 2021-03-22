@@ -68,8 +68,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "LevelSet1",
+    "path": "folders/Rooms/LevelSet1.yy",
   },
   "resourceVersion": "1.0",
   "name": "Tutorial1",

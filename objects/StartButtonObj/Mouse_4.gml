@@ -18,9 +18,3 @@ if (global.star_count >= 2){
 	
 }
 
-// if in tutorial
-if (global.inTutorial && global.currentMask == 6){
-	//show_debug_message("NEXT")
-	nextTutorialMask()
-	
-}

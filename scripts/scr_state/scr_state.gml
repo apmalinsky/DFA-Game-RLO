@@ -38,47 +38,16 @@ function doStateLeftClick(){
 			with (global.state_selected.id) {
 				image_blend = global.selected_state_color_rgb;
 			}}
-			
-			// if initial state selected
-			if (global.inTutorial){
-				if (global.state_selected.name == "s1" && global.currentMask == 1){
-					//show_debug_message("NEEEXT")
-					nextTutorialMask()
-			
-				}
-		
-			}
-			
 		}
 		else {
 
 			//select other state to make transition
 				
 				if (!global.duplicate_hovered_transition){
-					// if next state selected after initial state selected 
-					if (global.inTutorial){
-						if (global.state_selected.name == "s1" && getStateName() == "s2" && global.currentMask == 2){
-							//show_debug_message("NEEEXT")
-							nextTutorialMask()
-							global.clickAnywhereMode = true;
-			
-						}
-		
-					}
-			
-					// if next state selected after initial state selected 
-					if (global.inTutorial){
-						if (global.state_selected.name == "s2" && getStateName() == "s3" && global.currentMask == 5){
-							//show_debug_message("NEEEXT")
-							nextTutorialMask()
-			
-						}
-		
-					}
+
 			
 					//add transition to dfa
 					createTransition(global.state_selected.name, getStateName(), global.selected_transition_color_symbol, string(global.hovered_transition))
-					
 					global.addedTransition = true;
 			
 					//add the transition to the DFA
@@ -87,24 +56,13 @@ function doStateLeftClick(){
 					
 					//add the tID to the tostate object's indices
 					addTransitionIndex();
-					
-					
-					
-					
 				}
-				
-				
-				
 			}
 		}
 
 
 	//for drawing self loops right away
 	doStateHover();
-	
-	
-	
-	
 }
 
 

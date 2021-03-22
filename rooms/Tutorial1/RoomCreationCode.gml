@@ -15,10 +15,7 @@ genAllStates3State()
 genAllTransitions3State()
 
 
-// global variables for tutorial controller
 global.inTutorial = true;
-global.clickAnywhereMode = false;
-global.clickAnywhereCounter = 0;
 
 
 

@@ -25,13 +25,7 @@ if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, s
 	image_index = selected;
 	audio_play_sound(button_click, 10, false);
 	
-	if (selected){
-		
-		if (global.inTutorial && global.currentMask == 0){
-			//show_debug_message("red arrow selected")
-			nextTutorialMask();
-		}
-		
+if (selected){
 		global.selected_transition_color = global.red
 		global.selected_transition_color_symbol = "r";
 	}
