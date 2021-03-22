@@ -1,0 +1,61 @@
+
+
+
+
+function nextTutorialMask(){
+	
+	with (global.maskObjectId){
+		image_index += 1
+		
+		global.currentMask = image_index
+		
+		
+		show_debug_message(global.currentMask)
+	
+		// hide mask until transition animation end
+		//if (global.currentMask == 7){
+		//	show_debug_message("hide mask")
+		//	global.clickAnywhereMode = true
+		//	//visible = false
+		
+		//}
+	
+		// hide mask after last mask finished
+		if (global.currentMask == 7){
+			show_debug_message("hide mask")
+			global.clickAnywhereMode = true
+		}
+		
+	}
+	
+
+	
+}
+
+
+
+//function clickAnywhereMode(){
+	// in step
+		//if (global.clickAnywhereMode){
+	
+		//	//show_debug_message("anywhere mode")
+	
+		//	if (mouse_check_button_released(mb_left)){		
+		//		global.clickAnywhereCounter += 1
+
+		//		if (global.clickAnywhereCounter == 2) {
+		//			nextTutorialMask()
+		//			global.clickAnywhereCounter = 0
+		//			global.clickAnywhereMode = false
+		//		}
+		
+		//	}
+	
+		//}
+
+	
+//}
+
+
+
+
