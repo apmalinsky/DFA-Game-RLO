@@ -146,6 +146,7 @@
     {"id":{"name":"TitleSettingsVolume","path":"objects/TitleSettingsVolume/TitleSettingsVolume.yy",},"order":5,},
     {"id":{"name":"Transition_self_1_animation","path":"sprites/Transition_self_1_animation/Transition_self_1_animation.yy",},"order":1,},
     {"id":{"name":"TitleLevel3Obj","path":"objects/TitleLevel3Obj/TitleLevel3Obj.yy",},"order":2,},
+    {"id":{"name":"scr_animation","path":"scripts/scr_animation/scr_animation.yy",},"order":12,},
     {"id":{"name":"Transition_short_2","path":"sprites/Transition_short_2/Transition_short_2.yy",},"order":2,},
     {"id":{"name":"Transition_long_3_animation","path":"sprites/Transition_long_3_animation/Transition_long_3_animation.yy",},"order":5,},
     {"id":{"name":"SliderButtonObj","path":"objects/SliderButtonObj/SliderButtonObj.yy",},"order":6,},
