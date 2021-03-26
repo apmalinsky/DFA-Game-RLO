@@ -16,6 +16,7 @@ function animateTransition(tID){
 		    ds_queue_enqueue(global.animatingQueue, getTransitionAnimation(object_get_name(object_index)));
 		}
 	}
+	global.animationInQueue++;
 	//with (real(tID)) {
 		//sprite_index = getTransitionAnimation(object_get_name(object_index));
 	//}
@@ -96,7 +97,7 @@ function checkInput(num){
 			
 			global.inputs[num].sequence_objs[i].image_alpha=0.5;
 			
-			global.inputs[num].sequence_objs[i].alarm[0] = 1;
+			addSpriteChange(global.inputs[num].sequence_objs[i], goalSpriteReturner(global.inputs[num].sequence_objs[i], false)); 
 			/*
 			with (global.inputs[num].sequence_objs[i]) {
 				//sprite_index = getTransitionAnimation(object_get_name(object_index));
@@ -116,7 +117,7 @@ function checkInput(num){
 			//animateTransition(res[2]);   //res[2] contains the transition arrow object id, assumes function is written
 		}
 		else{
-			global.inputs[num].sequence_objs[i].alarm[1] = 1;
+			addSpriteChange(global.inputs[num].sequence_objs[i], goalSpriteReturner(global.inputs[num].sequence_objs[i], true)); 
 			//var tend = get_timer() + 500000; //wait .5 seconds
 			//while(get_timer()<tend){}
 			return false;
@@ -127,7 +128,6 @@ function checkInput(num){
 	
 	if (curr != "s3"){
 		global.inputs[num].end_obj.alarm[1] = 1;
-		global.inputs[num].end_obj.image_alpha=0.5;
 		return false;
 	
 	}
@@ -151,7 +151,10 @@ function checkAllStrings(){
 	else{
 		show_debug_message("EMPTY");
 	}
-	global.firstAnimationInitialized = false;
+	
+	global.animationInQueue = 0;
+	global.firstAnimationInitialized = false; // very important for animateTransition
+	
 	for (var i=0;i<array_length_1d(global.inputs); i++){
 		show_debug_message(global.inputs[i].sequence);
 		if(!checkInput(i)){
@@ -192,5 +195,6 @@ function checkAllStrings(){
 			}
 		}
 	}
+	
 	return true; //this true represents all strings ran successfully in the dfa
 }

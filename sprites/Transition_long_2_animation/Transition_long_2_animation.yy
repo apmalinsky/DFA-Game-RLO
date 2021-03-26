@@ -86,7 +86,7 @@
     "spriteId": {"name":"Transition_long_2_animation","path":"sprites/Transition_long_2_animation/Transition_long_2_animation.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 15.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
