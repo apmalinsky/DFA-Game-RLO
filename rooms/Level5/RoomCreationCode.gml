@@ -25,7 +25,7 @@ global.green = make_colour_rgb(75, 230, 90);
 global.blue = make_colour_rgb(74, 136, 251);
 global.num_red_left = 2;
 global.num_green_left = 2;
-global.num_blue_left = 2;
+
 
 global.red_count = instance_create_layer(125, 35, "Instances", ArrowCountObj);
 global.red_count.image_index = global.num_red_left;
@@ -37,7 +37,7 @@ global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
 global.blue_count.image_index = global.num_blue_left;
 global.blue_count.color = "b";
 global.total_num_left = 0; //r + g + b
-global.selected_state_color_rgb = make_colour_rgb(157, 157, 0);
+global.selected_state_color_rgb = make_colour_rgb(255, 255, 200);
 global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};

@@ -46,7 +46,7 @@ global.blue_count.visible = false;
 //global.blue_count.color = "b";
 
 global.total_num_left = 0; //r + g + b
-global.selected_state_color_rgb = make_colour_rgb(157, 157, 0);
+global.selected_state_color_rgb = make_colour_rgb(255, 255, 200);
 global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};
@@ -96,7 +96,7 @@ in2.acceptingOrNot = true;
 
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
-in3.acceptingOrNot = false;
+in3.acceptingOrNot = true;
 
 global.inputs[0] = in1;
 global.inputs[1] = in2;
