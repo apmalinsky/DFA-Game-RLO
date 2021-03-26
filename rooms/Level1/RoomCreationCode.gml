@@ -1,4 +1,5 @@
 
+room_persistent = true;
 //switch for edit mode, when making new rooms
 //global.editMode = true;
 global.editMode = false;
@@ -7,6 +8,10 @@ global.editMode = false;
 // create states and transitions
 genAllStates3State()
 genAllTransitions3State()
+
+global.inTutorial = true;
+initializeTutorialMask();
+
 
 
 if(global.editMode){
@@ -74,9 +79,9 @@ global.dfa = {
 }
 
 
-string1 = "g";
-string2 = "rgr";
-string3 = "rggg";
+string1 = "rg";
+string2 = "gg";
+string3 = "rr";
 
 x_pos = 901;
 y_pos = 564;
