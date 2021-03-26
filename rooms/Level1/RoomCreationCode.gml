@@ -96,7 +96,7 @@ in2.acceptingOrNot = true;
 
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
-in3.acceptingOrNot = false;
+in3.acceptingOrNot = true;
 
 global.inputs[0] = in1;
 global.inputs[1] = in2;
