@@ -9,3 +9,4 @@ function playSound(name, priority, loopOrNot){
 	//var tend = get_timer() + 500000; //wait .5 seconds
 	//while(get_timer()<tend){}
 }
+

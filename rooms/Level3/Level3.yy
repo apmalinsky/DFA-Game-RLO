@@ -22,6 +22,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"ResetButtonObj","path":"objects/ResetButtonObj/ResetButtonObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.187499985,"scaleY":0.187499985,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":256.0,"resourceVersion":"1.0","name":"inst_EEFB88A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"MenuButtonObj","path":"objects/MenuButtonObj/MenuButtonObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.74999994,"scaleY":0.74999994,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":672.0,"resourceVersion":"1.0","name":"inst_1B753F5F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"NextRoomButtonObj","path":"objects/NextRoomButtonObj/NextRoomButtonObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.46875,"scaleY":0.46875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":664.0,"resourceVersion":"1.0","name":"inst_34737E6D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"SettingsButtonObj","path":"objects/SettingsButtonObj/SettingsButtonObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":704.0,"resourceVersion":"1.0","name":"inst_2604E459","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"TitleLevel3Obj","path":"objects/TitleLevel3Obj/TitleLevel3Obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":0.0,"resourceVersion":"1.0","name":"inst_7D83D144","tags":[],"resourceType":"GMRInstance",},
@@ -42,6 +43,7 @@
     {"name":"inst_EEFB88A","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_1B753F5F","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_34737E6D","path":"rooms/Level3/Level3.yy",},
+    {"name":"inst_2604E459","path":"rooms/Level3/Level3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -65,8 +67,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "LevelSet1",
+    "path": "folders/Rooms/LevelSet1.yy",
   },
   "resourceVersion": "1.0",
   "name": "Level3",

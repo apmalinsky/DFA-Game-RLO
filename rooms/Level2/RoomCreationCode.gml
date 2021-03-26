@@ -38,7 +38,7 @@ global.blue_count.visible = false;
 //global.blue_count.color = "b";
 
 global.total_num_left = 0; //r + g + b
-global.selected_state_color_rgb = make_colour_rgb(157, 157, 0);
+global.selected_state_color_rgb = make_colour_rgb(255, 255, 200);
 global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};
@@ -71,9 +71,9 @@ global.dfa = {
 }
 
 
-string1 = "r";
-string2 = "gr";
-string3 = "rggr";
+string1 = "rrr";
+string2 = "ggr";
+string3 = "rrggr";
 
 x_pos = 901;
 y_pos = 564;
