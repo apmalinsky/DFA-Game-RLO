@@ -25,7 +25,7 @@ global.green = make_colour_rgb(75, 230, 90);
 global.blue = make_colour_rgb(74, 136, 251);
 global.num_red_left = 2;
 global.num_green_left = 2;
-global.num_blue_left = 2;
+
 
 global.red_count = instance_create_layer(125, 35, "Instances", ArrowCountObj);
 global.red_count.image_index = global.num_red_left;
@@ -69,10 +69,10 @@ global.dfa = {
 	final: "s3"
 }
 
+string1 = "r";
+string2 = "gr";
+string3 = "rggr";
 
-string1 = "rrr";
-string2 = "ggr";
-string3 = "rrggr";
 
 x_pos = 901;
 y_pos = 564;
