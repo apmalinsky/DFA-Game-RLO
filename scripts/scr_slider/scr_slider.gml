@@ -7,6 +7,12 @@ function generateSlider(xPos, yPos, audioGroup){
 	var sliderBaseID = instance_create_layer(xPos, yPos, "Instances", SliderBaseObj);
 	with(sliderButtonID){
 		baseID = sliderBaseID;
+		if(audioGroup = Music){
+			sprite_index = slider_button_music_spr;
+		}
+		else if(audioGroup = SoundEffects){
+			sprite_index = slider_button_volume_spr;
+		}
 	}
 	with(sliderBaseID){
 		buttonID = sliderButtonID;
