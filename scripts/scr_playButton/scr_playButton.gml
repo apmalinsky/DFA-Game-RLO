@@ -142,18 +142,14 @@ function checkInput(num){
 //checkString for per string code. Assumes all level strings are stored in global.strings
 function checkAllStrings(){
 	if(!ds_queue_empty(global.animatingQueue)){
-		show_debug_message("NOT EMPTY");
-		while(!ds_queue_empty(global.animatingQueue)){
-			show_debug_message(ds_queue_dequeue(global.animatingQueue));
-		}
-		show_debug_message("NOT EMPTY");
+		ds_queue_clear(global.animatingQueue);
+		global.firstAnimationInitialized = true;
+		global.animationInQueue = 1;
 	}
 	else{
-		show_debug_message("EMPTY");
+		global.firstAnimationInitialized = false;
+		global.animationInQueue = 0;
 	}
-	
-	global.animationInQueue = 0;
-	global.firstAnimationInitialized = false; // very important for animateTransition
 	
 	for (var i=0;i<array_length_1d(global.inputs); i++){
 		show_debug_message(global.inputs[i].sequence);
