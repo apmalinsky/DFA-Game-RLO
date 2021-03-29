@@ -3,7 +3,7 @@
 
 //This function must be called for all sliders.
 function generateSlider(xPos, yPos, audioGroup){
-	var sliderButtonID = instance_create_layer(xPos, yPos, "Instances", SliderButtonObj);
+	var sliderButtonID = instance_create_layer(xPos, yPos, "Instances", SliderButtonMusicObj);
 	var sliderBaseID = instance_create_layer(xPos, yPos, "Instances", SliderBaseObj);
 	with(sliderButtonID){
 		baseID = sliderBaseID;

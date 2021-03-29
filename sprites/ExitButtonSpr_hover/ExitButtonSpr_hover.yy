@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"LayerId":{"name":"3c81839c-7013-44f8-abce-13c683b25f01","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ExitButtonSpr","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"52cfdc27-4e9f-4b2e-af6b-2ba6e6ee8b59","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"52cfdc27-4e9f-4b2e-af6b-2ba6e6ee8b59","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},"LayerId":{"name":"7e83e17a-6d21-4e24-bf4e-c1f870f4d57f","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ExitButtonSpr_hover","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"52cfdc27-4e9f-4b2e-af6b-2ba6e6ee8b59","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"ExitButtonSpr","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},
+    "spriteId": {"name":"ExitButtonSpr_hover","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"dd57f734-9223-482c-bae5-438166d2fa30","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f8964575-68ea-4ff0-83bd-902a9dd43c45","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"52cfdc27-4e9f-4b2e-af6b-2ba6e6ee8b59","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ExitButtonSpr","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},
+    "parent": {"name":"ExitButtonSpr_hover","path":"sprites/ExitButtonSpr_hover/ExitButtonSpr_hover.yy",},
     "resourceVersion": "1.3",
-    "name": "ExitButtonSpr",
+    "name": "ExitButtonSpr_hover",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3c81839c-7013-44f8-abce-13c683b25f01","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7e83e17a-6d21-4e24-bf4e-c1f870f4d57f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Buttons",
     "path": "folders/Sprites/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ExitButtonSpr",
+  "name": "ExitButtonSpr_hover",
   "tags": [],
   "resourceType": "GMSprite",
 }
