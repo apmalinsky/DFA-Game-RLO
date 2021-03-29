@@ -36,6 +36,7 @@ global.green_count.color = "g";
 global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
 global.blue_count.image_index = global.num_blue_left;
 global.blue_count.color = "b";
+global.blue_count.visible = false;
 global.total_num_left = 0; //r + g + b
 global.selected_state_color_rgb = make_colour_rgb(255, 255, 200);
 global.is_state_selected = false;

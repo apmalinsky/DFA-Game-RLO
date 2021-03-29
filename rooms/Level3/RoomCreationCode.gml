@@ -72,10 +72,9 @@ global.dfa = {
 	final: "s3"
 }
 
-
 string1 = "r";
 string2 = "gr";
-string3 = "rgr";
+string3 = "rggr";
 
 x_pos = 901;
 y_pos = 564;
