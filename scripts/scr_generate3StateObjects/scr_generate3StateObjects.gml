@@ -190,7 +190,7 @@ function genAllTransitions3State(){
 	selfB3.image_yscale = .35
 	selfB3.image_angle = 0
 	
-	global.states_info.s2.to2.transitions = [selfB2.id, selfB1.id, selfB3.id]
+	global.states_info.s2.to2.transitions = [selfB1.id, selfB2.id, selfB3.id]
 	
 	// STATE C
 	var selfC1 = instance_create_layer(156, 400, "Instances", TransitionSelfObj1);
@@ -382,7 +382,7 @@ function genAllTransitions3State(){
 	longAC3.image_yscale = .4
 	longAC3.image_angle = -180
 	
-	global.states_info.s1.to3.transitions = [longAC3.id, longAC2.id, longAC1.id]
+	global.states_info.s1.to3.transitions = [longAC1.id, longAC2.id, longAC3.id]
 	
 	// STATE CA
 	var longCA1 = instance_create_layer(156, 400, "Instances", TransitionLongObj1);
