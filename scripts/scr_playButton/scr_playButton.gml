@@ -67,7 +67,7 @@ function resetAnimationSequence(){
 function checkInput(num){
 	
 	if(global.inputs[num].sequence==""){
-	    show_debug_message("Empty Input Seen");
+	    //show_debug_message("Empty Input Seen");
 		return true;
 		}
 	var curr = global.dfa.start;
@@ -111,7 +111,7 @@ function checkInput(num){
 			//var tend = get_timer() + 500000; //wait .5 seconds
 			//while(get_timer()<tend){}
 			
-			show_debug_message("found transitions");
+			//show_debug_message("found transitions");
 			//animate
 			//addAnimation(res[2]);
 			//animateTransition(res[2]);   //res[2] contains the transition arrow object id, assumes function is written
@@ -142,7 +142,6 @@ function checkInput(num){
 //checkString for per string code. Assumes all level strings are stored in global.strings
 function checkAllStrings(){
 	if(!ds_queue_empty(global.animatingQueue)){
-		show_debug_message("NOT EMPTY");
 		while(!ds_queue_empty(global.animatingQueue)){
 			show_debug_message(ds_queue_dequeue(global.animatingQueue));
 		}
@@ -156,7 +155,7 @@ function checkAllStrings(){
 	global.firstAnimationInitialized = false; // very important for animateTransition
 	
 	for (var i=0;i<array_length_1d(global.inputs); i++){
-		show_debug_message(global.inputs[i].sequence);
+		//show_debug_message(global.inputs[i].sequence);
 		if(!checkInput(i)){
 			if(global.inputs[i].acceptingOrNot){
 				addSoundEffectsToQueue(fail, 11, false);
@@ -168,7 +167,7 @@ function checkAllStrings(){
 				addSoundEffectsToQueue(Success, 11, false);
 				//audio_play_sound(Success, 11, false);
 				//var tend = get_timer() + 500000;
-				show_debug_message(global.inputs[i].star);
+				//show_debug_message(global.inputs[i].star);
 				global.inputs[i].end_obj.sprite_index = Completed_NA_goal;
 				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 				global.star_count += 1;
@@ -182,7 +181,7 @@ function checkAllStrings(){
 				addSoundEffectsToQueue(Success, 11, false);
 				//audio_play_sound(Success, 11, false);
 				//var tend = get_timer() + 500000;
-				show_debug_message(global.inputs[i].star);
+				//show_debug_message(global.inputs[i].star);
 				global.inputs[i].end_obj.sprite_index = Completed_goal;
 				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 				global.star_count += 1;
