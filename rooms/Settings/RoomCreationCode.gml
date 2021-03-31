@@ -1,2 +1,2 @@
-generateSlider(674, 256, Music);
-generateSlider(674, 512, SoundEffects);
+generateSlider(674, 350, Music);
+generateSlider(674, 550, SoundEffects);

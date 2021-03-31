@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 13,
-  "bbox_right": 64,
-  "bbox_top": 10,
-  "bbox_bottom": 66,
+  "bbox_left": 5,
+  "bbox_right": 122,
+  "bbox_top": 5,
+  "bbox_bottom": 122,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 80,
-  "height": 80,
+  "width": 128,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d3840009-a385-41a1-9bd8-f15e3246ddba","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3840009-a385-41a1-9bd8-f15e3246ddba","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"LayerId":{"name":"0a4d05ff-03c3-4f6a-abf7-a1b160f31ba7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ExitButtonSpr","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","name":"d3840009-a385-41a1-9bd8-f15e3246ddba","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"LayerId":{"name":"3c81839c-7013-44f8-abce-13c683b25f01","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ExitButtonSpr","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"ExitButtonSpr","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"73b71aec-dbfd-47b5-8bb7-cba6dead9150","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3840009-a385-41a1-9bd8-f15e3246ddba","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dd57f734-9223-482c-bae5-438166d2fa30","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa25c36f-a80e-4ed0-ab4e-3a16c2ee91d7","path":"sprites/ExitButtonSpr/ExitButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0a4d05ff-03c3-4f6a-abf7-a1b160f31ba7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3c81839c-7013-44f8-abce-13c683b25f01","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Buttons",
