@@ -241,7 +241,7 @@ function getNextAvailableIndex(indices){
 function getTransitionId(){
 	hoveredStateObj = getHoveredStateObj(getSelectedStateObj());
 	//setHoveredStateObj()
-	show_debug_message(hoveredStateObj) // this somehow fixes the order error
+	//show_debug_message(hoveredStateObj) // this somehow fixes the order error
 	var addedIndices = hoveredStateObj.addedIndices;
 
 	return hoveredStateObj.transitions[getNextAvailableIndex(addedIndices)];
@@ -301,7 +301,7 @@ function doStateHover(){
 	
 			//only draw transition if not in dfa already
 			if (!contains(global.dfa.transitions, global.state_selected.name, getStateName(), global.selected_transition_color_symbol)){
-				show_debug_message("not duplicate")
+				//show_debug_message("not duplicate")
 				with (global.hovered_transition) {
 					if (symToNumLeft(global.selected_transition_color_symbol) > 0){
 					image_blend = global.selected_transition_color;
@@ -311,12 +311,12 @@ function doStateHover(){
 				global.duplicate_hovered_transition = false;
 			}
 			else {
-				show_debug_message("duplicate")
+				//show_debug_message("duplicate")
 				global.duplicate_hovered_transition = true;
 			}
 		}
 		else {
-			show_debug_message("NO TRANSTIONS AVAILABLE")
+			//show_debug_message("NO TRANSTIONS AVAILABLE")
 			global.duplicate_hovered_transition = true;
 		}
 	}
@@ -353,7 +353,7 @@ function doStateLeave(){
 
 	global.duplicate_hovered_transition = false;
 
-	show_debug_message(global.dfa.transitions)
+	//show_debug_message(global.dfa.transitions)
 }
 
 
@@ -387,7 +387,7 @@ function getSymbols(s1){
 function hasTarget(s1, sym){
 
 	var trans = global.dfa.transitions;
-	show_debug_message("WWWWWWWW")
+	//show_debug_message("WWWWWWWW")
 	//show_debug_message(trans);
 
 

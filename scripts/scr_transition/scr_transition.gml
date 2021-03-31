@@ -6,7 +6,7 @@ function createTransition(s1, s2, sym, tID){
 	if (sym = "r") {
 		
 		if(global.num_red_left > 0 ){
-			show_debug_message(global.num_red_left)
+			//show_debug_message(global.num_red_left)
 			global.num_red_left -= 1;
 			global.red_count.alarm[2] = 1;
 			global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));
@@ -25,7 +25,7 @@ function createTransition(s1, s2, sym, tID){
 	    else if (sym = "b") {
 		
 			if(global.num_blue_left > 0 ){
-				show_debug_message(global.num_blue_left)
+				//show_debug_message(global.num_blue_left)
 				global.num_blue_left -= 1;
 				global.blue_count.alarm[2] = 1;
 				global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));
@@ -44,7 +44,7 @@ function createTransition(s1, s2, sym, tID){
 		else if (sym = "g") {
 		
 			if(global.num_green_left > 0 ){
-				show_debug_message(global.num_green_left)
+				//show_debug_message(global.num_green_left)
 				global.num_green_left -= 1;
 				global.green_count.alarm[2] = 1;
 				global.dfa.transitions = add(global.dfa.transitions, createLabel(s1,s2,sym,tID));
