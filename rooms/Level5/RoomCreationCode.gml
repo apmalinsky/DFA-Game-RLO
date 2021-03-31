@@ -11,6 +11,7 @@ if(global.editMode){
 
 
 // create states and transitions
+resetVars()
 genAllStates3State()
 genAllTransitions3State()
 
@@ -27,15 +28,16 @@ global.num_red_left = 2;
 global.num_green_left = 2;
 
 
-global.red_count = instance_create_layer(125, 35, "Instances", ArrowCountObj);
+global.red_count = instance_create_layer(125, 160, "Instances", ArrowCountObj);
 global.red_count.image_index = global.num_red_left;
 global.red_count.color = "r";
-global.green_count = instance_create_layer(125, 125, "Instances", ArrowCountObj);
+global.green_count = instance_create_layer(125, 250, "Instances", ArrowCountObj);
 global.green_count.image_index = global.num_green_left; 
 global.green_count.color = "g";
-global.blue_count = instance_create_layer(125, 215, "Instances", ArrowCountObj);
+global.blue_count = instance_create_layer(125, 340, "Instances", ArrowCountObj);
 global.blue_count.image_index = global.num_blue_left;
 global.blue_count.color = "b";
+global.blue_count.visible = false;
 global.total_num_left = 0; //r + g + b
 global.selected_state_color_rgb = make_colour_rgb(255, 255, 200);
 global.is_state_selected = false;

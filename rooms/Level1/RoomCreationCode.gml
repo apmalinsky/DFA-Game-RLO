@@ -6,6 +6,7 @@ global.editMode = false;
 
 
 // create states and transitions
+resetVars()
 genAllStates3State()
 genAllTransitions3State()
 
