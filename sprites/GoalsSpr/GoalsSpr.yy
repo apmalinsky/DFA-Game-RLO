@@ -2,20 +2,20 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 127,
-  "bbox_top": 0,
-  "bbox_bottom": 63,
+  "bbox_left": 31,
+  "bbox_right": 480,
+  "bbox_top": 28,
+  "bbox_bottom": 227,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
-  "height": 64,
+  "width": 512,
+  "height": 256,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"807bc588-702e-4b87-8fcc-b5b59692356a","path":"sprites/GoalsSpr/GoalsSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"807bc588-702e-4b87-8fcc-b5b59692356a","path":"sprites/GoalsSpr/GoalsSpr.yy",},"LayerId":{"name":"2abbe1d0-30e6-479e-bd4a-bd264acf6f1f","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","name":"807bc588-702e-4b87-8fcc-b5b59692356a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/GoalsSpr/GoalsSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/GoalsSpr/GoalsSpr.yy",},"LayerId":{"name":"0bc2cf2f-7845-4f6c-8f43-13b9282fe1cf","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","name":"219bb4de-bf31-444e-ad68-aee1cff76b76","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cfabc4b2-a89d-4287-ad06-c06fccd295f5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"807bc588-702e-4b87-8fcc-b5b59692356a","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2aff9a5d-7b9c-4723-8685-aa3265d2b056","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 15,
+    "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2abbe1d0-30e6-479e-bd4a-bd264acf6f1f","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0bc2cf2f-7845-4f6c-8f43-13b9282fe1cf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Goals",

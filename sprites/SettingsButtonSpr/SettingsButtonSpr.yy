@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 15,
-  "bbox_right": 67,
-  "bbox_top": 15,
-  "bbox_bottom": 65,
+  "bbox_left": 1,
+  "bbox_right": 126,
+  "bbox_top": 1,
+  "bbox_bottom": 126,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 80,
-  "height": 80,
+  "width": 128,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"58420c7f-49e5-4dae-85d4-c27fa00586e8","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"58420c7f-49e5-4dae-85d4-c27fa00586e8","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"LayerId":{"name":"9844ac94-eecd-4479-b689-a036fb56d000","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SettingsButtonSpr","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"resourceVersion":"1.0","name":"58420c7f-49e5-4dae-85d4-c27fa00586e8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7cc381bc-9cfc-447f-8c0b-8ae770960d56","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7cc381bc-9cfc-447f-8c0b-8ae770960d56","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"LayerId":{"name":"9a13552c-e660-4b09-a338-5ba8be6161b9","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"SettingsButtonSpr","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"resourceVersion":"1.0","name":"7cc381bc-9cfc-447f-8c0b-8ae770960d56","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"SettingsButtonSpr","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c19023aa-1452-437c-ad6d-fd75244cfecd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58420c7f-49e5-4dae-85d4-c27fa00586e8","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4a5b5a33-8cbc-431d-be01-fd54d298e1b5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cc381bc-9cfc-447f-8c0b-8ae770960d56","path":"sprites/SettingsButtonSpr/SettingsButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9844ac94-eecd-4479-b689-a036fb56d000","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9a13552c-e660-4b09-a338-5ba8be6161b9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Buttons",
