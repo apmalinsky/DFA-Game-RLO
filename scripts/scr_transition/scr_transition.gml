@@ -132,34 +132,46 @@ function getStateIndicesByTransitionID(tID){
 
 
 function removeTransition(tID){	
+	//show_debug_message(global.is_hovering_state)
+	//if (global.is_hovering_state == false){
+		//show_debug_message("can remove transition")
+	//sym = tokenize(getLabelByTransitionID(global.dfa.transitions, tID), 2);
 	
-	sym = tokenize(getLabelByTransitionID(global.dfa.transitions, tID), 2);
+		var sym = getSymbol(getLabelByTransitionID(global.dfa.transitions, tID))
 	
-	removeTransitionIndex(tID);
-	global.dfa.transitions = remove(global.dfa.transitions, tID);
-	if (sym = "r") {
+		removeTransitionIndex(tID);
+		global.dfa.transitions = remove(global.dfa.transitions, tID);
+		if (sym = "r") {
 		
-		global.num_red_left += 1;
-		global.red_count.alarm[2] = 1;
-		
-		
-		}
-		
-	if (sym = "b") {
-		
-		global.num_blue_left += 1;
-		global.blue_count.alarm[2] = 1;
+			global.num_red_left += 1;
+			global.red_count.alarm[2] = 1;
 		
 		
 		}
 		
-	if (sym = "g") {
+		if (sym = "b") {
 		
-		global.num_green_left += 1;
-		global.green_count.alarm[2] = 1;
+			global.num_blue_left += 1;
+			global.blue_count.alarm[2] = 1;
 		
 		
 		}
+		
+		if (sym = "g") {
+		
+			global.num_green_left += 1;
+			global.green_count.alarm[2] = 1;
+		
+		
+		}
+		
+	//}
+	//else {
+	//	show_debug_message("can't remove transition")
+	//}
+	
+	
+	
 	
 }
 

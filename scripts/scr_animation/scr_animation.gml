@@ -18,15 +18,20 @@ function animationEnded(objectID){
 			if(global.animationInQueue = 0){
 				playSoundsChangeSprites();
 			}
+			
 			var tend = get_timer() + 1000000; 
 			while(get_timer()<tend){}
 		}
 	}
+	
 }
 
 function addSpriteChange(objectID, spriteID){
 	ds_queue_enqueue(global.animatingQueue, "changeSprite", objectID, spriteID);
 }
+
+
+global.tempCounter = 0
 
 function playSoundsChangeSprites(){
 	while(!ds_queue_empty(global.animatingQueue)){
@@ -47,6 +52,14 @@ function playSoundsChangeSprites(){
 			break;
 		}
 	}
+	
+	global.tempCounter += 1
+	if (global.inTutorial && global.tempCounter == 2){
+		//show_debug_message("next mask")
+		nextTutorialMask()
+		showTutorialMask()
+	}
+	
 }
 
 function goalSpriteReturner(objectID, failedOrNot){

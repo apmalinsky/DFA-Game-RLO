@@ -192,5 +192,6 @@ function checkAllStrings(){
 		}
 	}
 	
+	
 	return true; //this true represents all strings ran successfully in the dfa
 }
