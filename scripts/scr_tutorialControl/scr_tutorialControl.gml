@@ -16,12 +16,15 @@ function initializeTutorialMask(){
 }
 
 
-
-
-
 function nextTutorialMask(){
 	
 	with (global.maskObjectId){
+		//// hide mask after last mask finished
+		//if (global.currentMask == 7){
+		//	show_debug_message("hide mask")
+		//	global.clickAnywhereMode = true
+		//}
+		
 		image_index += 1
 		
 		global.currentMask = image_index
@@ -30,18 +33,13 @@ function nextTutorialMask(){
 		show_debug_message(global.currentMask)
 	
 		// hide mask until transition animation end
-		//if (global.currentMask == 7){
-		//	show_debug_message("hide mask")
-		//	global.clickAnywhereMode = true
-		//	//visible = false
-		
-		//}
-	
-		// hide mask after last mask finished
 		if (global.currentMask == 7){
-			show_debug_message("hide mask")
 			global.clickAnywhereMode = true
+			//visible = false
+		
 		}
+	
+		
 		
 	}
 	
@@ -49,6 +47,21 @@ function nextTutorialMask(){
 	
 }
 
+
+function hideTutorialMask(){
+	with (global.maskObjectId){
+		
+		visible = false
+	}
+}
+
+function showTutorialMask(){
+	with (global.maskObjectId){
+		
+		visible = true
+	}
+	
+}
 
 
 //function clickAnywhereMode(){

@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 49,
-  "bbox_right": 549,
-  "bbox_top": 64,
-  "bbox_bottom": 84,
+  "bbox_left": 4,
+  "bbox_right": 507,
+  "bbox_top": 22,
+  "bbox_bottom": 41,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 600,
-  "height": 150,
+  "width": 512,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aa316ae0-d37e-404a-a056-48c0047ac879","path":"sprites/slider_base_spr/slider_base_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aa316ae0-d37e-404a-a056-48c0047ac879","path":"sprites/slider_base_spr/slider_base_spr.yy",},"LayerId":{"name":"b08ef60c-0c2a-4269-a585-cd6007bbf82a","path":"sprites/slider_base_spr/slider_base_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"slider_base_spr","path":"sprites/slider_base_spr/slider_base_spr.yy",},"resourceVersion":"1.0","name":"aa316ae0-d37e-404a-a056-48c0047ac879","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0fd8f306-c12d-4b7f-8286-1a1a8b709489","path":"sprites/slider_base_spr/slider_base_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0fd8f306-c12d-4b7f-8286-1a1a8b709489","path":"sprites/slider_base_spr/slider_base_spr.yy",},"LayerId":{"name":"3e6ca814-6c6d-40a6-9b18-b234bb558378","path":"sprites/slider_base_spr/slider_base_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"slider_base_spr","path":"sprites/slider_base_spr/slider_base_spr.yy",},"resourceVersion":"1.0","name":"0fd8f306-c12d-4b7f-8286-1a1a8b709489","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"slider_base_spr","path":"sprites/slider_base_spr/slider_base_spr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cba52f4b-3c01-4013-b127-ba74f09339ee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa316ae0-d37e-404a-a056-48c0047ac879","path":"sprites/slider_base_spr/slider_base_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9cd01fda-0fcd-447a-b05d-a32be20e9c92","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0fd8f306-c12d-4b7f-8286-1a1a8b709489","path":"sprites/slider_base_spr/slider_base_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 300,
-    "yorigin": 75,
+    "xorigin": 256,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"slider_base_spr","path":"sprites/slider_base_spr/slider_base_spr.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b08ef60c-0c2a-4269-a585-cd6007bbf82a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e6ca814-6c6d-40a6-9b18-b234bb558378","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Volume_slider",
