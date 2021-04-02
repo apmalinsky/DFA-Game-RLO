@@ -4,62 +4,62 @@
 // script for generating state and transition objects for 3-State level designs
 
 
+function resetVars(){
+	// initialize global variables
+	global.stateIDs = [0,0,0] //A, B, C
 
-// initialize global variables
-global.stateIDs = [0,0,0] //A, B, C
+	global.states_info = {
+		s1: {
+			name: "s1",
+			id: 0,
+			to1: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			},
+			to2: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			},
+			to3: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			}
+		},
+		s2: {
+			name: "s2",
+			id: 0,
+			to1: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			},
+			to2: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			},
+			to3: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			} 
+		},
+		s3: {
+			name: "s3",
+			id: 0,
+			to1: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			}, 
+			to2: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			},
+			to3: {
+				addedIndices: [-1,-1,-1],
+				transitions: [0,0,0]
+			}
+		},
 
-global.states_info = {
-	s1: {
-		name: "s1",
-		id: 0,
-		to1: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		},
-		to2: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		},
-		to3: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		}
-	},
-	s2: {
-		name: "s2",
-		id: 0,
-		to1: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		},
-		to2: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		},
-		to3: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		} 
-	},
-	s3: {
-		name: "s3",
-		id: 0,
-		to1: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		}, 
-		to2: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		},
-		to3: {
-			addedIndices: [-1,-1,-1],
-			transitions: [0,0,0]
-		}
-	},
-
+	}
 }
-
 
 
 
