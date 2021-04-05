@@ -5,10 +5,13 @@
 function animateTransition(tID){
 	if(!global.firstAnimationInitialized){
 		global.firstAnimationInitialized = true;
+		is_right = isRightTransition(tID);
 		with (real(tID)) {
 			sprite_index = getTransitionAnimation(object_get_name(object_index));
 			inAnimation = true;
 		}
+			if(is_right){ pointer_move_right() }
+			else{ pointer_move_left() }
 	}else{
 		ds_queue_enqueue(global.animatingQueue, "playAnimation");
 		ds_queue_enqueue(global.animatingQueue, real(tID));
@@ -151,6 +154,9 @@ function checkAllStrings(){
 		global.animationInQueue = 0;
 	}
 	
+//	global.pointer.visible = true;  // Uncomment this to show the pointer
+	
+	
 	for (var i=0;i<array_length_1d(global.inputs); i++){
 		//show_debug_message(global.inputs[i].sequence);
 		if(!checkInput(i)){
@@ -187,11 +193,12 @@ function checkAllStrings(){
 			else{
 				addSoundEffectsToQueue(fail, 11, false);
 				//audio_play_sound(fail, 11, false);
+				pointer_reset();
 				return false;
 			}
 		}
 	}
 	
-	
+	pointer_reset();
 	return true; //this true represents all strings ran successfully in the dfa
 }
