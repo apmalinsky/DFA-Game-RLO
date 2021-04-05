@@ -121,8 +121,17 @@ function tokenize(transitionLabel, index){
 	}
 }	
 
+// returns whether a transition goes right (or left) as boolean
+function isRightTransition(tID){
+	var label = getLabelByTransitionID(global.dfa.transitions, tID);
+	source = getSource(label);
+	target = getTarget(label);
+	return target > source;
+	
+}
 
 
+//what does this return?? 
 function getStateIndicesByTransitionID(tID){
 	//"s1-s2-r-100014"
 	

@@ -121,6 +121,18 @@ function genAllStates3State(){
 	global.states_info.s1.id = stateA.id
 	global.states_info.s2.id = stateB.id
 	global.states_info.s3.id = stateB.id
+	
+	genPointer();
+}
+
+function genPointer(){
+
+global.pointerx = 350;
+global.pointery = 255;
+global.pointer = instance_create_layer(global.pointerx, global.pointery, "Instances", pointer);
+global.pointer.visible = false;
+global.pointer.depth = -100;
+
 }
 
 
