@@ -10,8 +10,8 @@ function animateTransition(tID){
 			sprite_index = getTransitionAnimation(object_get_name(object_index));
 			inAnimation = true;
 		}
-		if(is_right){ pointer_move_right() }
-		else{ pointer_move_left() }
+			if(is_right){ pointer_move_right() }
+			else{ pointer_move_left() }
 	}else{
 		ds_queue_enqueue(global.animatingQueue, "playAnimation");
 		ds_queue_enqueue(global.animatingQueue, real(tID));
@@ -154,7 +154,7 @@ function checkAllStrings(){
 		global.animationInQueue = 0;
 	}
 	
-	global.pointer.visible = true;
+//	global.pointer.visible = true;  // Uncomment this to show the pointer
 	
 	
 	for (var i=0;i<array_length_1d(global.inputs); i++){

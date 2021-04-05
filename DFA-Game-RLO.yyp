@@ -61,6 +61,7 @@
     {"id":{"name":"Background_level","path":"sprites/Background_level/Background_level.yy",},"order":1,},
     {"id":{"name":"State_end","path":"sprites/State_end/State_end.yy",},"order":2,},
     {"id":{"name":"TransitionSelfObj2","path":"objects/TransitionSelfObj2/TransitionSelfObj2.yy",},"order":8,},
+    {"id":{"name":"Path1","path":"paths/Path1/Path1.yy",},"order":0,},
     {"id":{"name":"Play_hover","path":"sprites/Play_hover/Play_hover.yy",},"order":1,},
     {"id":{"name":"Level3_selector_hover","path":"sprites/Level3_selector_hover/Level3_selector_hover.yy",},"order":7,},
     {"id":{"name":"scr_screenObjs","path":"scripts/scr_screenObjs/scr_screenObjs.yy",},"order":4,},
