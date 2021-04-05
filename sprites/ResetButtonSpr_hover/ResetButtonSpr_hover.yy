@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ae6e4855-7b57-4966-a615-99aed477d34c","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ae6e4855-7b57-4966-a615-99aed477d34c","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"LayerId":{"name":"1407dee6-8667-43ef-a92f-ce9a68f1db4b","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"resourceVersion":"1.0","name":"ae6e4855-7b57-4966-a615-99aed477d34c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7bd55e33-6c75-485d-848b-48a6bd29660d","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7bd55e33-6c75-485d-848b-48a6bd29660d","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},"LayerId":{"name":"554290d0-9ade-4212-8d8a-fb40abdfadb5","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ResetButtonSpr_hover","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"7bd55e33-6c75-485d-848b-48a6bd29660d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},
+    "spriteId": {"name":"ResetButtonSpr_hover","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a650d4e6-cae5-44d6-81d6-99fdb2013f38","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae6e4855-7b57-4966-a615-99aed477d34c","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1fbfa5d7-fabe-4795-aefe-c37321bde6d4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7bd55e33-6c75-485d-848b-48a6bd29660d","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ResetButtonSpr","path":"sprites/ResetButtonSpr/ResetButtonSpr.yy",},
+    "parent": {"name":"ResetButtonSpr_hover","path":"sprites/ResetButtonSpr_hover/ResetButtonSpr_hover.yy",},
     "resourceVersion": "1.3",
-    "name": "ResetButtonSpr",
+    "name": "ResetButtonSpr_hover",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1407dee6-8667-43ef-a92f-ce9a68f1db4b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"554290d0-9ade-4212-8d8a-fb40abdfadb5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Buttons",
     "path": "folders/Sprites/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ResetButtonSpr",
+  "name": "ResetButtonSpr_hover",
   "tags": [],
   "resourceType": "GMSprite",
 }
