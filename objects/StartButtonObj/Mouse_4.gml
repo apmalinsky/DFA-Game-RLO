@@ -10,6 +10,7 @@ global.runningDFA = true;
 
 checkAllStrings();
 
+modifyStars(room, star_count);
 
 if (global.star_count >= 2){
 	with (NextRoomButtonObj){
