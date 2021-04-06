@@ -3,6 +3,10 @@ game_set_speed(30, gamespeed_fps)
 
 room_persistent = true;
 
+global.inLevelSet1 = false;
+global.inLevelSet2 = false;
+
+
 // global variables for tutorial controller
 global.inTutorial = false;
 global.clickAnywhereMode = false;
