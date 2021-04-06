@@ -109,6 +109,7 @@
     {"id":{"name":"Failed_blue","path":"sprites/Failed_blue/Failed_blue.yy",},"order":7,},
     {"id":{"name":"State_i","path":"sprites/State_i/State_i.yy",},"order":0,},
     {"id":{"name":"SettingsButtonSpr_hover","path":"sprites/SettingsButtonSpr_hover/SettingsButtonSpr_hover.yy",},"order":14,},
+    {"id":{"name":"NextLevelMask","path":"objects/NextLevelMask/NextLevelMask.yy",},"order":1,},
     {"id":{"name":"Goal_end","path":"sprites/Goal_end/Goal_end.yy",},"order":13,},
     {"id":{"name":"Transition_long_3","path":"sprites/Transition_long_3/Transition_long_3.yy",},"order":4,},
     {"id":{"name":"TransitionShortObj1","path":"objects/TransitionShortObj1/TransitionShortObj1.yy",},"order":2,},

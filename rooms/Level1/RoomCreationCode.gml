@@ -5,13 +5,21 @@ room_persistent = true;
 global.editMode = false;
 
 
+global.inLevelSet1 = true;
+
+
 // create states and transitions
 resetVars()
 genAllStates3State()
 genAllTransitions3State()
 
-global.inTutorial = true;
-initializeTutorialMask();
+
+if (!global.completedTutorial){
+	global.inTutorial = true;
+	initializeTutorialMask();
+}
+
+
 
 
 
