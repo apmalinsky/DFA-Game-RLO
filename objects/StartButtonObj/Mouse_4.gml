@@ -13,8 +13,14 @@ checkAllStrings();
 
 if (global.star_count >= 2){
 	with (NextRoomButtonObj){
-		visible = true;
+		visible = true;		
 	}
+	
+	// if in tutorial room
+	//if (room == Level1){
+	//	initializeNextLevelMask()
+	//}
+
 	
 }
 

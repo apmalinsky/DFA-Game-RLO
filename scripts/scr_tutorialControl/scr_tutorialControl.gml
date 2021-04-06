@@ -16,6 +16,22 @@ function initializeTutorialMask(){
 }
 
 
+function initializeNextLevelMask(){
+	
+	// initialize next level mask
+	var mask = instance_create_layer(0, 0, "Instances", NextLevelMask);
+	mask.x = 0
+	mask.y = 0
+	mask.image_xscale = 1
+	mask.image_yscale = 1
+	mask.image_angle = 0
+	mask.image_speed = 0
+	global.nextLevelMaskObjectId = mask.id;
+	visible = false;
+}
+
+
+
 function nextTutorialMask(){
 	
 	with (global.maskObjectId){		

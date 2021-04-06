@@ -11,6 +11,7 @@ if (global.clickAnywhereMode){
 			global.inTutorial = false
 			global.clickAnywhereCounter = 0
 			global.clickAnywhereMode = false
+			global.completedTutorial = true;
 		}
 		
 		global.clickAnywhereCounter += 1
