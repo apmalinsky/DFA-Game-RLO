@@ -10,7 +10,7 @@ if (visible){
 		global.current_level_max = global.current_level;
 	}
 	if (room == Level5){
-		room_goto(MenuLevels);
+		room_goto(LevelSet1Selection);
 	}
 	else {
 		room_goto_next();
