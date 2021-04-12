@@ -1,8 +1,16 @@
+
+
+
 //reset the DFA, maybe for new level
 function resetDFA(){
 	global.dfa.transitions = initTrans();
 	global.dfa.states = initStates();
 	global.dfa.alphabet = initAlphabet();
+	
+	
+	clearTransitions();
+	resetStateIndices();
+	resetArrowCounts();
 }
 
 //set all transitions invisible

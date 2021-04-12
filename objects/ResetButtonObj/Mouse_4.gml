@@ -2,9 +2,7 @@
 
 
 resetDFA();
-clearTransitions();
-resetStateIndices();
-resetArrowCounts();
+
 
 
 

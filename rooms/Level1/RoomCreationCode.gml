@@ -14,6 +14,7 @@ genAllStates3State()
 genAllTransitions3State()
 
 
+
 if (!global.completedTutorial){
 	global.inTutorial = true;
 	initializeTutorialMask();
@@ -60,6 +61,7 @@ global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};
 global.is_hovering_state = false;
+global.hover_state_id = 0;
 global.hovered_transition = 0;
 global.duplicate_hovered_transition = false;
 global.sequence = [];
@@ -137,4 +139,4 @@ global.animatingTransition = 0;
 //global.doneAnimation = false;
 
 
-
+resetDFA();

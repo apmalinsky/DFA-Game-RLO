@@ -272,12 +272,14 @@ function addTransitionIndex(){
 
 function removeTransitionIndex(tID){
 	var addedIndices = getStateIndicesByTransitionID(tID);
+	show_debug_message(addedIndices)
 
 	for (i = 0; i < array_length_1d(addedIndices); i += 1){
 		if (addedIndices[i] == tID){
 			addedIndices[i] = -1;
 		}
 	}
+	show_debug_message(addedIndices)
 }
 
 

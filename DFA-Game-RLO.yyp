@@ -86,7 +86,6 @@
     {"id":{"name":"State_i_current","path":"sprites/State_i_current/State_i_current.yy",},"order":5,},
     {"id":{"name":"Failed_green","path":"sprites/Failed_green/Failed_green.yy",},"order":8,},
     {"id":{"name":"Completed_green","path":"sprites/Completed_green/Completed_green.yy",},"order":5,},
-    {"id":{"name":"Tutorial1","path":"rooms/Tutorial1/Tutorial1.yy",},"order":1,},
     {"id":{"name":"Transition_long_animation","path":"sprites/Transition_long_animation/Transition_long_animation.yy",},"order":2,},
     {"id":{"name":"Level2_selector","path":"sprites/Level2_selector/Level2_selector.yy",},"order":1,},
     {"id":{"name":"pop","path":"sounds/pop/pop.yy",},"order":6,},
@@ -194,7 +193,6 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
-    {"roomId":{"name":"Tutorial1","path":"rooms/Tutorial1/Tutorial1.yy",},},
     {"roomId":{"name":"MenuLevels","path":"rooms/MenuLevels/MenuLevels.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},

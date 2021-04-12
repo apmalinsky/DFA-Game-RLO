@@ -15,6 +15,7 @@ resetVars()
 genAllStates3State()
 genAllTransitions3State()
 
+
 global.selected_transition_color = "";
 global.selected_transition_color_symbol = ""
 
@@ -48,6 +49,7 @@ global.is_state_selected = false;
 //store state id, x, and y coordinates
 global.state_selected = {name: "", id: 0, x: 0, y: 0};
 global.is_hovering_state = false;
+global.hover_state_id = 0;
 global.hovered_transition = 0;
 global.duplicate_hovered_transition = false;
 global.sequence = [];
@@ -104,3 +106,4 @@ in3.alarm[0] = 1;
 
 
 global.runningDFA = false;
+resetDFA();
