@@ -2,7 +2,7 @@
 
 
 if (visible){
-	
+	ds_queue_clear(global.animatingQueue);
 	window_set_cursor(cr_default);
 	room_persistent = false;
 	if (global.current_level == global.current_level_max){
