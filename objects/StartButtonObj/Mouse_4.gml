@@ -6,6 +6,7 @@ if (!global.inTutorial){
 }
 
 
+modifyStars(room, global.star_count);
 
 if (global.inTutorial){
 	

@@ -2,14 +2,13 @@
 
 
 if (visible){
-	
-	
+
 	if (room == Level1){
 		global.completedTutorial = true;
 	}
 	
-	
-	
+	ds_queue_clear(global.animatingQueue);
+
 	window_set_cursor(cr_default);
 	room_persistent = false;
 	if (global.current_level == global.current_level_max){
@@ -17,7 +16,7 @@ if (visible){
 		global.current_level_max = global.current_level;
 	}
 	if (room == Level5){
-		room_goto(MenuLevels);
+		room_goto(LevelSet1Selection);
 	}
 	else {
 		room_goto_next();

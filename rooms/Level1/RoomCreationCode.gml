@@ -68,10 +68,10 @@ global.sequence = [];
 global.addedTransition = false;
 
 
-//not sure if we just count total stars or per level, see scr_sceenObjs for how it might work
-global.num_levels = 1;
-global.star_count = 0;
-global.level_stars = array_create(global.num_levels, 0);
+//Local star count
+global.star_count = getStars(room);
+//This level was not played before
+if(global.star_count = -1)global.star_count = 0;
 
 
 //Logic global vars

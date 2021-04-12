@@ -144,10 +144,11 @@ function checkInput(num){
 //checks whether all strings for this level are accepted by the DFA, returns boolean, see
 //checkString for per string code. Assumes all level strings are stored in global.strings
 function checkAllStrings(){
+	global.star_count = 0;
 	if(!ds_queue_empty(global.animatingQueue)){
 		ds_queue_clear(global.animatingQueue);
 		global.firstAnimationInitialized = true;
-		global.animationInQueue = 1;
+		global.animationInQueue = 0;
 	}
 	else{
 		global.firstAnimationInitialized = false;
