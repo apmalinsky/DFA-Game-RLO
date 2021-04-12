@@ -148,7 +148,7 @@ function checkAllStrings(){
 	if(!ds_queue_empty(global.animatingQueue)){
 		ds_queue_clear(global.animatingQueue);
 		global.firstAnimationInitialized = true;
-		global.animationInQueue = 1;
+		global.animationInQueue = 0;
 	}
 	else{
 		global.firstAnimationInitialized = false;
