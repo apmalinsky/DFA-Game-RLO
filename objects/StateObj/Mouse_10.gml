@@ -11,6 +11,7 @@ audio_play_sound(button_hover, 10, false);
 
 
 sprite_index = State_i_current;
+global.hover_state_id = id
 
 
 doStateHover();

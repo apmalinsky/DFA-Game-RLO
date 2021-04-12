@@ -18,6 +18,7 @@ function animationEnded(objectID){
 			}
 			if(global.animationInQueue = 0){
 				playSoundsChangeSprites();
+				show_debug_message("animation ended")
 			}
 			
 			var tend = get_timer() + 1000000; 
@@ -55,11 +56,12 @@ function playSoundsChangeSprites(){
 	}
 	
 	global.tempCounter += 1
-	if (global.inTutorial && global.tempCounter == 2){
+	if (global.inTutorial && global.currentMask == 6 && global.tempCounter == 2){
 		//show_debug_message("next mask")
 		nextTutorialMask()
 		showTutorialMask()
 	}
+	
 	
 }
 

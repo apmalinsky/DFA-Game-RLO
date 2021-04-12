@@ -13,6 +13,8 @@ function initializeTutorialMask(){
 	mask.image_speed = 0
 	global.maskObjectId = mask.id;
 	global.currentMask = 0;
+	global.mask5Part1 = false;
+	
 }
 
 
@@ -43,7 +45,7 @@ function nextTutorialMask(){
 		show_debug_message(global.currentMask)
 		
 		
-		// hide mask until transition animation end
+		
 		if (global.currentMask == 7 || global.currentMask == 8){
 			//show_debug_message("RRRRRRRRRRRRRRRRRRRR")
 			global.clickAnywhereMode = true
