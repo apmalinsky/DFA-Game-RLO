@@ -27,11 +27,13 @@ function updateStateSelected(name, id, x, y){
 
 function doStateLeftClick(){
 	
+	
 	if (global.selected_transition_color != "") {
 		//show_debug_message("Changed");
 	
 		if (!global.is_state_selected){
 			if (symToNumLeft(global.selected_transition_color_symbol) > 0){
+				
 				global.is_state_selected = true;
 				updateStateSelected(getStateName(), self.id, x, self.bbox_top)
 
@@ -272,12 +274,14 @@ function addTransitionIndex(){
 
 function removeTransitionIndex(tID){
 	var addedIndices = getStateIndicesByTransitionID(tID);
+	show_debug_message(addedIndices)
 
 	for (i = 0; i < array_length_1d(addedIndices); i += 1){
 		if (addedIndices[i] == tID){
 			addedIndices[i] = -1;
 		}
 	}
+	show_debug_message(addedIndices)
 }
 
 

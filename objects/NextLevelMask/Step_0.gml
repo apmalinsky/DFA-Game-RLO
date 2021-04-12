@@ -17,7 +17,10 @@ if (visible){
 	}
 
 
-
+	//if (!global.inTutorial && !global.completedTutorial && ){
+		
+		
+	//}
 
 }
 
