@@ -3,6 +3,13 @@
 
 if (visible){
 	
+	
+	if (room == Level1){
+		global.completedTutorial = true;
+	}
+	
+	
+	
 	window_set_cursor(cr_default);
 	room_persistent = false;
 	if (global.current_level == global.current_level_max){

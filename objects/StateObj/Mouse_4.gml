@@ -18,7 +18,35 @@ with (StartButtonObj)
 if (!startButtonPressed){
 	//show_debug_message("start button not pressed")
 	
-	doStateLeftClick();
+	if (!global.inTutorial){
+		doStateLeftClick();
+	}
+	
+	
+	if (global.inTutorial){
+		
+		
+		if (global.currentMask == 1 && getStateName() == "s1"){
+			doStateLeftClick();
+				
+		}
+		if (global.currentMask == 2 && getStateName() == "s2"){
+			doStateLeftClick();
+		}
+		if (global.currentMask == 5 && getStateName() == "s2"){
+			doStateLeftClick();
+			global.mask5Part1 = true;
+		}
+		else {
+			show_debug_message("not allowed")
+		}
+		
+		
+		
+		
+	}
+	
+	
 }
 
 
