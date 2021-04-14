@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "slider_button_music_spr",
-    "path": "sprites/slider_button_music_spr/slider_button_music_spr.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

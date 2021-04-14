@@ -27,17 +27,20 @@ function updateStateSelected(name, id, x, y){
 
 function doStateLeftClick(){
 	
+	
 	if (global.selected_transition_color != "") {
 		//show_debug_message("Changed");
 	
 		if (!global.is_state_selected){
 			if (symToNumLeft(global.selected_transition_color_symbol) > 0){
-			global.is_state_selected = true;
-			updateStateSelected(getStateName(), self.id, x, self.bbox_top)
+				
+				global.is_state_selected = true;
+				updateStateSelected(getStateName(), self.id, x, self.bbox_top)
 
-			with (global.state_selected.id) {
-				image_blend = global.selected_state_color_rgb;
-			}}
+				with (global.state_selected.id) {
+					image_blend = global.selected_state_color_rgb;
+				}
+			}
 			
 			// if initial state selected
 			if (global.inTutorial){
@@ -63,11 +66,7 @@ function doStateLeftClick(){
 							global.clickAnywhereMode = true;
 			
 						}
-		
-					}
-			
-					// if next state selected after initial state selected 
-					if (global.inTutorial){
+						
 						if (global.state_selected.name == "s2" && getStateName() == "s3" && global.currentMask == 5){
 							//show_debug_message("NEEEXT")
 							nextTutorialMask()
@@ -76,17 +75,34 @@ function doStateLeftClick(){
 		
 					}
 			
-					//add transition to dfa
-					createTransition(global.state_selected.name, getStateName(), global.selected_transition_color_symbol, string(global.hovered_transition))
 					
-					global.addedTransition = true;
+					//if click on selected state
+					if (global.state_selected.name == getStateName()){
+						global.is_state_selected = false;
+
+						with (global.state_selected.id) {
+							image_blend = c_white;
+						}
+						updateStateSelected(pointer_null, 0, 0, 0)
+
+						//show_debug_message("DESELECT STATE")
+					}
+					else {
+						//add transition to dfa
+						createTransition(global.state_selected.name, getStateName(), global.selected_transition_color_symbol, string(global.hovered_transition))
+					
+						global.addedTransition = true;
 			
-					//add the transition to the DFA
-					global.is_state_selected = false;
-					updateStateSelected(pointer_null, 0, 0, 0)
+						//add the transition to the DFA
+						global.is_state_selected = false;
+						updateStateSelected(pointer_null, 0, 0, 0)
 					
-					//add the tID to the tostate object's indices
-					addTransitionIndex();
+						//add the tID to the tostate object's indices
+						addTransitionIndex();
+						
+					}
+					
+
 					
 					
 					
@@ -258,12 +274,14 @@ function addTransitionIndex(){
 
 function removeTransitionIndex(tID){
 	var addedIndices = getStateIndicesByTransitionID(tID);
+	show_debug_message(addedIndices)
 
 	for (i = 0; i < array_length_1d(addedIndices); i += 1){
 		if (addedIndices[i] == tID){
 			addedIndices[i] = -1;
 		}
 	}
+	show_debug_message(addedIndices)
 }
 
 
@@ -299,20 +317,25 @@ function doStateHover(){
 			global.hovered_transition = getTransitionId();
 			//show_debug_message("show transition: " + string(global.hovered_transition))
 	
-			//only draw transition if not in dfa already
-			if (!contains(global.dfa.transitions, global.state_selected.name, getStateName(), global.selected_transition_color_symbol)){
-				//show_debug_message("not duplicate")
-				with (global.hovered_transition) {
-					if (symToNumLeft(global.selected_transition_color_symbol) > 0){
-					image_blend = global.selected_transition_color;
-					visible = true
-					image_alpha = 0.5;}
+	
+			// if self loop, don't draw for level set 1
+			if (global.inLevelSet1 && global.state_selected.name != getStateName()){
+				
+				//only draw transition if not in dfa already
+				if (!contains(global.dfa.transitions, global.state_selected.name, getStateName(), global.selected_transition_color_symbol)){
+					//show_debug_message("not duplicate")
+					with (global.hovered_transition) {
+						if (symToNumLeft(global.selected_transition_color_symbol) > 0){
+						image_blend = global.selected_transition_color;
+						visible = true
+						image_alpha = 0.5;}
+					}
+					global.duplicate_hovered_transition = false;
 				}
-				global.duplicate_hovered_transition = false;
-			}
-			else {
-				//show_debug_message("duplicate")
-				global.duplicate_hovered_transition = true;
+				else {
+					//show_debug_message("duplicate")
+					global.duplicate_hovered_transition = true;
+				}
 			}
 		}
 		else {

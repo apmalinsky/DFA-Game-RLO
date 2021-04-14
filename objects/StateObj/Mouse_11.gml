@@ -12,6 +12,7 @@ window_set_cursor(cr_default);
 //show_debug_message(global.addedTransition)
 
 sprite_index = State_i;
+global.hover_state_id = 0;
 
 doStateLeave();
 

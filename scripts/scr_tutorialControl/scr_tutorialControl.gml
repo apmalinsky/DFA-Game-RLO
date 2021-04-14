@@ -13,30 +13,44 @@ function initializeTutorialMask(){
 	mask.image_speed = 0
 	global.maskObjectId = mask.id;
 	global.currentMask = 0;
+	global.mask5Part1 = false;
+	
 }
+
+
+function initializeNextLevelMask(){
+	
+	// initialize next level mask
+	var mask = instance_create_layer(0, 0, "Instances", NextLevelMask);
+	mask.x = 0
+	mask.y = 0
+	mask.image_xscale = 1
+	mask.image_yscale = 1
+	mask.image_angle = 0
+	mask.image_speed = 0
+	global.nextLevelMaskObjectId = mask.id;
+	visible = false;
+}
+
 
 
 function nextTutorialMask(){
 	
-	with (global.maskObjectId){
-		//// hide mask after last mask finished
-		//if (global.currentMask == 7){
-		//	show_debug_message("hide mask")
-		//	global.clickAnywhereMode = true
-		//}
-		
+	with (global.maskObjectId){		
 		image_index += 1
 		
 		global.currentMask = image_index
 		
 		
 		show_debug_message(global.currentMask)
-	
-		// hide mask until transition animation end
-		if (global.currentMask == 7){
-			global.clickAnywhereMode = true
-			//visible = false
 		
+		
+		
+		if (global.currentMask == 7 || global.currentMask == 8){
+			//show_debug_message("RRRRRRRRRRRRRRRRRRRR")
+			global.clickAnywhereMode = true
+			show_debug_message("click anywhere is on")
+			show_debug_message(global.clickAnywhereMode)
 		}
 	
 		
@@ -64,27 +78,6 @@ function showTutorialMask(){
 }
 
 
-//function clickAnywhereMode(){
-	// in step
-		//if (global.clickAnywhereMode){
-	
-		//	//show_debug_message("anywhere mode")
-	
-		//	if (mouse_check_button_released(mb_left)){		
-		//		global.clickAnywhereCounter += 1
-
-		//		if (global.clickAnywhereCounter == 2) {
-		//			nextTutorialMask()
-		//			global.clickAnywhereCounter = 0
-		//			global.clickAnywhereMode = false
-		//		}
-		
-		//	}
-	
-		//}
-
-	
-//}
 
 
 
