@@ -208,7 +208,6 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
-    {"roomId":{"name":"Tutorial1","path":"rooms/Tutorial1/Tutorial1.yy",},},
     {"roomId":{"name":"LevelSetMenu","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
