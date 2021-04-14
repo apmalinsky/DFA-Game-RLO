@@ -6,15 +6,24 @@ function animationEnded(objectID){
 			inAnimation = false;
 			playSoundsChangeSprites();
 			if(!ds_queue_empty(global.animatingQueue)){
+				global.animationInQueue--;
+				
 				if(ds_queue_head(global.animatingQueue) = "playAnimation"){
-					global.animationInQueue--;
 					ds_queue_dequeue(global.animatingQueue);
 					with(ds_queue_dequeue(global.animatingQueue)){
 						sprite_index = ds_queue_dequeue(global.animatingQueue);
 						inAnimation = true;
+
 					}
+					
 				}
+				pointer_move();
+				show_debug_message("pointer info:")
+				show_debug_message(global.pointer.x)
+				show_debug_message(global.pointer.visible)
 			}
+					
+			
 			if(global.animationInQueue = 0){
 				playSoundsChangeSprites();
 			}
@@ -24,11 +33,15 @@ function animationEnded(objectID){
 		}
 	}
 	
+
+	
 }
 
 function addSpriteChange(objectID, spriteID){
 	ds_queue_enqueue(global.animatingQueue, "changeSprite", objectID, spriteID);
 }
+
+
 
 
 global.tempCounter = 0
@@ -41,8 +54,9 @@ function playSoundsChangeSprites(){
 			var priority = ds_queue_dequeue(global.animatingQueue);
 			var loopOrNot = ds_queue_dequeue(global.animatingQueue);
 			playSound(name, priority, loopOrNot);
+			show_debug_message(name)
 		}
-		else if(ds_queue_head(global.animatingQueue) = "changeSprite"){
+		if(ds_queue_head(global.animatingQueue) = "changeSprite"){
 			ds_queue_dequeue(global.animatingQueue);
 			with(ds_queue_dequeue(global.animatingQueue)){
 				sprite_index = ds_queue_dequeue(global.animatingQueue);
@@ -51,6 +65,7 @@ function playSoundsChangeSprites(){
 		else{
 			break;
 		}
+	
 	}
 	
 	global.tempCounter += 1

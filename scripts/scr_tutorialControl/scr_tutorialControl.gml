@@ -30,7 +30,7 @@ function nextTutorialMask(){
 		global.currentMask = image_index
 		
 		
-		show_debug_message(global.currentMask)
+	//	show_debug_message(global.currentMask)
 	
 		// hide mask until transition animation end
 		if (global.currentMask == 7){

@@ -3,15 +3,17 @@
 
 
 function animateTransition(tID){
+	
+
+	
 	if(!global.firstAnimationInitialized){
 		global.firstAnimationInitialized = true;
-		is_right = isRightTransition(tID);
+
 		with (real(tID)) {
 			sprite_index = getTransitionAnimation(object_get_name(object_index));
 			inAnimation = true;
 		}
-			if(is_right){ pointer_move_right() }
-			else{ pointer_move_left() }
+
 	}else{
 		ds_queue_enqueue(global.animatingQueue, "playAnimation");
 		ds_queue_enqueue(global.animatingQueue, real(tID));
@@ -19,10 +21,13 @@ function animateTransition(tID){
 		    ds_queue_enqueue(global.animatingQueue, getTransitionAnimation(object_get_name(object_index)));
 		}
 	}
-	global.animationInQueue++;
+
+	global.animationInQueue+=1;
 	//with (real(tID)) {
 		//sprite_index = getTransitionAnimation(object_get_name(object_index));
 	//}
+	
+	show_debug_message(ds_queue_head(global.animatingQueue))
 	
 	return true;
 }
@@ -69,6 +74,9 @@ function resetAnimationSequence(){
 //checks if a string is in the language defined by the DFA
 function checkInput(num){
 	
+	pointer_reset();
+	global.pointer.visible = true;
+	
 	if(global.inputs[num].sequence==""){
 	    //show_debug_message("Empty Input Seen");
 		return true;
@@ -82,7 +90,13 @@ function checkInput(num){
 		res = hasTarget(curr, sym);
 		if(res[0]) {
 			//if target found
+			
+			// this is whether the transition is to the right (or left)
+			global.right = res[1] > curr;
+			
+			
 			curr=res[1];
+
 			//show_debug_message(curr)
 			
 			
@@ -154,7 +168,7 @@ function checkAllStrings(){
 		global.animationInQueue = 0;
 	}
 	
-//	global.pointer.visible = true;  // Uncomment this to show the pointer
+
 	
 	
 	for (var i=0;i<array_length_1d(global.inputs); i++){
@@ -193,12 +207,10 @@ function checkAllStrings(){
 			else{
 				addSoundEffectsToQueue(fail, 11, false);
 				//audio_play_sound(fail, 11, false);
-				pointer_reset();
 				return false;
 			}
 		}
 	}
 	
-	pointer_reset();
 	return true; //this true represents all strings ran successfully in the dfa
 }

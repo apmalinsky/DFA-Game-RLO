@@ -70,6 +70,8 @@ global.num_strings = 3;
 global.strings = array_create(global.num_strings, 0);
 global.num_symbols = 3;
 
+global.right = true;
+
 
 global.dfa = {
 	transitions: initTrans(),
