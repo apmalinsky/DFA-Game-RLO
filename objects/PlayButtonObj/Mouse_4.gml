@@ -14,4 +14,3 @@ global.level_stars_curr_size = 0;
 
 audio_play_sound(button_click, 10, false);
 sprite_index = Play_click;
-global.stillAnimating = true;
