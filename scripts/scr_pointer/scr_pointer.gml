@@ -12,11 +12,13 @@ function pointer_move_left(){
 
 }
 
-function pointer_self_loop(){
+function pointer_soft_reset(){
+
+global.pointer.x = global.pointerx;
+global.pointer.y = global.pointery;
 
 }
-
-function pointer_reset(){
+function pointer_hard_reset(){
 
 global.pointer.x = global.pointerx;
 global.pointer.y = global.pointery;

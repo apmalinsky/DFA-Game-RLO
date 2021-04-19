@@ -133,9 +133,6 @@ global.animationSequence = {
 
 */
 
-
-global.doingAnimation = false;
-global.animatingTransition = 0;
 //global.doneAnimation = false;
 
 

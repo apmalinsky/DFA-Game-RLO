@@ -3,26 +3,39 @@
 
 
 function animateTransition(tID){
-	if(!global.firstAnimationInitialized){
-		global.firstAnimationInitialized = true;
-		is_right = isRightTransition(tID);
-		with (real(tID)) {
-			sprite_index = getTransitionAnimation(object_get_name(object_index));
-			inAnimation = true;
-		}
-			if(is_right){ pointer_move_right() }
-			else{ pointer_move_left() }
-	}else{
-		ds_queue_enqueue(global.animatingQueue, "playAnimation");
-		ds_queue_enqueue(global.animatingQueue, real(tID));
-		with (real(tID)) {
-		    ds_queue_enqueue(global.animatingQueue, getTransitionAnimation(object_get_name(object_index)));
-		}
+	
+	//Add animation to queue
+	show_debug_message("Adding animation");
+	//Event type: play animation by changing an object sprite.
+	ds_queue_enqueue(global.animatingBuffer, "playAnimation");
+	//Add time delay(which will apply after this action is done) in mS:
+	ds_queue_enqueue(global.animatingBuffer, 0);
+	//Add the object's ID
+	ds_queue_enqueue(global.animatingBuffer, real(tID));
+	//Add the sprite ID to change the object's sprite ID into
+	with (real(tID)) {
+		ds_queue_enqueue(global.animatingBuffer, getTransitionAnimation(object_get_name(object_index)));
 	}
+	//Increment the number of animations in the buffer
 	global.animationInQueue++;
-	//with (real(tID)) {
-		//sprite_index = getTransitionAnimation(object_get_name(object_index));
-	//}
+
+
+
+    //Moving the ball
+	var isRight = isRightTransition(tID);
+	ds_queue_enqueue(global.animatingBuffer, "moveBall");
+	//Add time delay(which will apply after this action is done) in mS:
+	ds_queue_enqueue(global.animatingBuffer, 500000);
+	if(isRight){
+		//true if we are moving the ball to the right
+		show_debug_message("Ball move right");
+		ds_queue_enqueue(global.animatingBuffer, true);
+	}
+	else{
+		//false if we are moving the ball to the left
+		show_debug_message("Ball move left");
+		ds_queue_enqueue(global.animatingBuffer, false);
+	}
 	
 	return true;
 }
@@ -85,22 +98,13 @@ function checkInput(num){
 			curr=res[1];
 			//show_debug_message(curr)
 			
-			
-			global.doingAnimation = true;
-			global.animatingTransition = res[2];
-			
-			//object_set_sprite(global.animatingTransition, getTransitionAnimation(object_get_name(global.animatingTransition)));
-			
-			while(global.doingAnimation){
-				animateTransition(global.animatingTransition);
-				global.doingAnimation = false;
-			}
-			
-			
+			animateTransition(res[2]);
 			
 			global.inputs[num].sequence_objs[i].image_alpha=0.5;
 			
-			addSpriteChange(global.inputs[num].sequence_objs[i], goalSpriteReturner(global.inputs[num].sequence_objs[i], false)); 
+			//add a sprite change to AnimatonQueue, to update goals in the sequence box
+			addSpriteChangeToBuffer(0, global.inputs[num].sequence_objs[i], goalSpriteReturner(global.inputs[num].sequence_objs[i], false)); 
+			
 			/*
 			with (global.inputs[num].sequence_objs[i]) {
 				//sprite_index = getTransitionAnimation(object_get_name(object_index));
@@ -109,7 +113,7 @@ function checkInput(num){
 			*/
 
 			
-			addSoundEffectsToQueue(input_taken, 11, false);
+			addSoundEffectsToBuffer(input_taken, 500000, 11, false);
 			//audio_play_sound(input_taken, 11, false);
 			//var tend = get_timer() + 500000; //wait .5 seconds
 			//while(get_timer()<tend){}
@@ -120,9 +124,9 @@ function checkInput(num){
 			//animateTransition(res[2]);   //res[2] contains the transition arrow object id, assumes function is written
 		}
 		else{
-			addSpriteChange(global.inputs[num].sequence_objs[i], goalSpriteReturner(global.inputs[num].sequence_objs[i], true)); 
-			//var tend = get_timer() + 500000; //wait .5 seconds
-			//while(get_timer()<tend){}
+			//add a sprite change to AnimatonQueue, to update goals in the sequence box
+			addSpriteChangeToBuffer(0, global.inputs[num].sequence_objs[i], goalSpriteReturner(global.inputs[num].sequence_objs[i], true)); 
+
 			return false;
 		}
 		
@@ -144,16 +148,14 @@ function checkInput(num){
 //checks whether all strings for this level are accepted by the DFA, returns boolean, see
 //checkString for per string code. Assumes all level strings are stored in global.strings
 function checkAllStrings(){
+	
+	//making the ball visible at the start
+	global.pointer.visible = true;
+	
+	//reset variables related to animationBuffer and star counter
 	global.star_count = 0;
-	if(!ds_queue_empty(global.animatingQueue)){
-		ds_queue_clear(global.animatingQueue);
-		global.firstAnimationInitialized = true;
-		global.animationInQueue = 0;
-	}
-	else{
-		global.firstAnimationInitialized = false;
-		global.animationInQueue = 0;
-	}
+	global.animationInQueue = 0;
+	bufferAndBallReset();
 	
 //	global.pointer.visible = true;  // Uncomment this to show the pointer
 	
@@ -162,14 +164,16 @@ function checkAllStrings(){
 		//show_debug_message(global.inputs[i].sequence);
 		if(!checkInput(i)){
 			if(global.inputs[i].acceptingOrNot){
-				addSoundEffectsToQueue(fail, 11, false);
-				//audio_play_sound(fail, 11, false);
+				addSoundEffectsToBuffer(fail, 200000, 11, false);
+				//Trigger buffer to play
+				global.timerActive = true;
+	            global.animatingBufferTimer = get_timer() - 200000;
+				
 				return false;
 			}
 			else{
 				global.inputs[i].beaten = true;
-				addSoundEffectsToQueue(Success, 11, false);
-				//audio_play_sound(Success, 11, false);
+				addSoundEffectsToBuffer(Success, 200000, 11, false);
 				//var tend = get_timer() + 500000;
 				//show_debug_message(global.inputs[i].star);
 				global.inputs[i].end_obj.sprite_index = Completed_NA_goal;
@@ -177,12 +181,13 @@ function checkAllStrings(){
 				global.star_count += 1;
 				//while(get_timer()<tend){}
 				//Failed_goal
+				ds_queue_enqueue(global.animatingBuffer, "resetBall", 500000);
 			}
 		}
 		else {
 			if(global.inputs[i].acceptingOrNot){
 				global.inputs[i].beaten = true;
-				addSoundEffectsToQueue(Success, 11, false);
+				addSoundEffectsToBuffer(Success, 200000, 11, false);
 				//audio_play_sound(Success, 11, false);
 				//var tend = get_timer() + 500000;
 				//show_debug_message(global.inputs[i].star);
@@ -190,16 +195,22 @@ function checkAllStrings(){
 				global.inputs[i].star.sprite_index = Star_gold_64x64; //changes the star sprite to indicate success on string, not written
 				global.star_count += 1;
 				//while(get_timer()<tend){}
+				ds_queue_enqueue(global.animatingBuffer, "resetBall", 500000);
 			}
 			else{
-				addSoundEffectsToQueue(fail, 11, false);
-				//audio_play_sound(fail, 11, false);
-				pointer_reset();
+				addSoundEffectsToBuffer(fail, 200000, 11, false);
+				//Trigger buffer to play
+				global.timerActive = true;
+	            global.animatingBufferTimer = get_timer() - 200000;
+				
 				return false;
 			}
 		}
-	}
+	}   
 	
-	pointer_reset();
+	//Trigger buffer to play
+	global.timerActive = true;
+	global.animatingBufferTimer = get_timer() - 200000;
+	
 	return true; //this true represents all strings ran successfully in the dfa
 }

@@ -15,7 +15,13 @@ global.clickAnywhereCounter = 0;
 global.completedTutorial = false;
 
 
-global.animatingQueue = ds_queue_create();
+global.animatingBuffer = ds_queue_create();
+
+global.animatingBufferTimer = get_timer();
+global.timerActive = false;
+global.doingAnimation = false;
+global.currentRoomIsLevel = false;
+
 audio_group_load(Music);
 audio_group_load(SoundEffects);
 

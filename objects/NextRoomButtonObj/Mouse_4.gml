@@ -7,7 +7,7 @@ if (visible){
 		global.completedTutorial = true;
 	}
 	
-	ds_queue_clear(global.animatingQueue);
+	ds_queue_clear(global.animatingBuffer);
 
 	window_set_cursor(cr_default);
 	room_persistent = false;
