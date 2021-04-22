@@ -22,20 +22,11 @@ function animateTransition(tID){
 
 
     //Moving the ball
-	var isRight = isRightTransition(tID);
+	var tType = transitionType(tID);
 	ds_queue_enqueue(global.animatingBuffer, "moveBall");
 	//Add time delay(which will apply after this action is done) in mS:
 	ds_queue_enqueue(global.animatingBuffer, 500000);
-	if(isRight){
-		//true if we are moving the ball to the right
-		show_debug_message("Ball move right");
-		ds_queue_enqueue(global.animatingBuffer, true);
-	}
-	else{
-		//false if we are moving the ball to the left
-		show_debug_message("Ball move left");
-		ds_queue_enqueue(global.animatingBuffer, false);
-	}
+	ds_queue_enqueue(global.animatingBuffer, tType);
 	
 	return true;
 }

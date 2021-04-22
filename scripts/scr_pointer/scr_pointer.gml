@@ -12,12 +12,14 @@ function pointer_move_left(){
 
 }
 
+//When a new sequence starts after another.
 function pointer_soft_reset(){
 
 global.pointer.x = global.pointerx;
 global.pointer.y = global.pointery;
 
 }
+//When all sequences finish.
 function pointer_hard_reset(){
 
 global.pointer.x = global.pointerx;

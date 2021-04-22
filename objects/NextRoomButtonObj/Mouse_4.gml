@@ -8,6 +8,7 @@ if (visible){
 	}
 	
 	ds_queue_clear(global.animatingBuffer);
+	bufferAndBallReset();
 
 	window_set_cursor(cr_default);
 	room_persistent = false;

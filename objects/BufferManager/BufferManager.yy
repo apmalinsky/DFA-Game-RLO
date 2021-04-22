@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SoundObjects",
-    "path": "folders/Objects/SoundObjects.yy",
+    "name": "BufferObjects",
+    "path": "folders/Objects/BufferObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SoundManager",
+  "name": "BufferManager",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -14,7 +14,7 @@ if (global.editMode){
 
 if (visible){
 	
-	window_set_cursor(cr_drag);
+	window_set_cursor(cr_handpoint);
 
 	image_alpha = 0.5;
 

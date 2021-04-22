@@ -1,43 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-//function animationEnded(objectID){
-//	if(inAnimation && global.animationInQueue = 0){
-//		playSoundsChangeSprites();
-//	}
-//	with(objectID){
-//		if(inAnimation){
-//			inAnimation = false;
-//			if(!ds_queue_empty(global.animatingBuffer)){
-//				if(ds_queue_head(global.animatingBuffer) != "playAnimation"){
-//					playSoundsChangeSprites();
-//				}
-//				global.animationInQueue--;
-//				ds_queue_dequeue(global.animatingBuffer);
-//				with(ds_queue_dequeue(global.animatingBuffer)){
-//					sprite_index = ds_queue_dequeue(global.animatingBuffer);
-//					inAnimation = true;
-//				}
-//				var tend = get_timer() + 750000; 
-//			    while(get_timer()<tend){}
-//			}
-//			else{
-//				//All animations ended
-//				show_debug_message("Animations ended");
-//				global.timerActive = true;
-//				global.timer = get_timer() + 1000000;
-//				if (global.inTutorial && global.currentMask == 6){
-//					//show_debug_message("next mask")
-//					nextTutorialMask();
-//					showTutorialMask();
-//				}
-//			}
-//		}
-//	}
-	
-//}
-
-
 function addSpriteChangeToBuffer(timeDelay, objectID, spriteID){
 	ds_queue_enqueue(global.animatingBuffer, "changeSprite", timeDelay, objectID, spriteID);
 }
@@ -64,9 +27,35 @@ function changeSprite(timeDelay, objectID, spriteID){
 }
 
 
-function moveBall(timeDelay, isRight){
-	if(isRight)pointer_move_right();
-	else pointer_move_left();
+function moveBall(timeDelay, tType){
+	if(tType = 1){
+		//true if we are moving the ball to the right
+		show_debug_message("Ball move right");
+		pointer_move_right();
+	}
+	else if(tType = -1){
+		//false if we are moving the ball to the left
+		show_debug_message("Ball move left");
+		pointer_move_left();
+	}
+	else if(tType = -2){
+		//false if we are moving the ball to the left
+		show_debug_message("Ball move double left");
+		pointer_move_left();
+		pointer_move_left();
+	}
+	else if(tType = 2){
+		//false if we are moving the ball to the left
+		show_debug_message("Ball move double right");
+		pointer_move_right();
+		pointer_move_right();
+	}
+	else if(tType = 0){
+		show_debug_message("Ball self loop");
+	}
+	else{
+		show_error("Transition type error", true);
+	}
 	global.timerActive = true;
 	global.animatingBufferTimer = get_timer() + timeDelay;
 }

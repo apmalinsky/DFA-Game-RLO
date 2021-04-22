@@ -3,9 +3,9 @@
 
 //If an arrow is not in transition
 if(!global.doingAnimation && global.currentRoomIsLevel){
-	//is there an ongoing pause/delay and Enough time has elapsed or is the timer inactive
+	//is there an ongoing pause/delay and Enough time has elapsed
 	if(global.timerActive && global.animatingBufferTimer < get_timer()){
-		//if the buffer is not empty
+		//if the buffer is not empty, trigger one event and activate the timer
 		if(!ds_queue_empty(global.animatingBuffer)){
 			if(ds_queue_head(global.animatingBuffer) = "playAnimation"){
 				ds_queue_dequeue(global.animatingBuffer);
@@ -37,8 +37,8 @@ if(!global.doingAnimation && global.currentRoomIsLevel){
 			else if(ds_queue_head(global.animatingBuffer) = "moveBall"){
 				ds_queue_dequeue(global.animatingBuffer);
 				var timeDelay = ds_queue_dequeue(global.animatingBuffer);
-				var isRight = ds_queue_dequeue(global.animatingBuffer);
-				moveBall(timeDelay, isRight);
+				var tType = ds_queue_dequeue(global.animatingBuffer);
+				moveBall(timeDelay, tType);
 			}
 			else if(ds_queue_head(global.animatingBuffer) = "resetBall"){
 				ds_queue_dequeue(global.animatingBuffer);
@@ -48,13 +48,14 @@ if(!global.doingAnimation && global.currentRoomIsLevel){
 	            global.animatingBufferTimer = get_timer() + timeDelay;
 			}
 			else{
+				show_debug_message("animatingBuffer error " + string(ds_queue_size(global.animatingBuffer)));
 				show_error("animatingBuffer error", true);
 			}
 		}
+		//Animations ended
 		if(global.timerActive && ds_queue_empty(global.animatingBuffer)){
-			//Animations ended
 			show_debug_message("Animations ended");
-			//Tutorial end
+			//Tutorial animations ended trigger
 			if (global.inTutorial && global.currentMask == 6){
 				//show_debug_message("next mask")
 				nextTutorialMask();
