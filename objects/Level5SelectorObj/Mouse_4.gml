@@ -5,7 +5,8 @@
 
 if (global.current_level_max > 4){
 
-global.current_level = 5
+global.current_level = 5;
+global.currentRoomIsLevel = true;
 room_goto(Level5);
 window_set_cursor(cr_default);
 

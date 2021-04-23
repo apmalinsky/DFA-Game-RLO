@@ -5,4 +5,7 @@
 sprite_index = Transition_self_2;
 
 
-animationEnded(id);
+if(inAnimation){
+	global.doingAnimation = false;
+	inAnimation = false;
+}

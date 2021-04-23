@@ -3,8 +3,15 @@
 
 //This function must be called for all sliders.
 function generateSlider(xPos, yPos, audioGroup){
-	var sliderButtonID = instance_create_layer(xPos, yPos, "Instances", SliderButtonMusicObj);
-	var sliderBaseID = instance_create_layer(xPos, yPos, "Instances", SliderBaseObj);
+	if(os_browser != browser_not_a_browser){
+		var sliderBaseID = instance_create_layer(xPos, yPos, "Instances", SliderBaseObj);
+	    var sliderButtonID = instance_create_layer(xPos, yPos, "Instances", SliderButtonMusicObj);
+    }
+	else{
+		var sliderButtonID = instance_create_layer(xPos, yPos, "Instances", SliderButtonMusicObj);
+		var sliderBaseID = instance_create_layer(xPos, yPos, "Instances", SliderBaseObj);
+	}
+	
 	with(sliderButtonID){
 		baseID = sliderBaseID;
 		if(audioGroup = Music){
@@ -37,6 +44,7 @@ function extractValue(sliderBaseID){
 		return minVal + (maxVal - minVal) * sliderFloat;
 	}
 }
+
 function setVolumeForAudioGroup(audioGroup, volume){
 	if(volume < 0 or volume > 100){
 		show_error("Volume must be between 0 and 100", true);

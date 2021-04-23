@@ -1,6 +1,7 @@
 
 
 room_persistent = false;
+global.currentRoomIsLevel = false;
 switch(room){
 	case Level1:
 	case Level2:

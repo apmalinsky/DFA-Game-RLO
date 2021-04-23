@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8389332f-3d01-46d7-9ca4-fd8018dd8a71","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Volume_slider",
     "path": "folders/Sprites/Buttons/Volume_slider.yy",

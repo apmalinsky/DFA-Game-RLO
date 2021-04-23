@@ -2,14 +2,14 @@
 
 //show_debug_message("entered")
 
-
-
-window_set_cursor(cr_drag);
-audio_play_sound(button_hover, 10, false);
-
-if (!global.stillAnimating){
+if(sprite_index != Play_click){
 	sprite_index = Play_hover;
 }
+
+
+window_set_cursor(cr_handpoint);
+audio_play_sound(button_hover, 10, false);
+
 
 
 

@@ -4,11 +4,8 @@
 
 window_set_cursor(cr_default);
 
-
-if (!global.stillAnimating){
+if(sprite_index != Play_click){
 	sprite_index = Play_normal;
-
-	
 }
 
 //image_speed = 1.0
