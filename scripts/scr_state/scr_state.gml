@@ -160,35 +160,6 @@ function doStateRightClick(){
 }
 */
 
-//short or long, to find the right animation sprite
-function getTransitionAnimation(obj_name){
-	switch(obj_name){
-		case "TransitionShortObj1":
-			return Transition_short_1_animation;
-		case "TransitionShortObj2":
-			return Transition_short_2_animation;
-		case "TransitionShortObj3":
-			return Transition_short_3_animation;
-			
-		case "TransitionLongObj1":
-			return Transition_long_1_animation;
-		case "TransitionLongObj2":
-			return Transition_long_2_animation;
-		case "TransitionLongObj3":
-			return Transition_long_3_animation;
-			
-		case "TransitionSelfObj1":
-			return Transition_self_1_animation;
-		case "TransitionSelfObj2":
-			return Transition_self_2_animation;
-		case "TransitionSelfObj3":
-			return Transition_self_3_animation;
-	}
-}
-
-
-
-
 function getSelectedStateObj(){
 	switch(global.state_selected.name){
 		case "s1":

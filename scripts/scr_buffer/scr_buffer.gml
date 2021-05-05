@@ -80,3 +80,54 @@ function bufferAndBallReset(){
 	pointer_soft_reset();
 }
 
+//short or long, to find the right animation sprite
+function getTransitionAnimation(obj_name){
+	switch(obj_name){
+		case "TransitionShortObj1":
+			return Transition_short_1_animation;
+		case "TransitionShortObj2":
+			return Transition_short_2_animation;
+		case "TransitionShortObj3":
+			return Transition_short_3_animation;
+			
+		case "TransitionLongObj1":
+			return Transition_long_1_animation;
+		case "TransitionLongObj2":
+			return Transition_long_2_animation;
+		case "TransitionLongObj3":
+			return Transition_long_3_animation;
+			
+		case "TransitionSelfObj1":
+			return Transition_self_1_animation;
+		case "TransitionSelfObj2":
+			return Transition_self_2_animation;
+		case "TransitionSelfObj3":
+			return Transition_self_3_animation;
+	}
+}
+
+//return the correct "purple"(not actually purple but uses shader) transition animation for playButton
+function getPurpleTransitionAnimation(obj_name){
+	switch(obj_name){
+		case "TransitionShortObj1":
+			return Transition_short_1_purple;
+		case "TransitionShortObj2":
+			return Transition_short_2_purple;
+		case "TransitionShortObj3":
+			return Transition_short_3_purple;
+			
+		case "TransitionLongObj1":
+			return Transition_long_1_purple;
+		case "TransitionLongObj2":
+			return Transition_long_2_purple;
+		case "TransitionLongObj3":
+			return Transition_long_3_purple;
+			
+		case "TransitionSelfObj1":
+			return Transition_self_1_purple;
+		case "TransitionSelfObj2":
+			return Transition_self_2_purple;
+		case "TransitionSelfObj3":
+			return Transition_self_3_purple;
+	}
+}
