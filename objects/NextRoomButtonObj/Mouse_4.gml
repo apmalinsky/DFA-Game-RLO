@@ -8,16 +8,16 @@ if (visible){
 	}
 	
 	ds_queue_clear(global.animatingBuffer);
+	global.doingAnimation = false;
+	global.timerActive = false;
 	bufferAndBallReset();
 
 	window_set_cursor(cr_default);
 	room_persistent = false;
-	if (global.current_level == global.current_level_max){
-		global.current_level += 1;
-		global.current_level_max = global.current_level;
-	}
+
 	if (room == Level5){
-		room_goto(LevelSet1Selection);
+		room_goto(LevelSetMenu);
+		global.currentRoomIsLevel = false;
 	}
 	else {
 		room_goto_next();

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sequence_box_spr",
-    "path": "sprites/Sequence_box_spr/Sequence_box_spr.yy",
+    "name": "Level5_selector",
+    "path": "sprites/Level5_selector/Level5_selector.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,15 +22,18 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":11,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Goal_Objs",
-    "path": "folders/Objects/Goal_Objs.yy",
+    "name": "SelectorLevels",
+    "path": "folders/Objects/SelectorLevels.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sequence_box",
+  "name": "Level5SelectorObj",
   "tags": [],
   "resourceType": "GMObject",
 }

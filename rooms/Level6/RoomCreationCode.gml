@@ -74,13 +74,17 @@ global.dfa = {
 	final: "s3"
 }
 
-
+string0 = "g";
 string1 = "r";
 string2 = "grr";
 string3 = "rggrg";
 
 x_pos = 901;
 y_pos = 564;
+
+in0 = instance_create_layer(x_pos, y_pos - 72, "Instances",  Input_sequence);
+in0.sequence = string0;
+in0.acceptingOrNot = false;
 
 in1 = instance_create_layer(x_pos, y_pos, "Instances", Input_sequence);
 in1.sequence = string1;
@@ -91,10 +95,12 @@ in2.sequence = string2;
 in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
 in3.sequence = string3;
 
-global.inputs[0] = in1;
-global.inputs[1] = in2;
-global.inputs[2] = in3;
+global.inputs[0] = in0;
+global.inputs[1] = in1;
+global.inputs[2] = in2;
+global.inputs[3] = in3;
 
+in0.alarm[0] = 1;
 in1.alarm[0] = 1;
 in2.alarm[0] = 1;
 in3.alarm[0] = 1;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sequence_box_spr",
-    "path": "sprites/Sequence_box_spr/Sequence_box_spr.yy",
+    "name": "Sequence_box_red_spr",
+    "path": "sprites/Sequence_box_red_spr/Sequence_box_red_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
     "path": "folders/Objects/Goal_Objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sequence_box",
+  "name": "Sequence_box_red",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/GoalsSpr/GoalsSpr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/GoalsSpr/GoalsSpr.yy",},"LayerId":{"name":"0bc2cf2f-7845-4f6c-8f43-13b9282fe1cf","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","name":"219bb4de-bf31-444e-ad68-aee1cff76b76","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},"LayerId":{"name":"0bc2cf2f-7845-4f6c-8f43-13b9282fe1cf","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Sequence_box_spr","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},"resourceVersion":"1.0","name":"219bb4de-bf31-444e-ad68-aee1cff76b76","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},
+    "spriteId": {"name":"Sequence_box_spr","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2aff9a5d-7b9c-4723-8685-aa3265d2b056","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/GoalsSpr/GoalsSpr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2aff9a5d-7b9c-4723-8685-aa3265d2b056","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"219bb4de-bf31-444e-ad68-aee1cff76b76","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 4,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"GoalsSpr","path":"sprites/GoalsSpr/GoalsSpr.yy",},
+    "parent": {"name":"Sequence_box_spr","path":"sprites/Sequence_box_spr/Sequence_box_spr.yy",},
     "resourceVersion": "1.3",
-    "name": "GoalsSpr",
+    "name": "Sequence_box_spr",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Goals.yy",
   },
   "resourceVersion": "1.0",
-  "name": "GoalsSpr",
+  "name": "Sequence_box_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }
