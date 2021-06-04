@@ -139,6 +139,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"591ecdbb-f3f2-4104-bd8c-8931bd25748f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Transitions_Long",
     "path": "folders/Sprites/Transitions/Transitions_Long.yy",

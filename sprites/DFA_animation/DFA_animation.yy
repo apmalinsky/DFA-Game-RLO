@@ -199,6 +199,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"74d34c1c-790d-439f-a6c2-91a2a5cbeb35","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "DFA_animation",
     "path": "folders/Sprites/DFA_animation.yy",

@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7f65925a-7381-45a5-bf7d-76b51e5dc68e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Transitions_Self",
     "path": "folders/Sprites/Transitions/Transitions_Self.yy",

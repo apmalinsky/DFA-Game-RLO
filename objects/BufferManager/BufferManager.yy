@@ -18,16 +18,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":72,"eventType":7,"collisionObjectId":null,"parent":{"name":"SoundManager","path":"objects/SoundManager/SoundManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":72,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SoundObjects",
-    "path": "folders/Objects/SoundObjects.yy",
+    "name": "BufferObjects",
+    "path": "folders/Objects/BufferObjects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "SoundManager",
+  "name": "BufferManager",
   "tags": [],
   "resourceType": "GMObject",
 }

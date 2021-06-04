@@ -121,12 +121,12 @@ function tokenize(transitionLabel, index){
 	}
 }	
 
-// returns whether a transition goes right (or left) as boolean
-function isRightTransition(tID){
+// returns whether a transition is double left(-2), left(-1), self loop(0), right(1), double right(2)
+function transitionType(tID){
 	var label = getLabelByTransitionID(global.dfa.transitions, tID);
 	source = getSource(label);
 	target = getTarget(label);
-	return target > source;
+	return real(string_char_at(target, 2)) - real(string_char_at(source, 2));
 	
 }
 

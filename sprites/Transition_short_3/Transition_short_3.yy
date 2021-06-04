@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"48a9f0c2-4b88-48f7-9cd9-bc80b06dd1de","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Transitions_Short",
     "path": "folders/Sprites/Transitions/Transitions_Short.yy",
