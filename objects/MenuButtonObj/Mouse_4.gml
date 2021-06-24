@@ -13,4 +13,10 @@ switch(room){
 	default:
 		room_goto(LevelSetMenu);
 }
+
+ds_queue_clear(global.animatingBuffer);
+global.doingAnimation = false;
+global.timerActive = false;
+bufferAndBallReset();  
+	
 window_set_cursor(cr_default);

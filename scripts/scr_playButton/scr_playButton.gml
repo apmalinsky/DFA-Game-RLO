@@ -14,7 +14,7 @@ function animateTransition(tID){
 	ds_queue_enqueue(global.animatingBuffer, real(tID));
 	//Add the sprite ID to change the object's sprite ID into
 	with (real(tID)) {
-		ds_queue_enqueue(global.animatingBuffer, getTransitionAnimation(object_get_name(object_index)));
+		ds_queue_enqueue(global.animatingBuffer, getPurpleTransitionAnimation(object_get_name(object_index)));
 	}
 	//Increment the number of animations in the buffer
 	global.animationInQueue++;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "GoalsSpr",
-    "path": "sprites/GoalsSpr/GoalsSpr.yy",
+    "name": "Sequence_box_spr",
+    "path": "sprites/Sequence_box_spr/Sequence_box_spr.yy",
   },
   "solid": false,
   "visible": true,
