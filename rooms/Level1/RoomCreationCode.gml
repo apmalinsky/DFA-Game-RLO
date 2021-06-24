@@ -18,6 +18,7 @@ genAllTransitions3State()
 if (!global.completedTutorial){
 	global.inTutorial = true;
 	initializeTutorialMask();
+	initializeNextLevelMask();
 }
 
 

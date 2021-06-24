@@ -1,8 +1,13 @@
 
 
 
-if (global.clickAnywhereMode){
+if (global.clickAnywhereMode && visible){
 	if (mouse_check_button_released(mb_left)){	
+		
+		if (global.inTutorial == false){
+			show_debug_message("PRESSING WRONG MASK")
+		}
+		
 		if (global.currentMask == 7){
 			nextTutorialMask()
 			global.clickAnywhereCounter = 0
@@ -11,7 +16,6 @@ if (global.clickAnywhereMode){
 			global.inTutorial = false
 			global.clickAnywhereCounter = 0
 			global.clickAnywhereMode = false
-			//global.completedTutorial = true;
 		}
 		
 		global.clickAnywhereCounter += 1

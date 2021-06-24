@@ -28,8 +28,8 @@ function initializeNextLevelMask(){
 	mask.image_yscale = 1
 	mask.image_angle = 0
 	mask.image_speed = 0
-	global.nextLevelMaskObjectId = mask.id;
-	visible = false;
+	mask.visible = false;
+	global.nextLevelMaskObjectId = mask.id
 }
 
 
@@ -64,14 +64,12 @@ function nextTutorialMask(){
 
 function hideTutorialMask(){
 	with (global.maskObjectId){
-		
 		visible = false
 	}
 }
 
 function showTutorialMask(){
 	with (global.maskObjectId){
-		
 		visible = true
 	}
 	
@@ -79,6 +77,19 @@ function showTutorialMask(){
 
 
 
+function hideNextLevelMask(){
+	with (global.nextLevelMaskObjectId){
+		visible = false
+	}
+	global.completedTutorial = true;
+}
 
+function showNextLevelMask(){
+	with (global.nextLevelMaskObjectId){
+		visible = true
+	}
+	global.clickAnywhereMode = true
+	show_debug_message("click anywhere is on")
+}
 
 

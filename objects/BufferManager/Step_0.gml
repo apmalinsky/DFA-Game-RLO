@@ -61,6 +61,14 @@ if(!global.doingAnimation && global.currentRoomIsLevel){
 				nextTutorialMask();
 				showTutorialMask();
 			}
+			
+			//Show next level button mask
+			if (global.inTutorial == false && global.completedTutorial == false && global.nextLevelMaskObjectId.visible == 0){
+				show_debug_message("show next level mask")
+				showNextLevelMask()
+			}
+			
+			
 			//pointer hard reset
 			pointer_hard_reset();
 			global.timerActive = false;
