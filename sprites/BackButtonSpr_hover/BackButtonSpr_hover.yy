@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 8,
-  "bbox_right": 60,
-  "bbox_top": 7,
-  "bbox_bottom": 44,
+  "bbox_left": 23,
+  "bbox_right": 288,
+  "bbox_top": 23,
+  "bbox_bottom": 99,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 320,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e1f78bac-8bda-42d3-9518-02c0c8856935","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e1f78bac-8bda-42d3-9518-02c0c8856935","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"LayerId":{"name":"fd114727-ab8b-4611-89ea-1e0d1226d43e","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"BackButtonSpr_hover","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"e1f78bac-8bda-42d3-9518-02c0c8856935","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"bac4b2cf-8718-4add-8b0c-cfd81e795399","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bac4b2cf-8718-4add-8b0c-cfd81e795399","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"LayerId":{"name":"fd114727-ab8b-4611-89ea-1e0d1226d43e","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"BackButtonSpr_hover","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"resourceVersion":"1.0","name":"bac4b2cf-8718-4add-8b0c-cfd81e795399","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"BackButtonSpr_hover","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b51a1e04-0b05-4b1a-9a85-96734af476ff","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e1f78bac-8bda-42d3-9518-02c0c8856935","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bd9cbe2b-6ac1-4920-ad87-96e96e8d69a7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bac4b2cf-8718-4add-8b0c-cfd81e795399","path":"sprites/BackButtonSpr_hover/BackButtonSpr_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
