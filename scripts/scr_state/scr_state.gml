@@ -227,8 +227,7 @@ function getNextAvailableIndex(indices){
 //return next available transition id between selected and entered state
 function getTransitionId(){
 	hoveredStateObj = getHoveredStateObj(getSelectedStateObj());
-	//setHoveredStateObj()
-	//show_debug_message(hoveredStateObj) // this somehow fixes the order error
+
 	var addedIndices = hoveredStateObj.addedIndices;
 
 	return hoveredStateObj.transitions[getNextAvailableIndex(addedIndices)];
@@ -244,17 +243,14 @@ function addTransitionIndex(){
 }
 
 function removeTransitionIndex(tID){
-	var addedIndices = getStateIndicesByTransitionID(tID);
-	show_debug_message(addedIndices)
+	var info = getStateInfoByTransitionID(tID);
 
-	for (i = 0; i < array_length_1d(addedIndices); i += 1){
-		if (addedIndices[i] == tID){
-			addedIndices[i] = -1;
+	for (i = 0; i < array_length_1d(info.addedIndices); i += 1){
+		if (info.addedIndices[i] == tID){
+			info.addedIndices[i] = -1;
 		}
 	}
-	show_debug_message(addedIndices)
 }
-
 
 function transitionsAvailable(){
 	var hoveredStateObj = getHoveredStateObj(getSelectedStateObj());
