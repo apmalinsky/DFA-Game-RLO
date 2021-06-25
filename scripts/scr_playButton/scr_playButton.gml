@@ -160,6 +160,8 @@ function checkAllStrings(){
 				global.timerActive = true;
 	            global.animatingBufferTimer = get_timer() - 200000;
 				
+				//Change the stars
+				modifyStars(room, global.star_count);
 				return false;
 			}
 			else{
@@ -194,6 +196,8 @@ function checkAllStrings(){
 				global.timerActive = true;
 	            global.animatingBufferTimer = get_timer() - 200000;
 				
+				//Change the stars
+				modifyStars(room, global.star_count);
 				return false;
 			}
 		}
@@ -202,6 +206,9 @@ function checkAllStrings(){
 	//Trigger buffer to play
 	global.timerActive = true;
 	global.animatingBufferTimer = get_timer() - 200000;
+	
+	//Change the stars
+	modifyStars(room, global.star_count);
 	
 	return true; //this true represents all strings ran successfully in the dfa
 }

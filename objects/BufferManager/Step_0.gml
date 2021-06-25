@@ -54,6 +54,7 @@ if(!global.doingAnimation && global.currentRoomIsLevel){
 		}
 		//Animations ended
 		if(global.timerActive && ds_queue_empty(global.animatingBuffer)){
+			
 			show_debug_message("Animations ended");
 			//Tutorial animations ended trigger
 			if (global.inTutorial && global.currentMask == 6){
