@@ -108,7 +108,7 @@ div.gm4html5_login_header
     background-color: azure;
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 75%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
@@ -117,7 +117,8 @@ div.gm4html5_login_header
 }
 
 #home-content-text-box p {
-    margin: 3%;
+    margin: 2%;
+    text-align: center;
 }
 
 #button {
@@ -132,7 +133,7 @@ div.gm4html5_login_header
     background-color: azure;
     position: absolute;
     left: 50%;
-    top: 87%;
+    top: 93%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
