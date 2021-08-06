@@ -24,7 +24,9 @@ function modifyStars(levelID, newQuantity){
 	for (var i = 0; i < global.level_stars_curr_size; i++){
 		//in the case it already exists in the logic
 		if(global.level_stars[i][0] = levelID){
-			global.level_stars[i][1] = newQuantity;
+			if(global.level_stars[i][1] < newQuantity){
+				global.level_stars[i][1] = newQuantity;
+			}
 			found = true;
 		}
 	}

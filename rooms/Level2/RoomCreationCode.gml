@@ -99,6 +99,17 @@ in1.alarm[0] = 1;
 in2.alarm[0] = 1;
 in3.alarm[0] = 1;
 
+//letting the user see the previous stars they have gotten
+starNum = global.star_count;
+if(starNum > 3){
+	show_error("Fatal error: the number of stars exceed 3", true);
+}
+var i = 0;
+while(starNum > 0){
+	global.inputs[i].star.sprite_index = Star_gold_64x64
+	i++;
+	starNum--;
+}
 
 global.runningDFA = false;
 
