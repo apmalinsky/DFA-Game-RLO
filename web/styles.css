@@ -1,0 +1,148 @@
+
+
+html body {
+    /* background: #0; */
+    background-color: #707070;
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
+    background-image: url('shapelined-_JBKdviweXI-unsplash.jpg');
+    /* background-size: auto; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#colorBody {
+    width: 100%;
+}
+
+.navbar { 
+    margin-bottom: 0;
+}
+
+canvas {
+    image-rendering: optimizeSpeed;
+    -webkit-interpolation-mode: nearest-neighbor;
+    -ms-touch-action: none;
+    /* margin-right: auto; */
+    margin-left: 7.5%;
+    padding: 0px;
+    border: 0px;
+    display: block;
+    /* resize canvas relative to screen size */
+    width: 75vw;
+
+}
+/* :-webkit-full-screen #canvas {
+    width: 100%;
+    height: 100%;
+} */
+div.gm4html5_div_class
+{
+    margin: 5vw;
+    margin-top: 5vh;
+    /* margin-bottom: 2vh; */
+    padding: 0px;
+    border: 0px;
+}
+/* START - Login Dialog Box */
+/* div.gm4html5_login
+{
+    padding: 20px;
+    position: absolute;
+    border: solid 2px #000000;
+    background-color: #404040;
+    color:#00ff00;
+    border-radius: 15px;
+    box-shadow: #101010 20px 20px 40px;
+}
+div.gm4html5_cancel_button
+{
+    float: right;
+}
+div.gm4html5_login_button
+{
+    float: left;
+}
+div.gm4html5_login_header
+{
+    text-align: center;
+} */
+/* END - Login Dialog Box */
+/* :-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* HOME Page */
+
+#home-content {
+    height: 100vh;
+    margin-top: 2vh;
+}
+
+#home-content-top {
+    display:table-cell; 
+    vertical-align: middle; 
+    text-align:center;
+    width: 100vw;
+    
+}
+
+#splash-img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+#home-content-bottom {
+    /* display: block; */
+    height: 100%;
+}
+
+#home-content-text-box {
+    width: 50%;
+    margin: 0;
+    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+    background-color: azure;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+#home-content-text-box p {
+    margin: 2%;
+    text-align: center;
+}
+
+#button {
+    width: 20%;
+    height: 5%;
+    font-size: x-large;
+    color: black;
+    border-radius: 25px;
+    margin: 0;
+    margin-right: 0;
+    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+    background-color: azure;
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#button:hover {
+    background-color: gray;
+}
+
+
+
+

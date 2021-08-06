@@ -131,24 +131,51 @@ function transitionType(tID){
 }
 
 
-//what does this return?? 
-function getStateIndicesByTransitionID(tID){
-	//"s1-s2-r-100014"
+function switchTarget(source, target){
 	
+	switch(target){
+		case "s1":
+			return source.to1;
+			
+		case "s2":
+			return source.to2;
+		
+		case "s3":
+			return source.to3;
+	}
+	
+}
+
+
+function getStateInfoByTransitionID(tID){
 	var label = getLabelByTransitionID(global.dfa.transitions, tID);
-	return getToObjByTargetName(getStateObjByName(getSource(label)), getTarget(label)).addedIndices;
+	var source = getSource(label);
+	var target = getTarget(label);
+	
+	switch(source){
+		case "s1":
+			return switchTarget(global.states_info.s1, target)
+			
+		case "s2":
+			return switchTarget(global.states_info.s2, target)
+		
+		case "s3":
+			return switchTarget(global.states_info.s3, target)
+	}
 }
 
 
 function removeTransition(tID){	
-	//show_debug_message(global.is_hovering_state)
-	//if (global.is_hovering_state == false){
-		//show_debug_message("can remove transition")
-	//sym = tokenize(getLabelByTransitionID(global.dfa.transitions, tID), 2);
-	
+
 		var sym = getSymbol(getLabelByTransitionID(global.dfa.transitions, tID))
-	
+
 		removeTransitionIndex(tID);
+		//show_debug_message(getStateIndicesByTransitionID(tID))
+		//getStateIndicesByTransitionID(tID) = [-1,-1,-1]
+		
+		//var ind = getStateIndicesByTransitionID(tID);
+		//show_debug_message(ind)
+		
 		global.dfa.transitions = remove(global.dfa.transitions, tID);
 		if (sym = "r") {
 		
