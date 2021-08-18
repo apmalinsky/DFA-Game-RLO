@@ -3,4 +3,5 @@
 
 //draw stars number
 draw_set_colour(c_yellow);
-draw_text_transformed(30, 30, "Stars:" + string(getTotalStars()), 3, 3, 0);
+draw_set_font(Times36);
+draw_text(30, 30, "Stars:" + string(getTotalStars()));
