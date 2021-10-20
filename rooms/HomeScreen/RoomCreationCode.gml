@@ -14,7 +14,7 @@ global.clickAnywhereCounter = 0;
 
 global.completedTutorial = false;
 
-
+//Start the animation buffer
 global.animatingBuffer = ds_queue_create();
 
 global.animatingBufferTimer = get_timer();
@@ -22,6 +22,10 @@ global.timerActive = false;
 global.doingAnimation = false;
 global.currentRoomIsLevel = false;
 
+//Set the number of levels here
+global.num_levels = 25;
+
+//Load sound so it can be used.
 audio_group_load(Music);
 audio_group_load(SoundEffects);
 

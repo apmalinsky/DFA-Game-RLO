@@ -2,7 +2,7 @@
 
 
 if (visible){
-
+	save_game();
 	if (room == Level1){
 		global.completedTutorial = true;
 	}

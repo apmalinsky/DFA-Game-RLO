@@ -104,7 +104,7 @@ global.states_info = {
 //not sure if we just count total stars or per level, see scr_sceenObjs for how it might work
 global.num_levels = 1;
 global.star_count = 0;
-global.level_stars = array_create(global.num_levels, 0);
+global.levelStars = array_create(global.num_levels, 0);
 
 
 //Logic global vars
