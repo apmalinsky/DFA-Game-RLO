@@ -14,11 +14,7 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"LevelSet1SelectorObj","path":"objects/LevelSet1SelectorObj/LevelSet1SelectorObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":230.0,"resourceVersion":"1.0","name":"inst_63EFBBB7","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"LevelSet2SelectorObj","path":"objects/LevelSet2SelectorObj/LevelSet2SelectorObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":480.0,"resourceVersion":"1.0","name":"inst_38180FCE","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"LevelSet3SelectorObj","path":"objects/LevelSet3SelectorObj/LevelSet3SelectorObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":270.0,"resourceVersion":"1.0","name":"inst_6E229462","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"LevelSet4SelectorObj","path":"objects/LevelSet4SelectorObj/LevelSet4SelectorObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":480.0,"resourceVersion":"1.0","name":"inst_56D9B0C5","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"LevelSet5SelectorObj","path":"objects/LevelSet5SelectorObj/LevelSet5SelectorObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":230.0,"resourceVersion":"1.0","name":"inst_1C0082AD","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"LevelSetSelectorObj","path":"objects/LevelSetSelectorObj/LevelSetSelectorObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":230.0,"resourceVersion":"1.0","name":"inst_63EFBBB7","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"drawStarsText","path":"objects/drawStarsText/drawStarsText.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":96.0,"resourceVersion":"1.0","name":"inst_64444F5","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"BackButtonObj","path":"objects/BackButtonObj/BackButtonObj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":640.0,"resourceVersion":"1.0","name":"inst_17F15524","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -29,10 +25,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_63EFBBB7","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
-    {"name":"inst_38180FCE","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
-    {"name":"inst_6E229462","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
-    {"name":"inst_56D9B0C5","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
-    {"name":"inst_1C0082AD","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
     {"name":"inst_64444F5","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
     {"name":"inst_17F15524","path":"rooms/LevelSetMenu/LevelSetMenu.yy",},
   ],

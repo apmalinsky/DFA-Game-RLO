@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Title_level5",
-    "path": "sprites/Title_level5/Title_level5.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

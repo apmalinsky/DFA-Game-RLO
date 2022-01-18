@@ -18,9 +18,11 @@ function clearTransitions(){
 	with (TransitionShortObj1){
 		visible = false;
 	}
+	
 	with (TransitionShortObj2){
 		visible = false;
 	}
+	
 	with (TransitionShortObj3){
 		visible = false;
 	}
@@ -28,9 +30,11 @@ function clearTransitions(){
 	with (TransitionLongObj1){
 		visible = false;
 	}
+	
 	with (TransitionLongObj2){
 		visible = false;
 	}
+	
 	with (TransitionLongObj3){
 		visible = false;
 	}
@@ -38,9 +42,11 @@ function clearTransitions(){
 	with (TransitionSelfObj1){
 		visible = false;
 	}
+	
 	with (TransitionSelfObj2){
 		visible = false;
 	}
+	
 	with (TransitionSelfObj3){
 		visible = false;
 	}
