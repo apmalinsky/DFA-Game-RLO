@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Transition_self_1",
-    "path": "sprites/Transition_self_1/Transition_self_1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

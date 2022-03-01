@@ -2,10 +2,9 @@
 
 
 if (visible){
-
-	if (room == Level1){
-		global.completedTutorial = true;
-	}
+//	if (room == Level1){
+//		global.completedTutorial = true;
+//	}
 	
 	ds_queue_clear(global.animatingBuffer);
 	global.doingAnimation = false;
@@ -13,16 +12,14 @@ if (visible){
 	bufferAndBallReset();
 
 	window_set_cursor(cr_default);
-	room_persistent = false;
-
-	if (room == Level5){
-		room_goto(LevelSetMenu);
-		global.currentRoomIsLevel = false;
-	}
-	else {
-		room_goto_next();
-	}
 	
+	global.prevRoomID = global.currentRoomID;
+	global.currentRoomID = room_next(room);
+	
+	
+	room_goto_next();
+	global.currentRoomIsLevel = false;
+	global.currentLevel++;
 }
 
 

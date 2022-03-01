@@ -1,20 +1,52 @@
 
-if (global.editMode){
-	show_debug_message("State: " + string(id))
-}
-
-
-
-
-window_set_cursor(cr_handpoint);
 audio_play_sound(button_hover, 10, false);
-
-
-sprite_index = State_i_current;
-global.hover_state_id = id
-
-
-doStateHover();
+if(global.drawing && ds_list_find_index(global.currentPathNodes, {id: id, i: i, j: j}) == -1){
+	var len = ds_list_size(global.currentPathNodes);
+	var prevState = ds_list_find_value(global.currentPathNodes, len - 1);
+	var TileBackgroundSize = {x: sprite_get_width(tile_background), y: sprite_get_height(tile_background)};
+	var pipeCoords = {x: 0, y: 0};
+	var cfgN = -1;
+	if(prevState.j == j + 2 && prevState.i == i) {
+		cfgN = 3;
+	} else if(prevState.j == j - 2 && prevState.i == i) {
+		cfgN = 0;
+	} else if(prevState.j == j - 1) {
+		if(j % 2 == 0 && prevState.i == i){
+			cfgN = 1;
+		} else if(j % 2 == 0 && prevState.i == i - 1) {
+			cfgN = 5;
+		} if(j % 2 == 1 && prevState.i == i){
+			cfgN = 5;
+		} else if(j % 2 == 1 && prevState.i == i + 1) {
+			cfgN = 1;
+		} 
+	} else if(prevState.j == j + 1) {
+		if(j % 2 == 0 && prevState.i == i){
+			cfgN = 2;
+		} else if(j % 2 == 0 && prevState.i == i - 1) {
+			cfgN = 4;
+		} if(j % 2 == 1 && prevState.i == i){
+			cfgN = 4;
+		} else if(j % 2 == 1 && prevState.i == i + 1) {
+			cfgN = 2;
+		} 
+	}
+	if(cfgN != -1){
+		var pipeCoords = get_tile_coords(i, j);
+		var offsetX = (TileBackgroundSize.x / 2 - global.pipeOffsets[cfgN].x);
+		var offsetY = (TileBackgroundSize.y / 2 - global.pipeOffsets[cfgN].y);
+		var scale = global.levelTileScaling[global.currentLevel];
+		pipeCoords.x += offsetX * scale;
+		pipeCoords.y += offsetY * scale;
+		var newPipe = instance_create_layer(pipeCoords.x, pipeCoords.y, "States", PipeObj);
+		newPipe.image_xscale = global.levelTileScaling[global.currentLevel];
+		newPipe.image_yscale = global.levelTileScaling[global.currentLevel];
+		newPipe.sprite_index = get_selected_pipe();
+		newPipe.image_index = global.pipeImgIndices[cfgN];
+		ds_list_insert(global.currentPathNodes, len, {id: id, i: i, j: j});
+		ds_list_insert(global.currentPathTrans, ds_list_size(global.currentPathTrans), newPipe.id);
+	}
+}
 
 
 

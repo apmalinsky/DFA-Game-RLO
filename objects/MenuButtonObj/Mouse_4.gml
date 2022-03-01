@@ -1,22 +1,14 @@
 
-
-room_persistent = false;
+// We are closing it, so we are saving what we need,
+// and deleting this instance of the room, resetting some var
+var _roomName = room_get_name(room);
+room_goto(asset_get_index("LevelSet" + string(global.currentLevel % 5 + 1) + "Selection"));
 global.currentRoomIsLevel = false;
-switch(room){
-	case Level1:
-	case Level2:
-	case Level3:
-	case Level4:
-	case Level5:
-		room_goto(LevelSet1Selection);
-		break;
-	default:
-		room_goto(LevelSetMenu);
-}
+global.currentLevel = -1;
+
 
 ds_queue_clear(global.animatingBuffer);
 global.doingAnimation = false;
 global.timerActive = false;
-bufferAndBallReset();  
 	
 window_set_cursor(cr_default);

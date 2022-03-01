@@ -1,154 +1,83 @@
-
 room_persistent = true;
 //switch for edit mode, when making new rooms
 //global.editMode = true;
 global.editMode = false;
 
+global.transitionsLeft = array_create(global.numberOfLevels, array_create(3, 0));
+//0 for red, 1 for green, 2 for blue
+global.transitionsLeft[global.currentLevel][0] = 2;
+global.transitionsLeft[global.currentLevel][1] = 2;
 
-global.inLevelSet1 = true;
+//TODO: (optional) make this automatic using shaders instesd of initializing each color
+var redSelector = instance_create_layer(0, 128, "Dynamic", RedSelectorObj);
+var greenSelector = instance_create_layer(0, 224, "Dynamic", GreenSelectorObj);
+//var blueSelector = instance_create_layer(0, 320, "Dynamic", BlueSelectorObj);
 
-
-// create states and transitions
-resetVars()
-genAllStates3State()
-genAllTransitions3State()
-
-
-
-if (!global.completedTutorial){
-	global.inTutorial = true;
-	initializeTutorialMask();
-	initializeNextLevelMask();
+for (var i = 0; i < 3; i++) {
+	global.arrowCountObjs[global.currentLevel][i] = instance_create_layer(125, 160 + 90 * i, "Dynamic", ArrowCountObj);
+	global.arrowCountObjs[global.currentLevel][i].image_index = global.transitionsLeft[global.currentLevel][i];
+	global.arrowCountObjs[global.currentLevel][i].image_xscale = 0.25;
+	global.arrowCountObjs[global.currentLevel][i].image_yscale = 0.25;
+	//if blue arrows should not exist on this level
+	if(global.transitionsLeft[global.currentLevel][i] == 0) {
+		global.arrowCountObjs[global.currentLevel][i].visible = false;
+	}
+	global.arrowCountObjs[global.currentLevel][i].color = i;
 }
 
+var _xPos = 901;
+var _yPos = 564;
+
+var so1 = instance_create_layer(_xPos, _yPos, "Dynamic", Input_sequence);
+so1.sequence = "rg";
+so1.acceptingOrNot = true;
+so1.alarm[0] = 1;
+
+var so2 = instance_create_layer(_xPos, _yPos + 64, "Dynamic",  Input_sequence);
+so2.sequence = "gg";
+so2.acceptingOrNot = true;
+so2.alarm[0] = 1;
+
+var so3 = instance_create_layer(_xPos, _yPos + 128, "Dynamic",  Input_sequence);
+so3.sequence = "rr";
+so3.acceptingOrNot = true;
+so3.alarm[0] = 1;
 
 
-
-
-if(global.editMode){
-	editOn();
-	show_debug_message("EDITING")
+var scale = global.levelTileScaling[global.currentLevel];
+for(var i = 0; i < global.tilesNum.i; i++) {
+	for(var j = 0; j < global.tilesNum.j; j++) {
+		var tilePos = get_tile_coords(i, j);
+		var tile = instance_create_layer(tilePos.x, tilePos.y, "Dynamic",  TileMainObj); 
+		tile.image_xscale = scale;
+		tile.image_yscale = scale;
+		var state = instance_create_layer(tilePos.x, tilePos.y, "States",  StateObj); 
+		state.sprite_index = state_normal;
+		state.image_xscale = scale;
+		state.image_yscale = scale;
+		state.i = i;
+		state.j = j;
+		if(i == global.startState.i && j == global.startState.j) {
+			state.sprite_index = state_start;
+		} else if(i == global.endState.i && j == global.endState.j){
+			state.sprite_index = state_end;
+		} else if(i == global.middleState.i && j == global.middleState.j){
+			state.sprite_index = state_middle;
+		} else {
+			state.sprite_index = state_normal;
+		}
+	}
 }
 
+global.sequenceObjs[global.currentLevel] = [so1, so2, so3];
 
-global.selected_transition_color = "";
-global.selected_transition_color_symbol = ""
-
-//global.red = make_colour_rgb(157, 11, 14); 
-//global.green = make_colour_rgb(0, 166, 82);
-//global.blue = make_colour_rgb(0, 114, 187);
-global.red = make_colour_rgb(250, 94, 90); 
-global.green = make_colour_rgb(75, 230, 90);
-global.blue = make_colour_rgb(74, 136, 251);
-global.num_red_left = 2;
-global.num_green_left = 2;
-global.num_blue_left = 2;
-
-global.red_count = instance_create_layer(125, 160, "Instances", ArrowCountObj);
-global.red_count.image_index = global.num_red_left;
-global.red_count.color = "r";
-global.green_count = instance_create_layer(125, 250, "Instances", ArrowCountObj);
-global.green_count.image_index = global.num_green_left; 
-global.green_count.color = "g";
-
-global.blue_count = instance_create_layer(125, 340, "Instances", ArrowCountObj);
-global.blue_count.visible = false;
-//global.blue_count.image_index = global.num_blue_left;
-//global.blue_count.color = "b";
-
-global.total_num_left = 0; //r + g + b
-global.selected_state_color_rgb = make_colour_rgb(255, 255, 200);
-global.is_state_selected = false;
-//store state id, x, and y coordinates
-global.state_selected = {name: "", id: 0, x: 0, y: 0};
-global.is_hovering_state = false;
-global.hover_state_id = 0;
-global.hovered_transition = 0;
-global.duplicate_hovered_transition = false;
-global.sequence = [];
-global.addedTransition = false;
-
-
-//Local star count
-global.star_count = getStars(room);
-//This level was not played before
-if(global.star_count = -1)global.star_count = 0;
-
+//store state id, its x, and y coordinates relative to the tile system
+global.drawing = false;
+global.currentPathNodes = ds_list_create();
+global.currentPathTrans = ds_list_create();
+global.allPaths = ds_list_create();
+global.allEdges = ds_list_create()
 
 //Logic global vars
-global.num_states = 3;
-global.num_strings = 3;
-global.strings = array_create(global.num_strings, 0);
-global.num_symbols = 3;
-
-
-global.dfa = {
-	transitions: initTrans(),
-    states: initStates(),
-	alphabet: initAlphabet(),
-	start: "s1",
-	final: "s3"
-}
-
-
-string1 = "rg";
-string2 = "gg";
-string3 = "rr";
-
-x_pos = 901;
-y_pos = 564;
-
-in1 = instance_create_layer(x_pos, y_pos, "Instances", Input_sequence);
-in1.sequence = string1;
-in1.acceptingOrNot = true;
-
-in2 = instance_create_layer(x_pos, y_pos + 64, "Instances",  Input_sequence);
-in2.sequence = string2;
-in2.acceptingOrNot = true;
-
-in3 = instance_create_layer(x_pos, y_pos + 128, "Instances",  Input_sequence);
-in3.sequence = string3;
-in3.acceptingOrNot = true;
-
-global.inputs[0] = in1;
-global.inputs[1] = in2;
-global.inputs[2] = in3;
-
-in1.alarm[0] = 1;
-in2.alarm[0] = 1;
-in3.alarm[0] = 1;
-
-//letting the user see the previous stars they have gotten
-starNum = global.star_count;
-if(starNum > 3){
-	show_error("Fatal error: the number of stars exceed 3", true);
-}
-show_debug_message(starNum)
-show_debug_message(" STARS")
-var i = 0;
-while(starNum > 0){
-	global.inputs[i].star.sprite_index = Star_gold_64x64
-	i++;
-	starNum--;
-}
-
-
-global.runningDFA = false;
-
-/*
-global.animationSequence = {
-	
-	seq1: {
-		tIDs: [0, 0, 0, 0, 0]
-		goalIDs: []
-	},
-	seq2: [0, 0, 0, 0, 0],
-	seq3: [0, 0, 0, 0, 0],
-}
-
-*/
-
-//global.doneAnimation = false;
-
-
-resetDFA();
+global.numStates = 3;
+global.numSequences = 3;

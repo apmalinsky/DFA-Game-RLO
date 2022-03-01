@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//If an arrow is not in transition
+//If an arrow is not in transition and if we are on a level
 if(!global.doingAnimation && global.currentRoomIsLevel){
 	//is there an ongoing pause/delay and Enough time has elapsed
 	if(global.timerActive && global.animatingBufferTimer < get_timer()){

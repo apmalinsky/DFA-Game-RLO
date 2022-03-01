@@ -27,7 +27,8 @@ function generateSlider(xPos, yPos, audioGroup){
 	}
 }
 
-//You don't have to set the minimum and maximum value, it is by default 0 and 100 respectively.
+//You don't have to set the minimum and maximum value, 
+//it is by default 0 and 100 respectively.
 function setMinMaxForSlider(sliderBaseID, minimumValue, maximumValue){
 	if(maximumValue < minimumValue){
 		show_error("the maximum value cannot be lower than the minimum value", true);
@@ -38,6 +39,9 @@ function setMinMaxForSlider(sliderBaseID, minimumValue, maximumValue){
 	}
 }
 
+//Asks the current value of the slider
+//param sliderBaseID: Object type
+//return number
 function extractValue(sliderBaseID){
 	with(sliderBaseID){
 		var sliderFloat = ((buttonID.x - x) / 500) + 0.5;
@@ -45,6 +49,10 @@ function extractValue(sliderBaseID){
 	}
 }
 
+//Sets the volume for a certain audioGroup
+//param audioGroup: audioGroup type
+//param volume: number type
+//return void
 function setVolumeForAudioGroup(audioGroup, volume){
 	if(volume < 0 or volume > 100){
 		show_error("Volume must be between 0 and 100", true);
