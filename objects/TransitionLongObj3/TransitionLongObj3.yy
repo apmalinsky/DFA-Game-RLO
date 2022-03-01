@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Transition_long_3",
-    "path": "sprites/Transition_long_3/Transition_long_3.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

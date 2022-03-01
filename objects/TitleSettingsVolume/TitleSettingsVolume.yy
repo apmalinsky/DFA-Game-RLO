@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Title_settings_volume",
-    "path": "sprites/Title_settings_volume/Title_settings_volume.yy",
+    "name": "Volume_text_spr",
+    "path": "sprites/Volume_text_spr/Volume_text_spr.yy",
   },
   "solid": false,
   "visible": true,

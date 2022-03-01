@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Transition_short_1",
-    "path": "sprites/Transition_short_1/Transition_short_1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

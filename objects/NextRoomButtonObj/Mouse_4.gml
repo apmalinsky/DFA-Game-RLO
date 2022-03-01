@@ -19,7 +19,7 @@ if (visible){
 	
 	room_goto_next();
 	global.currentRoomIsLevel = false;
-	
+	global.currentLevel++;
 }
 
 

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.currentLevel = -1;
+global.currentRoomIsLevel = false;
 if(room == LevelSetMenu){
 	global.prevRoomID = global.currentRoomID;
 	global.currentRoomID = HomeScreen;
