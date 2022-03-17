@@ -1,6 +1,6 @@
 
 // check if clicked
-if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, self)) {
+if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, self)) {
 	selected = !selected; //switch state of button
 	image_index = selected;
 	audio_play_sound(button_click, 10, false);

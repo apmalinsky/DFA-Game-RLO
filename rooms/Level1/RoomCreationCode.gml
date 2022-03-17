@@ -71,13 +71,6 @@ for(var i = 0; i < global.tilesNum.i; i++) {
 
 global.sequenceObjs[global.currentLevel] = [so1, so2, so3];
 
-//store state id, its x, and y coordinates relative to the tile system
-global.drawing = false;
-global.currentPathNodes = ds_list_create();
-global.currentPathTrans = ds_list_create();
-global.allPaths = ds_list_create();
-global.allEdges = ds_list_create()
-
 //Logic global vars
 global.numStates = 3;
 global.numSequences = 3;

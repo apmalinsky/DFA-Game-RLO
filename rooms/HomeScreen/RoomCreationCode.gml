@@ -35,6 +35,12 @@ global.sequenceObjs = array_create(global.numberOfLevels, -1);
 //These whill be set in the creation code of individual levels
 global.arrowCountObjs = array_create(global.numberOfLevels, array_create(3, -1));
 global.transitionsLeft = array_create(global.numberOfLevels, array_create(3, 0));
+//store state id, its x, and y coordinates relative to the tile system
+global.drawing = false;
+global.currentPathNodes = ds_list_create();
+global.currentPathTrans = ds_list_create();
+global.allPaths = ds_list_create();
+global.allEdges = ds_list_create();
 //This should always be saved because it stores which color was chosen to draw an arrow with it
 global.selectedColors = array_create(global.numberOfLevels, -1);
 //Decides where and how big/small the tiles should be on the screen
